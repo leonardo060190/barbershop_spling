@@ -1,10 +1,8 @@
 package com.barbershop.barbershop.cidades;
 
+import com.barbershop.barbershop.estados.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -25,5 +23,7 @@ public class Cidade implements Serializable {
     private String nome;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
-
+    @ManyToOne
+    @JoinColumn(name = "estados_id")
+    private Estado estado;
 }

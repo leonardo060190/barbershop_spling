@@ -1,10 +1,8 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
+import com.barbershop.barbershop.diaSemana.DiaSemana;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -26,4 +24,7 @@ public class HorarioFuncionamento implements Serializable {
     private String fim;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
+    @ManyToOne
+    @JoinColumn(name = "diaSemana_id")
+    private DiaSemana diaSemana;
 }

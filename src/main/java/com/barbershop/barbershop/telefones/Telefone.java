@@ -1,9 +1,8 @@
 package com.barbershop.barbershop.telefones;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.barbershop.barbershop.barbearias.Barbearia;
+import com.barbershop.barbershop.clientes.Cliente;
+import jakarta.persistence.*;
 import lombok.*;
 
 
@@ -22,4 +21,10 @@ public class Telefone implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String telefone;
+    @ManyToOne
+    @JoinColumn(name = "barbearia_id")
+    private Barbearia barbearia;
+    @ManyToOne
+    @JoinColumn(name = "cliente_id")
+    private Cliente cliente;
 }

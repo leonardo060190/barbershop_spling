@@ -1,5 +1,6 @@
 package com.barbershop.barbershop.clientes;
 
+import com.barbershop.barbershop.enderecos.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -36,6 +37,9 @@ public class Cliente implements Serializable{
     private Set<Integer>perfis = new HashSet<>();
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
+    @ManyToOne
+    @JoinColumn(name = "endereco_id")
+    private Endereco endereco;
 
 
 

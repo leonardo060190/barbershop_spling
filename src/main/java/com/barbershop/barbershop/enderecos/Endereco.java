@@ -1,10 +1,8 @@
 package com.barbershop.barbershop.enderecos;
 
+import com.barbershop.barbershop.cidades.Cidade;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -28,6 +26,8 @@ public class Endereco implements Serializable {
     private String cep;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
-
+    @ManyToOne
+    @JoinColumn(name = "cidades_id")
+    private Cidade cidade;
 
 }

@@ -1,9 +1,7 @@
 package com.barbershop.barbershop.servicos;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import com.barbershop.barbershop.barbearias.Barbearia;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
@@ -24,6 +22,8 @@ public class Servicos implements Serializable {
     private Double preco;
     private String descricao;
     private String foto;
-
+    @ManyToOne
+    @JoinColumn(name = "barbearia_id")
+    private Barbearia barbearia;
 
 }

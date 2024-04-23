@@ -1,6 +1,9 @@
 package com.barbershop.barbershop.barbearias;
 
+import com.barbershop.barbershop.enderecos.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
+import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
+import com.barbershop.barbershop.servicos.Servicos;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
@@ -36,18 +39,17 @@ public class Barbearia implements Serializable {
     private Set<Integer>perfis =new HashSet<>();
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
+    @ManyToOne
+    @JoinColumn(name = "enderecos_id")
+    private Endereco endereco;
+    @ManyToOne
+    @JoinColumn(name = "servicos_id")
+    private Servicos servicos;
+    @ManyToOne
+    @JoinColumn(name = "horarioFuncionamento_id")
+    private HorarioFuncionamento horarioFuncionamento;
 
 
-    public Barbearia(String id, String nome, String cnpj, String email, String razaoSocial, String senha, String foto, LocalDate dataCriacao) {
-        this.id = id;
-        this.nome = nome;
-        this.cnpj = cnpj;
-        this.email = email;
-        this.razaoSocial = razaoSocial;
-        this.senha = senha;
-        this.foto = foto;
-        this.dataCriacao = dataCriacao;
-    }
 
     public Set<Perfil> getPerfis() { return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet()); }
 
