@@ -1,34 +1,34 @@
-package com.barbershop.barbershop.barbearias;
+package com.barbershop.barbershop.barbearia;
 
-import com.barbershop.barbershop.enderecos.Endereco;
+import com.barbershop.barbershop.agendamento.Agendamento;
+import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
-import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
-import com.barbershop.barbershop.servicos.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
-
-@NoArgsConstructor
+@Entity
+//@NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
-@Entity
 public class Barbearia implements Serializable {
     private static final long serialVersionUID = 1L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Integer id;
     private String nome;
     @Column(unique = true)
-    private  String cnpj;
+    private String cnpj;
     @Column(unique = true)
     private String email;
     private String razaoSocial;
@@ -36,21 +36,26 @@ public class Barbearia implements Serializable {
     private String foto;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "PERFIS")
-    private Set<Integer>perfis =new HashSet<>();
+    private Set<Integer> perfis = new HashSet<>();
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
-    @ManyToOne
-    @JoinColumn(name = "enderecos_id")
+    @OneToOne
+    @JoinColumn(name = "endereco_id")
     private Endereco endereco;
-    @ManyToOne
-    @JoinColumn(name = "servicos_id")
-    private Servico servico;
-    @ManyToOne
-    @JoinColumn(name = "horarioFuncionamento_id")
-    private HorarioFuncionamento horarioFuncionamento;
 
 
+    public Barbearia() {
+        addPerfil(Perfil.BARBEARIA);
+    }
 
-    public Set<Perfil> getPerfis() { return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet()); }
+
+    void addPerfil(Perfil perfil) {
+        this.perfis.add(perfil.getCodigo());
+    }
+
+    public Set<Perfil> getPerfis() {
+        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
+    }
 
 }
+

@@ -1,6 +1,7 @@
-package com.barbershop.barbershop.clientes;
+package com.barbershop.barbershop.cliente;
 
-import com.barbershop.barbershop.enderecos.Endereco;
+import com.barbershop.barbershop.agendamento.Agendamento;
+import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -8,17 +9,19 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-@NoArgsConstructor
+//@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
-public class Cliente implements Serializable{
+public class Cliente implements Serializable {
     private static final long serialVersionUID = 1l;
 
     @Id
@@ -34,30 +37,30 @@ public class Cliente implements Serializable{
     private String foto;
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "PERFIS")
-    private Set<Integer>perfis = new HashSet<>();
+    private Set<Integer> perfis = new HashSet<>();
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
 
-
-
-    public Cliente(Integer id, String nome, String cpf, String email, String senha, String dataNascimento, String foto, LocalDate dataCriacao) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
-        this.email = email;
-        this.senha = senha;
-        this.dataNascimento = dataNascimento;
-        this.foto = foto;
-        this.dataCriacao = dataCriacao;
+    public Cliente() {
+        addPerfil(Perfil.CLIENTE);
     }
 
-    public Set<Perfil> getPerfis() { return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet()); }
+    private void addPerfil(Perfil perfil) {
+        this.perfis.add(perfil.getCodigo());
+    }
 
+
+    public Set<Perfil> getPerfis() {
+        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
+    }
 
 }
+
+
+
 
 

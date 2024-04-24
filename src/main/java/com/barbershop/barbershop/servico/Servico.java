@@ -1,31 +1,29 @@
-package com.barbershop.barbershop.telefones;
+package com.barbershop.barbershop.servico;
 
-import com.barbershop.barbershop.barbearias.Barbearia;
-import com.barbershop.barbershop.clientes.Cliente;
+import com.barbershop.barbershop.barbearia.Barbearia;
 import jakarta.persistence.*;
 import lombok.*;
-
 
 import java.io.Serializable;
 
 @Entity
-@Setter
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Telefone implements Serializable {
+public class Servico implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column(unique = true)
-    private String telefone;
+    private String nome;
+    private Double preco;
+    private String descricao;
+    private String foto;
     @ManyToOne
     @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
-    @ManyToOne
-    @JoinColumn(name = "cliente_id")
-    private Cliente cliente;
+
 }

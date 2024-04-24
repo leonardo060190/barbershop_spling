@@ -1,21 +1,19 @@
-package com.barbershop.barbershop.agendamentos;
+package com.barbershop.barbershop.agendamento;
 
-import com.barbershop.barbershop.clientes.Cliente;
-import com.barbershop.barbershop.servicos.Servico;
-import com.fasterxml.jackson.annotation.JsonFormat;
+import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.servico.Servico;
 import jakarta.persistence.*;
 import jdk.jfr.Enabled;
 import lombok.*;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 
 @Enabled
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class AgendamentosPK implements Serializable {
+public class AgendamentoPK implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @ManyToOne
