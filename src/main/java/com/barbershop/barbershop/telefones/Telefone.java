@@ -20,6 +20,7 @@ public class Telefone implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Column(unique = true)
     private String telefone;
     @ManyToOne
     @JoinColumn(name = "barbearia_id")

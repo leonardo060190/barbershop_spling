@@ -20,8 +20,8 @@ public class HorarioFuncionamento implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String inicio;
-    private String fim;
+    private LocalDate inicio;
+    private LocalDate fim;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
     @ManyToOne

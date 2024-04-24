@@ -12,7 +12,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-public class Servicos implements Serializable {
+public class Servico implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id

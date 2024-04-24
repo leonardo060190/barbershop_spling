@@ -3,7 +3,7 @@ package com.barbershop.barbershop.barbearias;
 import com.barbershop.barbershop.enderecos.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
-import com.barbershop.barbershop.servicos.Servicos;
+import com.barbershop.barbershop.servicos.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
@@ -44,7 +44,7 @@ public class Barbearia implements Serializable {
     private Endereco endereco;
     @ManyToOne
     @JoinColumn(name = "servicos_id")
-    private Servicos servicos;
+    private Servico servico;
     @ManyToOne
     @JoinColumn(name = "horarioFuncionamento_id")
     private HorarioFuncionamento horarioFuncionamento;
