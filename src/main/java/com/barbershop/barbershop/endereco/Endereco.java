@@ -26,6 +26,7 @@ public class Endereco implements Serializable {
     private String cep;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
+
     @ManyToOne
     @JoinColumn(name = "cidade_id")
     private Cidade cidade;

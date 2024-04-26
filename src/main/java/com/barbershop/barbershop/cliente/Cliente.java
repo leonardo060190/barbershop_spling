@@ -1,17 +1,15 @@
 package com.barbershop.barbershop.cliente;
 
-import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.validator.constraints.br.CPF;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -20,26 +18,46 @@ import java.util.stream.Collectors;
 @Entity
 @Getter
 @Setter
-@EqualsAndHashCode(of = "id")
+@EqualsAndHashCode(of = "cliente_id")
+@Table(name = "cliente")
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String nome;
-    @Column(unique = true)
-    private String cpf;
-    @Column(unique = true)
-    private String email;
-    private String senha;
-    private String dataNascimento;
-    private String foto;
+    @Column(name = "cliente_id")
+    private Integer cliente_id;
+
+    @Column(name = "cliente_nome")
+    private String cliente_nome;
+
+    @Column(unique = true, name = "cliente_cpf")
+    @CPF
+    private String cliente_cpf;
+
+    @Column(unique = true, name = "cliente_email")
+    private String cliente_email;
+
+    @Column(name = "cliente_senha")
+    private String cliente_senha;
+
+    @Column(name = "cliente_datanascimento")
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate cliente_dataNascimento;
+
+    @Column(name = "cliente_foto")
+    private String cliente_foto;
+
+
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "PERFIS")
     private Set<Integer> perfis = new HashSet<>();
+
+    @Column(name = "cliente_datacriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataCriacao = LocalDate.now();
+    private LocalDate cliente_dataCriacao = LocalDate.now();
+
+
     @OneToOne
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
