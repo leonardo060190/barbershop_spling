@@ -69,7 +69,7 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "telefone_id", fetch = FetchType.LAZY)
     private List<Telefone> telefones;
 
-    @ManyToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
     private List<Agendamento> agendamentos;
 
 

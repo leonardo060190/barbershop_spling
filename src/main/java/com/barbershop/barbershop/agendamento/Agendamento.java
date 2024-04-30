@@ -9,6 +9,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 @Getter
@@ -20,11 +21,6 @@ import java.time.LocalDate;
 public class Agendamento implements Serializable {
     private static final long serialVersionUID = 1L;
 
-//    @JsonIgnore
-//    @EmbeddedId
-//    @Column(name = "agendamento_id")
-//    private AgendamentoPK agendamento_id = new AgendamentoPK();
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "agendamento_id")
@@ -32,19 +28,25 @@ public class Agendamento implements Serializable {
 
 
     @Column(name = "agendamento_data")
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
     private LocalDate agendamento_data;
+
+    @Column(name = "agendamento_hora")
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
+    private LocalTime agendamento_hora;
 
     @Column(name = "agendamento_dataCriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate agendamento_dataCriacao = LocalDate.now();
 
 
-    @ManyToMany
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "agendamento_cliente_id")
     private Cliente cliente;
 
-    @ManyToMany
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "agendamento_servico_id")
     private Servico servico;
 

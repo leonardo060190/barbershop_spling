@@ -35,7 +35,7 @@ public class Servico implements Serializable {
     @JoinColumn(name = "servico_barbearia_id")
     private Barbearia barbearia;
 
-    @ManyToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
     private List<Agendamento> agendamentos;
 
 }
