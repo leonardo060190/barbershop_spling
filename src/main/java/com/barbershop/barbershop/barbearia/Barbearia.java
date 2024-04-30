@@ -3,6 +3,9 @@ package com.barbershop.barbershop.barbearia;
 
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
+import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
+import com.barbershop.barbershop.servico.Servico;
+import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.*;
@@ -13,6 +16,7 @@ import java.time.LocalDate;
 
 import java.util.HashSet;
 
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 @Entity
@@ -55,9 +59,19 @@ public class Barbearia implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate barbearia_dataCriacao = LocalDate.now();
 
-    @OneToOne
-    @JoinColumn(name = "endereco_id")
+    @ManyToOne
+    @JoinColumn(name = "barbearia_endereco_id")
     private Endereco endereco;
+
+    @OneToMany(mappedBy = "servico_id", fetch = FetchType.LAZY)
+    private List<Servico> servicos;
+
+    @OneToMany(mappedBy = "horarioFuncionamento_id", fetch = FetchType.LAZY)
+    private List<HorarioFuncionamento> horarioFuncionamentos;
+
+
+    @OneToMany(mappedBy = "telefone_id", fetch = FetchType.LAZY)
+    private List<Telefone> telefones;
 
 
     public Barbearia() {

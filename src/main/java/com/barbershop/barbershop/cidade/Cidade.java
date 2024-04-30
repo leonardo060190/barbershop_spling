@@ -13,17 +13,21 @@ import java.time.LocalDate;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "id")
+@EqualsAndHashCode(of = "cidade_id")
+@Table(name = "cidade")
 public class Cidade implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
-    private String nome;
+    @Column(name = "cidade_id")
+    private Integer cidade_id;
+    @Column(name = "cidade_nome")
+    private String cidade_nome;
+    @Column(name = "cidade_dataCriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataCriacao = LocalDate.now();
+    protected LocalDate cidade_dataCriacao = LocalDate.now();
     @ManyToOne
-    @JoinColumn(name = "estado_id")
+    @JoinColumn(name = "cidade_estado_id")
     private Estado estado;
 }

@@ -1,7 +1,10 @@
 package com.barbershop.barbershop.cliente;
 
+import com.barbershop.barbershop.agendamento.Agendamento;
+//import com.barbershop.barbershop.agendamento.AgendamentoPK;
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
+import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,6 +13,7 @@ import org.hibernate.validator.constraints.br.CPF;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -58,9 +62,15 @@ public class Cliente implements Serializable {
     private LocalDate cliente_dataCriacao = LocalDate.now();
 
 
-    @OneToOne
-    @JoinColumn(name = "endereco_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "cliente_endereco_id", nullable = false)
     private Endereco endereco;
+
+    @OneToMany(mappedBy = "telefone_id", fetch = FetchType.LAZY)
+    private List<Telefone> telefones;
+
+    @ManyToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
+    private List<Agendamento> agendamentos;
 
 
     public Cliente() {
