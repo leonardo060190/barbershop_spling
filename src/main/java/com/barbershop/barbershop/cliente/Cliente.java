@@ -12,6 +12,7 @@ import org.hibernate.validator.constraints.br.CPF;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -22,55 +23,55 @@ import java.util.stream.Collectors;
 @Entity
 @Getter
 @Setter
-@EqualsAndHashCode(of = "cliente_id")
-@Table(name = "cliente")
+@EqualsAndHashCode(of = "id")
+
 public class Cliente implements Serializable {
     private static final long serialVersionUID = 1l;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "cliente_id")
-    private Integer cliente_id;
 
-    @Column(name = "cliente_nome")
-    private String cliente_nome;
+    private Integer id;
 
-    @Column(unique = true, name = "cliente_cpf")
+
+    private String nome;
+
+    @Column(unique = true)
     @CPF
-    private String cliente_cpf;
+    private String cpf;
 
-    @Column(unique = true, name = "cliente_email")
-    private String cliente_email;
+    @Column(unique = true)
+    private String email;
 
-    @Column(name = "cliente_senha")
-    private String cliente_senha;
 
-    @Column(name = "cliente_datanascimento")
+    private String senha;
+
+
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate cliente_dataNascimento;
+    private LocalDate dataNascimento;
 
-    @Column(name = "cliente_foto")
-    private String cliente_foto;
+
+    private String foto;
 
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "PERFIS")
     private Set<Integer> perfis = new HashSet<>();
 
-    @Column(name = "cliente_datacriacao")
+    @Column(name = "datacriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate cliente_dataCriacao = LocalDate.now();
+    private LocalDate dataCriacao = LocalDate.now();
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente_endereco_id", nullable = false)
+    @JoinColumn(name = "endereco_id", nullable = false)
     private Endereco endereco;
 
-    @OneToMany(mappedBy = "telefone_id", fetch = FetchType.LAZY)
-    private List<Telefone> telefones;
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    private List<Telefone> telefones = new ArrayList<>();
 
-    @OneToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
-    private List<Agendamento> agendamentos;
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    private List<Agendamento> agendamentos = new ArrayList<>();
 
 
     public Cliente() {

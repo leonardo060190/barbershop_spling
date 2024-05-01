@@ -13,22 +13,23 @@ import java.io.Serializable;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "telefone_id")
-@Table(name = "telefone")
+@EqualsAndHashCode(of = "id")
+
 public class Telefone implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "telefone_id")
-    private Integer telefone_id;
+    private Integer id;
 
-    @Column(name = "telefone_numero", unique = true)
-    private String telefone_numero;
+    @Column(unique = true)
+    private String numero;
+
     @ManyToOne
-    @JoinColumn(name = "telefone_barbearia_id")
+    @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
+
     @ManyToOne
-    @JoinColumn(name = "telefone_cliente_id")
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 }

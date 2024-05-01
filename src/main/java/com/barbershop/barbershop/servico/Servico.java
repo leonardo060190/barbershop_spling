@@ -14,28 +14,29 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "servico_id")
-@Table(name = "servico")
+@EqualsAndHashCode(of = "id")
+
 public class Servico implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "servico_id")
-    private Integer servico_id;
-    @Column(name = "servico_nome")
-    private String servico_nome;
-    @Column(name = "servico_preco")
-    private Double servico_preco;
-    @Column(name = "servico_descricao")
-    private String servico_descricao;
-    @Column(name = "servico_foto")
-    private String servico_foto;
+
+    private Integer id;
+
+    private String nome;
+
+    private Double preco;
+
+    private String descricao;
+
+    private String foto;
+
     @ManyToOne
-    @JoinColumn(name = "servico_barbearia_id")
+    @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
 
-    @OneToMany(mappedBy = "agendamento_id", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "servico", fetch = FetchType.LAZY)
     private List<Agendamento> agendamentos;
 
 }

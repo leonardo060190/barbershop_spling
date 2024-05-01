@@ -9,6 +9,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -16,33 +17,33 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "endereco_id")
-@Table(name = "endereco")
+@EqualsAndHashCode(of = "id")
+
 public class Endereco implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "endereco_id")
-    private Integer endereco_id;
-    @Column(name = "endereco_rua")
-    private String endereco_rua;
-    @Column(name = "endereco_bairro")
-    private String endereco_bairro;
-    @Column(name = "endereco_numero")
-    private Integer endereco_numero;
-    @Column(name = "endereco_cep")
-    private String endereco_cep;
+
+    private Integer id;
+
+    private String rua;
+
+    private String bairro;
+
+    private Integer numero;
+
+    private String cep;
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne
-    @JoinColumn(name = "endereco_cidade_id")
+    @JoinColumn(name = "cidade_id")
     private Cidade cidade;
 
-    @OneToMany(mappedBy = "cliente_id", fetch = FetchType.LAZY)
-    private List<Cliente> clientes;
+    @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
+    private List<Cliente> clientes = new ArrayList<>();
 
-    @OneToMany(mappedBy = "barbearia_id", fetch = FetchType.LAZY)
-    private List<Barbearia> barbearias;
+    @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
+    private List<Barbearia> barbearias = new ArrayList<>();
 }

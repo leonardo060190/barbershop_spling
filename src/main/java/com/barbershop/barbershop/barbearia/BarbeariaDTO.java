@@ -21,38 +21,38 @@ public class BarbeariaDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
 
-    private Integer barbearia_id;
+    private Integer id;
     @NotNull(message = "O campo Nome é requerido")
-    private String barbearia_nome;
+    private String nome;
     @NotNull(message = "O campo CNPJ é requerido")
     @CNPJ
-    private String barbearia_cnpj;
+    private String cnpj;
     @NotNull(message = "O campo E-MAIL é requerido")
-    private String barbearia_email;
+    private String email;
     @NotNull(message = "O campo RAZÃO SOCIAL é requerido")
-    private String barbearia_razaoSocial;
+    private String razaoSocial;
     @NotNull(message = "O campo SENHA é requerido")
-    private String barbearia_senha;
+    private String senha;
     @NotNull(message = "O campo FOTO é requerido")
-    private String barbearia_foto;
+    private String foto;
 
     private Set<Integer> perfis = new HashSet<>();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate barbearia_dataCriacao = LocalDate.now();
+    private LocalDate dataCriacao = LocalDate.now();
 
     @OneToOne
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
     public BarbeariaDTO(Barbearia obj){
-        this.barbearia_id = obj.getBarbearia_id();
-        this.barbearia_nome = obj.getBarbearia_nome();
-        this.barbearia_cnpj = obj.getBarbearia_cnpj();
-        this.barbearia_email = obj.getBarbearia_email();
-        this.barbearia_razaoSocial = obj.getBarbearia_razaoSocial();
-        this.barbearia_senha = obj.getBarbearia_senha();
-        this.barbearia_dataCriacao = obj.getBarbearia_dataCriacao();
+        this.id = obj.getId();
+        this.nome = obj.getNome();
+        this.cnpj = obj.getCnpj();
+        this.email = obj.getEmail();
+        this.razaoSocial = obj.getRazaoSocial();
+        this.senha = obj.getSenha();
+        this.dataCriacao = obj.getDataCriacao();
         this.perfis = obj.getPerfis().stream()
                 .map(x -> x.getCodigo())
                 .collect(Collectors.toSet());

@@ -7,6 +7,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -14,25 +15,25 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "diasemana_id")
-@Table(name = "diasemana")
+@EqualsAndHashCode(of = "id")
+
 public class DiaSemana implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "diasemana_id")
-    private Integer diasemana_id;
+    private Integer id;
 
-    @Column(name = "diasemana_nome")
-    private String diasemana_nome;
 
-    @Column(name = "diasemana_datacriacao")
+    private String nome;
+
+
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate diasemana_dataCriacao = LocalDate.now();
+    protected LocalDate dataCriacao = LocalDate.now();
 
-    @OneToMany(mappedBy = "horarioFuncionamento_id", fetch = FetchType.LAZY)
-    private List<HorarioFuncionamento> horarioFuncionamento;
+    @OneToMany(mappedBy = "diaSemana", fetch = FetchType.LAZY)
+    private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<>();
+
 
     public DiaSemana(Object o, String s, LocalDate now) {
     }

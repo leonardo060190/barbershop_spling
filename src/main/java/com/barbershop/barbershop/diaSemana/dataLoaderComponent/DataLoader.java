@@ -12,10 +12,11 @@ import java.util.List;
 
 @Component
 public class DataLoader implements CommandLineRunner {
+
     private final DiaSemanaRepository diaSemanaRepository;
 
     @Autowired
-    public DataLoader(DiaSemanaRepository diaSemanaRepository){
+    public DataLoader(DiaSemanaRepository diaSemanaRepository) {
         this.diaSemanaRepository = diaSemanaRepository;
     }
 
@@ -31,6 +32,8 @@ public class DataLoader implements CommandLineRunner {
                 new DiaSemana(null, "Sábado", LocalDate.now()),
                 new DiaSemana(null, "Domingo", LocalDate.now())
         );
+
+        // Salvar no banco de dados
         diaSemanaRepository.saveAll(diasSemana);
     }
 }

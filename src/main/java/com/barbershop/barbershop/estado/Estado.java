@@ -2,11 +2,13 @@ package com.barbershop.barbershop.estado;
 
 import com.barbershop.barbershop.cidade.Cidade;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -15,24 +17,24 @@ import java.util.List;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "estado_id")
-@Table(name = "estado")
+@EqualsAndHashCode(of = "id")
+
 public class Estado implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "estado_id")
-    private Integer estado_id;
-    @Column(name = "estado_nome")
-    private String estado_nome;
-    @Column(name = "estado_sigla")
-    private String estado_sigla;
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    @Column(name = "estado_dataCriacao")
-    protected LocalDate dataCriacao = LocalDate.now();
+    private Integer id;
 
-    @OneToMany(mappedBy = "cidade_id", fetch = FetchType.LAZY)
-    private List<Cidade> cidades;
+    private String nome;
+
+    private String sigla;
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate dataCriacao = LocalDate.now();
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "estado", fetch = FetchType.LAZY)
+    private List<Cidade> cidades = new ArrayList<>();
 
 }

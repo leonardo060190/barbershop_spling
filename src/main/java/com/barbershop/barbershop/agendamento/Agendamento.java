@@ -16,38 +16,38 @@ import java.time.LocalTime;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "agendamento_id")
-@Table(name = "agendamento")
+@EqualsAndHashCode(of = "id")
+
 public class Agendamento implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "agendamento_id")
-    private Integer agendamento_id;
+
+    private Integer id;
 
 
-    @Column(name = "agendamento_data")
+
     @Temporal(TemporalType.DATE)
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
-    private LocalDate agendamento_data;
+    private LocalDate data;
 
-    @Column(name = "agendamento_hora")
-    @Temporal(TemporalType.DATE)
+
+    @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    private LocalTime agendamento_hora;
+    private LocalTime hora;
 
-    @Column(name = "agendamento_dataCriacao")
+
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate agendamento_dataCriacao = LocalDate.now();
+    protected LocalDate dataCriacao = LocalDate.now();
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "agendamento_cliente_id")
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "agendamento_servico_id")
+    @JoinColumn(name = "servico_id")
     private Servico servico;
 
 }

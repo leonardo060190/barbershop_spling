@@ -14,27 +14,27 @@ import java.time.LocalDate;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@EqualsAndHashCode(of = "horarioFuncionamento_id")
+@EqualsAndHashCode(of = "id")
 public class HorarioFuncionamento implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "horarioFuncionamento_id")
-    private Integer horarioFuncionamento_id;
-    @Column(name = "horarioFuncionamento_inicio")
-    private LocalDate horarioFuncionamento_inicio;
-    @Column(name = "horarioFuncionamento_fim")
-    private LocalDate horarioFuncionamento_fim;
-    @Column(name = "horarioFuncionamento_dataCriacao")
+
+    private Integer id;
+
+    private LocalDate inicio;
+
+    private LocalDate fim;
+
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate horarioFuncionamento_dataCriacao = LocalDate.now();
+    protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne
-    @JoinColumn(name = "horarioFuncionamento_barbearia_id")
+    @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
 
     @ManyToOne
-    @JoinColumn(name = "horarioFuncionamento_diaSemana_id")
+    @JoinColumn(name = "diaSemana_id")
     private DiaSemana diaSemana;
 }
