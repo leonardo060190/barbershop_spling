@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,6 +21,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Cidade implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id

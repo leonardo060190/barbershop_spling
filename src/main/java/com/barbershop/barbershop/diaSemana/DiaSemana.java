@@ -35,6 +35,10 @@ public class DiaSemana implements Serializable {
     private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<>();
 
 
-    public DiaSemana(Object o, String s, LocalDate now) {
+
+    public DiaSemana( String nome, LocalDate now) {
+
+        this.nome = nome;
+        this.dataCriacao = LocalDate.now();
     }
 }

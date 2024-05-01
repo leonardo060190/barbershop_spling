@@ -37,4 +37,9 @@ public class Estado implements Serializable {
     @OneToMany(mappedBy = "estado", fetch = FetchType.LAZY)
     private List<Cidade> cidades = new ArrayList<>();
 
+    public Estado(String nome, String sigla, LocalDate now) {
+        this.nome = nome;
+        this.sigla = sigla;
+        this.dataCriacao = LocalDate.now();
+    }
 }

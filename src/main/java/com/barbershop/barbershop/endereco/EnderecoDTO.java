@@ -1,4 +1,49 @@
 package com.barbershop.barbershop.endereco;
 
-public class EnderecoDTO {
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serial;
+import java.io.Serializable;
+import java.time.LocalDate;
+
+
+@Getter
+@Setter
+public class EnderecoDTO implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
+    private Integer id;
+
+    @NotNull(message = "O campo RUA é requerido")
+    private String rua;
+
+    @NotNull(message = "O campo BAIRRO é requerido")
+    private String bairro;
+
+    @NotNull(message = "O campo NUMERO é requerido")
+    private Integer numero;
+
+    @NotNull(message = "O campo CEP é requerido")
+    private String cep;
+
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    protected LocalDate dataCriacao = LocalDate.now();
+
+    public EnderecoDTO(Endereco obj) {
+        this.id = obj.getId();
+        this.rua = obj.getRua();
+        this.bairro = obj.getBairro();
+        this.numero = obj.getNumero();
+        this.cep = obj.getCep();
+        this.dataCriacao = obj.getDataCriacao();
+    }
 }

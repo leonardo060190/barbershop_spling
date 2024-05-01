@@ -1,14 +1,14 @@
 package com.barbershop.barbershop.barbearia;
 
-import com.barbershop.barbershop.endereco.Endereco;
+
 import com.barbershop.barbershop.enuns.Perfil;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.validator.constraints.br.CNPJ;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -18,8 +18,8 @@ import java.util.stream.Collectors;
 @Getter
 @Setter
 public class BarbeariaDTO implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
-
 
     private Integer id;
     @NotNull(message = "O campo Nome é requerido")
@@ -41,9 +41,7 @@ public class BarbeariaDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @OneToOne
-    @JoinColumn(name = "endereco_id")
-    private Endereco endereco;
+
 
     public BarbeariaDTO(Barbearia obj){
         this.id = obj.getId();
@@ -56,7 +54,6 @@ public class BarbeariaDTO implements Serializable {
         this.perfis = obj.getPerfis().stream()
                 .map(x -> x.getCodigo())
                 .collect(Collectors.toSet());
-        addPerfil(Perfil.BARBEARIA);
 
     }
 

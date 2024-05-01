@@ -27,7 +27,6 @@ public class Agendamento implements Serializable {
     private Integer id;
 
 
-
     @Temporal(TemporalType.DATE)
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
     private LocalDate data;

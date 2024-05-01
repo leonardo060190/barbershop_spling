@@ -11,29 +11,27 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class DataLoader implements CommandLineRunner {
-
+public class DataLoaderDiaSemana implements CommandLineRunner {
     private final DiaSemanaRepository diaSemanaRepository;
 
     @Autowired
-    public DataLoader(DiaSemanaRepository diaSemanaRepository) {
+    public DataLoaderDiaSemana(DiaSemanaRepository diaSemanaRepository){
         this.diaSemanaRepository = diaSemanaRepository;
     }
 
     @Override
     public void run(String... args) throws Exception {
+        if (diaSemanaRepository.count() == 0) {
         // Inserir dados iniciais
         List<DiaSemana> diasSemana = Arrays.asList(
-                new DiaSemana(null, "Segunda-feira", LocalDate.now()),
-                new DiaSemana(null, "Terça-feira", LocalDate.now()),
-                new DiaSemana(null, "Quarta-feira", LocalDate.now()),
-                new DiaSemana(null, "Quinta-feira", LocalDate.now()),
-                new DiaSemana(null, "Sexta-feira", LocalDate.now()),
-                new DiaSemana(null, "Sábado", LocalDate.now()),
-                new DiaSemana(null, "Domingo", LocalDate.now())
+                new DiaSemana("Segunda-feira", LocalDate.now()),
+                new DiaSemana("Terça-feira", LocalDate.now()),
+                new DiaSemana("Quarta-feira", LocalDate.now()),
+                new DiaSemana("Quinta-feira", LocalDate.now()),
+                new DiaSemana("Sexta-feira", LocalDate.now()),
+                new DiaSemana("Sábado", LocalDate.now()),
+                new DiaSemana("Domingo", LocalDate.now())
         );
-
-        // Salvar no banco de dados
         diaSemanaRepository.saveAll(diasSemana);
-    }
+    }}
 }
