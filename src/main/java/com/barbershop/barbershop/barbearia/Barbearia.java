@@ -8,9 +8,11 @@ import com.barbershop.barbershop.servico.Servico;
 import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -28,6 +30,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 
 public class Barbearia implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,13 +67,15 @@ public class Barbearia implements Serializable {
     @JoinColumn(name = "endereco_id")
     private Endereco endereco;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<Servico> servicos = new ArrayList<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<>();
 
-
+    @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<Telefone> telefones = new ArrayList<>();
 

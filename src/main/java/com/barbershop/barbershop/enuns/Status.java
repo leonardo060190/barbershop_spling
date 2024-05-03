@@ -1,14 +1,13 @@
 package com.barbershop.barbershop.enuns;
 
 import lombok.Getter;
-import lombok.Setter;
+
 
 @Getter
-
 public enum Status {
     ABERTO(0, "Aberto"),
-    ANDAMENTO(0, "Andamento"),
-    ENCERRADO(0, "Encerrado");
+    CONCLUIDO(0, "Concluído"),
+    CANCELADO(0, "Cancelado");
 
     private Integer codigo;
 

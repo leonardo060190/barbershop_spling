@@ -1,6 +1,9 @@
 package com.barbershop.barbershop.endereco;
 
 
+
+import com.barbershop.barbershop.barbearia.BarbeariaDTO;
+import com.barbershop.barbershop.cliente.ClienteDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
@@ -10,6 +13,8 @@ import lombok.Setter;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Getter
@@ -37,6 +42,12 @@ public class EnderecoDTO implements Serializable {
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
+
+    private List<ClienteDTO> clientes = new ArrayList<>();
+
+    private List<BarbeariaDTO> barbearias = new ArrayList<>();
+
+
 
     public EnderecoDTO(Endereco obj) {
         this.id = obj.getId();

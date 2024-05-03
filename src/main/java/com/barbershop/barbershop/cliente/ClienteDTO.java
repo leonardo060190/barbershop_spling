@@ -1,6 +1,10 @@
 package com.barbershop.barbershop.cliente;
 
+import com.barbershop.barbershop.agendamento.Agendamento;
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.enuns.Perfil;
+import com.barbershop.barbershop.telefone.Telefone;
+import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -11,7 +15,9 @@ import org.hibernate.validator.constraints.br.CPF;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -49,6 +55,11 @@ public class ClienteDTO implements Serializable {
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
+
+    private List<TelefoneDTO> telefones = new ArrayList<>();
+
+    private List<AgendamentoDTO> agendamentos = new ArrayList<>();
+
 
     public ClienteDTO(Cliente obj) {
         this.id = obj.getId();

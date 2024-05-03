@@ -3,10 +3,10 @@ package com.barbershop.barbershop.agendamento;
 import com.barbershop.barbershop.cliente.Cliente;
 import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
@@ -19,6 +19,7 @@ import java.time.LocalTime;
 @EqualsAndHashCode(of = "id")
 
 public class Agendamento implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id

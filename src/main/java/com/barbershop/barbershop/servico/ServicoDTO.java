@@ -1,9 +1,8 @@
 package com.barbershop.barbershop.servico;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
-import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,11 +10,12 @@ import lombok.Setter;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Setter
 @Getter
-public class ServiceDTO implements Serializable {
+public class ServicoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
@@ -36,7 +36,10 @@ public class ServiceDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    public ServiceDTO(Servico obj) {
+    private List<AgendamentoDTO> agendamentos = new ArrayList<>();
+
+
+    public ServicoDTO(Servico obj) {
 
         this.id = obj.getId();
         this.nome = obj.getNome();

@@ -6,10 +6,12 @@ import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -26,6 +28,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 
 public class Cliente implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1l;
 
     @Id
@@ -67,9 +70,11 @@ public class Cliente implements Serializable {
     @JoinColumn(name = "endereco_id", nullable = false)
     private Endereco endereco;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
     private List<Telefone> telefones = new ArrayList<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
     private List<Agendamento> agendamentos = new ArrayList<>();
 

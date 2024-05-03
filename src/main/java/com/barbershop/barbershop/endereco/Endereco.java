@@ -4,9 +4,11 @@ import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.Cliente;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -20,6 +22,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Endereco implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -37,13 +40,15 @@ public class Endereco implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "cidade_id")
     private Cidade cidade;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
     private List<Cliente> clientes = new ArrayList<>();
 
+    @JsonIgnore
     @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
     private List<Barbearia> barbearias = new ArrayList<>();
 }

@@ -1,5 +1,7 @@
 package com.barbershop.barbershop.diaSemana;
 
+import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
+import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
@@ -8,8 +10,8 @@ import lombok.Setter;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
-
-
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Getter
@@ -26,6 +28,9 @@ public class DiaSemanaDTO implements Serializable {
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
+
+    private List<HorarioFuncionamentoDTO> horarioFuncionamento = new ArrayList<>();
+
 
 
     public DiaSemanaDTO(DiaSemana obj) {

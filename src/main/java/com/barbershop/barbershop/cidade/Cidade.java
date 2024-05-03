@@ -34,7 +34,7 @@ public class Cidade implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "estado_id")
     private Estado estado;
 

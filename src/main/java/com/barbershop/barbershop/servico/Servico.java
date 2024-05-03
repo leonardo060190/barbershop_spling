@@ -4,11 +4,14 @@ import com.barbershop.barbershop.agendamento.Agendamento;
 //import com.barbershop.barbershop.agendamento.AgendamentoPK;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -19,6 +22,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Servico implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -36,11 +40,12 @@ public class Servico implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
 
+    @JsonIgnore
     @OneToMany(mappedBy = "servico", fetch = FetchType.LAZY)
-    private List<Agendamento> agendamentos;
+    private List<Agendamento> agendamentos = new ArrayList<>();
 
 }

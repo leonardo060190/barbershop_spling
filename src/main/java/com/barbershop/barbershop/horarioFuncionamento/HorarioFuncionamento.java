@@ -6,6 +6,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
@@ -16,6 +17,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class HorarioFuncionamento implements Serializable {
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -30,11 +32,11 @@ public class HorarioFuncionamento implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "barbearia_id")
     private Barbearia barbearia;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "diaSemana_id")
     private DiaSemana diaSemana;
 }
