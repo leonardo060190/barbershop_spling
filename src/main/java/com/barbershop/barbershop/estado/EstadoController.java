@@ -28,7 +28,7 @@ public class EstadoController {
     }
 
     @PostMapping //salvar no banco
-    public ResponseEntity<EstadoDTO> createEstedo(@Valid @RequestBody EstadoDTO estadoDTO){
+    public ResponseEntity<EstadoDTO> createEstado(@Valid @RequestBody EstadoDTO estadoDTO){
         EstadoDTO createEstadoDTO = estadoService.create(estadoDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(createEstadoDTO);
     }
