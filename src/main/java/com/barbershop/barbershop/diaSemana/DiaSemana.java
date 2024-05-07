@@ -41,7 +41,6 @@ public class DiaSemana implements Serializable {
 
 
     public DiaSemana( String nome, LocalDate now) {
-
         this.nome = nome;
         this.dataCriacao = LocalDate.now();
     }
