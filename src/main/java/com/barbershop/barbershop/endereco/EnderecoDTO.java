@@ -45,7 +45,7 @@ public class EnderecoDTO implements Serializable {
 
     private List<ClienteDTO> clientes = new ArrayList<>();
 
-    private List<BarbeariaDTO> barbearias = new ArrayList<>();
+    private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 
 

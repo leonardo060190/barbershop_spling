@@ -5,7 +5,9 @@ import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.endereco.EnderecoDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.io.Serial;
@@ -17,6 +19,8 @@ import java.util.List;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class CidadeDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -29,7 +33,7 @@ public class CidadeDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    private List<EnderecoDTO> enderecos = new ArrayList<>();
+    private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
     public CidadeDTO(Cidade obj) {
         this.id = obj.getId();

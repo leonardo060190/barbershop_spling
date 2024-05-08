@@ -1,10 +1,12 @@
 package com.barbershop.barbershop.estado;
 
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 import java.util.List;
+
 
 @Mapper(componentModel = "spring")
 public interface EstadoMapper {
@@ -27,5 +29,9 @@ public interface EstadoMapper {
             @Mapping(source = "estadoDTO.dataCriacao", target = "dataCriacao"),
     })
     Estado updateEntity(EstadoDTO estadoDTO, Estado estado);
+
+    //erro
+    //java: Can't map property "Set<Perfil> cidades[].enderecos[].clientes[].perfis" to "Set<Integer> cidades[].enderecos[].clientes[].perfis". Consider to declare/implement a mapping method: "Set<Integer> map(Set<Perfil> value)".
+
 
 }
