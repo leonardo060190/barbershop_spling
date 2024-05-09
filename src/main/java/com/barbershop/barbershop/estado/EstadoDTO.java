@@ -37,7 +37,7 @@ public class EstadoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private List<CidadeDTO> cidades = new ArrayList<CidadeDTO>();
+    private List<CidadeDTO> cidadeslist= new ArrayList<>();
 
 
     public EstadoDTO(Estado obj) {

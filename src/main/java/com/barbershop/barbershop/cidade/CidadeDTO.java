@@ -35,7 +35,7 @@ public class CidadeDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
+    private List<EnderecoDTO> enderecos = new ArrayList<>();
 
     public CidadeDTO(Cidade obj) {
         this.id = obj.getId();

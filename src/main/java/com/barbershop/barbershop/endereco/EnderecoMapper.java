@@ -30,10 +30,11 @@ public interface EnderecoMapper {
             @Mapping(source = "enderecoDTO.numero", target = "numero"),
             @Mapping(source = "enderecoDTO.cep", target = "cep"),
             @Mapping(source = "enderecoDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "enderecoDTO.cidadeId", target = "cidade")
+            @Mapping(source = "enderecoDTO.cidadeId", target = "cidade", expression = "java(map(enderecoDTO.getCidadeId()))")
 
     })
     Endereco updateEntity(EnderecoDTO enderecoDTO, Endereco endereco);
 
+    Cidade map(Integer cidadeId);
 
 }

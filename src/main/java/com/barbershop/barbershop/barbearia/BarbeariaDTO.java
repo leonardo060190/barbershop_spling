@@ -68,7 +68,8 @@ public class BarbeariaDTO implements Serializable {
         this.cnpj = obj.getCnpj();
         this.email = obj.getEmail();
         this.razaoSocial = obj.getRazaoSocial();
-        this.senha = obj.getSenha();
+        this.foto = obj.getFoto();
+//        this.senha = obj.getSenha();
         this.dataCriacao = obj.getDataCriacao();
         this.enderecoId = obj.getEndereco() != null ? obj.getEndereco().getId() : null;
 

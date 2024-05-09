@@ -33,7 +33,7 @@ public class DiaSemanaDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private List<HorarioFuncionamentoDTO> horarioFuncionamento = new ArrayList<HorarioFuncionamentoDTO>();
+    private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<>();
 
 
 

@@ -1,5 +1,7 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
+import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.estado.Estado;
 import com.barbershop.barbershop.estado.EstadoDTO;
 import org.mapstruct.Mapper;
@@ -28,9 +30,11 @@ public interface HorarioFuncionamentoMapper {
             @Mapping(source = "horarioFuncionamentoDTO.fim", target = "fim"),
             @Mapping(source = "horarioFuncionamentoDTO.dataCriacao", target = "dataCriacao"),
             @Mapping(source = "horarioFuncionamentoDTO.barbeariaId", target = "barbearia"),
-            @Mapping(source = "horarioFuncionamentoDTO.diaSemanaId", target = "diaSemana")
+            @Mapping(source = "horarioFuncionamentoDTO.diaSemanaId", target = "diaSemana", expression = "java(map(horarioFuncionamentoDTO.getBarbeariaId()))")
     })
     HorarioFuncionamento updateEntity(HorarioFuncionamentoDTO horarioFuncionamentoDTO, HorarioFuncionamento horarioFuncionamento);
+
+    Barbearia map(Integer barbeariaId);
 
 
 }
