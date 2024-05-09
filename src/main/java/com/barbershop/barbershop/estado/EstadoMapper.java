@@ -30,8 +30,6 @@ public interface EstadoMapper {
     })
     Estado updateEntity(EstadoDTO estadoDTO, Estado estado);
 
-    //erro
-    //java: Can't map property "Set<Perfil> cidades[].enderecos[].clientes[].perfis" to "Set<Integer> cidades[].enderecos[].clientes[].perfis". Consider to declare/implement a mapping method: "Set<Integer> map(Set<Perfil> value)".
 
 
 }

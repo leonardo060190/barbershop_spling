@@ -20,7 +20,7 @@ public class EnderecoService {
 
 
     //busca todos os dias da semana
-    public List<DiaSemanaDTO> findAll(){
+    public List<EnderecoDTO> findAll(){
         List<Endereco> enderecos = enderecoRepository.findAll();
         return  enderecos.stream().map(enderecoMapper::toDTO).collect(Collectors.toList());
     }
@@ -32,16 +32,16 @@ public class EnderecoService {
     }
 
     //criando
-    public EnderecoDTO create(EnderecoDTO EnderecoDTO){
-        Endereco endereco = enderecoMapper.toEntity(EnderecoDTO);
+    public EnderecoDTO create(EnderecoDTO enderecoDTO){
+        Endereco endereco = enderecoMapper.toEntity(enderecoDTO);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);
     }
 
     //update
-    public EnderecoDTO update(Integer id, EnderecoDTO EnderecoDTO){
+    public EnderecoDTO update(Integer id, EnderecoDTO enderecoDTO){
         Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encotrado"));
-        enderecoMapper.updateEntity(EnderecoDTO,endereco);
+        enderecoMapper.updateEntity(enderecoDTO,endereco);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);
     }

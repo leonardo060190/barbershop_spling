@@ -29,7 +29,7 @@ public class CidadeController {
     }
 
     @PostMapping
-    public ResponseEntity<CidadeDTO> createDiaSemana(@Valid @RequestBody CidadeDTO cidadeDTO){
+    public ResponseEntity<CidadeDTO> create(@Valid @RequestBody CidadeDTO cidadeDTO){
         CidadeDTO create = cidadeService.create(cidadeDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

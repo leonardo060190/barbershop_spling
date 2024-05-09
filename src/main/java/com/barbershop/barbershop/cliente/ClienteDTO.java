@@ -51,14 +51,15 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Set<Integer> perfis = new HashSet<>();
+    private Integer enderecoId;
+
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private List<TelefoneDTO> telefones = new ArrayList<>();
+    private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
-    private List<AgendamentoDTO> agendamentos = new ArrayList<>();
+    private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 
     public ClienteDTO(Cliente obj) {
@@ -69,23 +70,10 @@ public class ClienteDTO implements Serializable {
         this.senha = obj.getSenha();
         this.dataNascimento = obj.getDataNascimento();
         this.foto = obj.getFoto();
-        this.perfis = obj.getPerfis().stream()
-                .map(x -> x.getCodigo())
-                .collect(Collectors.toSet());;
         this.dataCriacao = obj.getDataCriacao();
-    }
-
-    public ClienteDTO() {
-        addPerfil(Perfil.CLIENTE);
-    }
-
-    private void addPerfil(Perfil perfil) {
-        this.perfis.add(perfil.getCodigo());
+        this.enderecoId = obj.getEndereco() != null ? obj.getEndereco().getId() : null;
     }
 
 
-    public Set<Perfil> getPerfis() {
-        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
-    }
 
 }

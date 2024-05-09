@@ -23,7 +23,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 @Entity
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
@@ -55,16 +55,13 @@ public class Barbearia implements Serializable {
 
     private String foto;
 
-    @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "PERFIS")
-    private Set<Integer> perfis = new HashSet<>();
 
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne
-    @JoinColumn(name = "endereco_id")
+    @JoinColumn(name = "enderecoId")
     private Endereco endereco;
 
     @JsonIgnore
@@ -80,18 +77,7 @@ public class Barbearia implements Serializable {
     private List<Telefone> telefones = new ArrayList<>();
 
 
-    public Barbearia() {
-        addPerfil(Perfil.BARBEARIA);
-    }
 
-
-    void addPerfil(Perfil perfil) {
-        this.perfis.add(perfil.getCodigo());
-    }
-
-    public Set<Perfil> getPerfis() {
-        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
-    }
 
 }
 

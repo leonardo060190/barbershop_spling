@@ -23,12 +23,19 @@ public class HorarioFuncionamentoDTO implements Serializable {
     private LocalDate fim;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataCriacao = LocalDate.now();
+    private LocalDate dataCriacao = LocalDate.now();
+
+    private Integer barbeariaId;
+
+    private Integer diaSemanaId;
 
     public HorarioFuncionamentoDTO(HorarioFuncionamento obj) {
         this.id = obj.getId();
         this.inicio = obj.getInicio();
         this.fim = obj.getFim();
         this.dataCriacao = obj.getDataCriacao();
+        this.barbeariaId = obj.getBarbearia() != null ? obj.getBarbearia().getId() : null;
+        this.diaSemanaId = obj.getDiaSemana() != null ? obj.getDiaSemana().getId() : null;
+
     }
 }

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-//@NoArgsConstructor
+@NoArgsConstructor
 @AllArgsConstructor
 @Entity
 @Getter
@@ -57,17 +57,13 @@ public class Cliente implements Serializable {
     private String foto;
 
 
-    @ElementCollection(fetch = FetchType.EAGER)
-    @CollectionTable(name = "PERFIS")
-    private Set<Integer> perfis = new HashSet<>();
-
     @Column(name = "datacriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "endereco_id", nullable = false)
+    @JoinColumn(name = "enderecoId", nullable = false)
     private Endereco endereco;
 
     @JsonIgnore
@@ -79,18 +75,6 @@ public class Cliente implements Serializable {
     private List<Agendamento> agendamentos = new ArrayList<>();
 
 
-    public Cliente() {
-        addPerfil(Perfil.CLIENTE);
-    }
-
-    private void addPerfil(Perfil perfil) {
-        this.perfis.add(perfil.getCodigo());
-    }
-
-
-    public Set<Perfil> getPerfis() {
-        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
-    }
 
 }
 

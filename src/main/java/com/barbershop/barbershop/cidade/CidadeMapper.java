@@ -2,11 +2,13 @@ package com.barbershop.barbershop.cidade;
 
 import com.barbershop.barbershop.estado.Estado;
 import com.barbershop.barbershop.estado.EstadoDTO;
+import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
 
 import java.util.List;
 
+@Mapper(componentModel = "spring")
 public interface CidadeMapper {
 
     //Conversor Entity(Model) para DTO
@@ -24,7 +26,8 @@ public interface CidadeMapper {
             @Mapping(source = "cidadeDTO.id", target = "id"),
             @Mapping(source = "cidadeDTO.nome", target = "nome"),
             @Mapping(source = "cidadeDTO.dataCriacao", target = "dataCriacao"),
+            @Mapping(source = "cidadeDTO.estadoId", target = "estado")
     })
-    Estado updateEntity(CidadeDTO cidadeDTO, Cidade cidade);
+    Cidade updateEntity(CidadeDTO cidadeDTO, Cidade cidade);
 
 }

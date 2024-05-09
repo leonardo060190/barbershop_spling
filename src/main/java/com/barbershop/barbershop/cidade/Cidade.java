@@ -35,7 +35,7 @@ public class Cidade implements Serializable {
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "estado_id")
+    @JoinColumn(name = "estadoId")
     private Estado estado;
 
     @JsonIgnore

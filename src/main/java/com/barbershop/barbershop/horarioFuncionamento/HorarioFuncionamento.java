@@ -33,10 +33,10 @@ public class HorarioFuncionamento implements Serializable {
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "barbearia_id")
+    @JoinColumn(name = "barbeariaId")
     private Barbearia barbearia;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "diaSemana_id")
+    @JoinColumn(name = "diaSemanaId")
     private DiaSemana diaSemana;
 }

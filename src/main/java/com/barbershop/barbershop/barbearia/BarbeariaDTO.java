@@ -50,7 +50,7 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Set<Integer> perfis = new HashSet<>();
+    private Integer enderecoId;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
@@ -59,7 +59,7 @@ public class BarbeariaDTO implements Serializable {
 
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<>();
 
-    private List<TelefoneDTO> telefones = new ArrayList<>();
+    private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
 
     public BarbeariaDTO(Barbearia obj){
@@ -70,23 +70,8 @@ public class BarbeariaDTO implements Serializable {
         this.razaoSocial = obj.getRazaoSocial();
         this.senha = obj.getSenha();
         this.dataCriacao = obj.getDataCriacao();
-        this.perfis = obj.getPerfis().stream()
-                .map(x -> x.getCodigo())
-                .collect(Collectors.toSet());
+        this.enderecoId = obj.getEndereco() != null ? obj.getEndereco().getId() : null;
 
     }
 
-
-    public BarbeariaDTO() {
-        addPerfil(Perfil.BARBEARIA);
-    }
-
-
-    void addPerfil(Perfil perfil) {
-        this.perfis.add(perfil.getCodigo());
-    }
-
-    public Set<Perfil> getPerfis() {
-        return perfis.stream().map(perfil -> Perfil.toEnum(perfil)).collect(Collectors.toSet());
-    }
 }

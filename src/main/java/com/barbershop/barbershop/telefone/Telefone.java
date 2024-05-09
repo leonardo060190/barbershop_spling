@@ -28,10 +28,10 @@ public class Telefone implements Serializable {
     private String numero;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "barbearia_id")
+    @JoinColumn(name = "barbeariaId")
     private Barbearia barbearia;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "clienteId")
     private Cliente cliente;
 }

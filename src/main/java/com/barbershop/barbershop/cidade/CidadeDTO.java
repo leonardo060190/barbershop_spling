@@ -30,6 +30,8 @@ public class CidadeDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
+    private Integer estadoId;
+
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
@@ -39,5 +41,6 @@ public class CidadeDTO implements Serializable {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.dataCriacao = obj.getDataCriacao();
+        this.estadoId = obj.getEstado() != null ? obj.getEstado().getId() : null;
     }
 }

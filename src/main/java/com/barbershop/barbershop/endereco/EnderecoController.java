@@ -10,33 +10,33 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/endereco")
+@RequestMapping("/enderecos")
 public class EnderecoController {
 
     @Autowired
     private EnderecoService enderecoService;
 
     @GetMapping
-    public ResponseEntity<List<enderecoDTO>> getAll(){
-        List<enderecoDTO> enderecoDTO = enderecoService.findAll();
-        return  ResponseEntity.ok(enderecoDTO);
+    public ResponseEntity<List<EnderecoDTO>> getAll(){
+        List<EnderecoDTO> enderecosDTO = enderecoService.findAll();
+        return  ResponseEntity.ok(enderecosDTO);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<enderecoDTO> getById(@PathVariable Integer id){
-        enderecoDTO enderecoDTO = enderecoService.findById(id);
+    public ResponseEntity<EnderecoDTO> getById(@PathVariable Integer id){
+        EnderecoDTO enderecoDTO = enderecoService.findById(id);
         return ResponseEntity.ok(enderecoDTO);
     }
 
     @PostMapping
-    public ResponseEntity<enderecoDTO> create(@Valid @RequestBody enderecoDTO enderecoDTO){
-        enderecoDTO create = enderecoService.create(enderecoDTO);
+    public ResponseEntity<EnderecoDTO> create(@Valid @RequestBody EnderecoDTO enderecoDTO){
+        EnderecoDTO create = enderecoService.create(enderecoDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<enderecoDTO> update(@PathVariable Integer id, @Valid @RequestBody EnderecoDTO enderecoDTO){
-        enderecoDTO update = enderecoService.update(id, enderecoDTO);
+    public ResponseEntity<EnderecoDTO> update(@PathVariable Integer id, @Valid @RequestBody EnderecoDTO enderecoDTO){
+        EnderecoDTO update = enderecoService.update(id, enderecoDTO);
         return ResponseEntity.ok(update);
     }
 

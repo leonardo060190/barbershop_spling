@@ -27,5 +27,5 @@ public interface DiaSemanaMapper {
             @Mapping(source = "diaSemanaDTO.nome", target = "nome"),
             @Mapping(source = "diaSemanaDTO.dataCriacao", target = "dataCriacao"),
     })
-    Estado updateEntity(DiaSemanaDTO diaSemanaDTO, DiaSemana diaSemana);
+    DiaSemana updateEntity(DiaSemanaDTO diaSemanaDTO, DiaSemana diaSemana);
 }

@@ -1,7 +1,7 @@
 package com.barbershop.barbershop.endereco;
 
-import com.barbershop.barbershop.diaSemana.DiaSemana;
-import com.barbershop.barbershop.diaSemana.DiaSemanaDTO;
+
+import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.estado.Estado;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
@@ -30,6 +30,10 @@ public interface EnderecoMapper {
             @Mapping(source = "enderecoDTO.numero", target = "numero"),
             @Mapping(source = "enderecoDTO.cep", target = "cep"),
             @Mapping(source = "enderecoDTO.dataCriacao", target = "dataCriacao"),
+            @Mapping(source = "enderecoDTO.cidadeId", target = "cidade")
+
     })
-    Estado updateEntity(EnderecoDTO enderecoDTO, Endereco endereco);
+    Endereco updateEntity(EnderecoDTO enderecoDTO, Endereco endereco);
+
+
 }

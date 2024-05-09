@@ -3,6 +3,7 @@ package com.barbershop.barbershop.endereco;
 
 
 import com.barbershop.barbershop.barbearia.BarbeariaDTO;
+import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.ClienteDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
@@ -41,9 +42,11 @@ public class EnderecoDTO implements Serializable {
     private String cep;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataCriacao = LocalDate.now();
+    private LocalDate dataCriacao = LocalDate.now();
 
-    private List<ClienteDTO> clientes = new ArrayList<>();
+    private Integer cidadeId;
+
+    private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
@@ -56,5 +59,8 @@ public class EnderecoDTO implements Serializable {
         this.numero = obj.getNumero();
         this.cep = obj.getCep();
         this.dataCriacao = obj.getDataCriacao();
+        this.cidadeId = obj.getCidade() != null ? obj.getCidade().getId() : null;
     }
+
+
 }

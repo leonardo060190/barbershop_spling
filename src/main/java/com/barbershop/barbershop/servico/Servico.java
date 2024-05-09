@@ -41,7 +41,7 @@ public class Servico implements Serializable {
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "barbearia_id")
+    @JoinColumn(name = "barbeariaId")
     private Barbearia barbearia;
 
     @JsonIgnore
