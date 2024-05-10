@@ -27,6 +27,8 @@ public interface EstadoMapper {
             @Mapping(source = "estadoDTO.nome", target = "nome"),
             @Mapping(source = "estadoDTO.sigla", target = "sigla"),
             @Mapping(source = "estadoDTO.dataCriacao", target = "dataCriacao"),
+            @Mapping(source = "estadoDTO.cidades", target = "cidades"),
+
     })
     Estado updateEntity(EstadoDTO estadoDTO, Estado estado);
 

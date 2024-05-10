@@ -1,15 +1,19 @@
 package com.barbershop.barbershop.telefone;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.cliente.Cliente;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 public class TelefoneDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -19,14 +23,14 @@ public class TelefoneDTO implements Serializable {
 
     private String numero;
 
-    private Integer barbeariaId;
+    private Barbearia barbeariaId;
 
-    private Integer clienteId;
+    private Cliente clienteId;
 
     public TelefoneDTO(Telefone obj) {
         this.id = obj.getId();
         this.numero = obj.getNumero();
-        this.barbeariaId = obj.getBarbearia() != null ? obj.getBarbearia().getId() : null;
-        this.clienteId = obj.getCliente() != null ? obj.getCliente().getId() : null;
+        this.barbeariaId = obj.getBarbearia();
+        this.clienteId = obj.getCliente();
     }
 }

@@ -28,7 +28,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 
 public class Cliente implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1l;
 
     @Id
@@ -68,11 +68,11 @@ public class Cliente implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
-    private List<Telefone> telefones = new ArrayList<>();
+    private List<Telefone> telefones = new ArrayList<Telefone>();
 
     @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
-    private List<Agendamento> agendamentos = new ArrayList<>();
+    private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
 
 

@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 
 public class Barbearia implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -70,11 +70,11 @@ public class Barbearia implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
-    private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<>();
+    private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<HorarioFuncionamento>();
 
     @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
-    private List<Telefone> telefones = new ArrayList<>();
+    private List<Telefone> telefones = new ArrayList<Telefone>();
 
 
 

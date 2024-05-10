@@ -17,7 +17,7 @@ import java.io.Serializable;
 @EqualsAndHashCode(of = "id")
 
 public class Telefone implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id

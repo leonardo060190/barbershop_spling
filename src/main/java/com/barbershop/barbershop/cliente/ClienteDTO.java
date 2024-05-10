@@ -2,14 +2,15 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
+import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.telefone.Telefone;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
 
 import java.io.Serial;
@@ -22,8 +23,11 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 public class ClienteDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1l;
@@ -51,14 +55,16 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Integer enderecoId;
+    private Endereco enderecoId;
 
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
+    @JsonIgnore
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
+    @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 
@@ -66,12 +72,12 @@ public class ClienteDTO implements Serializable {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.cpf = obj.getCpf();
-        this.email = obj.getEmail();
         this.senha = obj.getSenha();
+        this.email = obj.getEmail();
         this.dataNascimento = obj.getDataNascimento();
         this.foto = obj.getFoto();
         this.dataCriacao = obj.getDataCriacao();
-        this.enderecoId = obj.getEndereco() != null ? obj.getEndereco().getId() : null;
+        this.enderecoId = obj.getEndereco();
     }
 
 

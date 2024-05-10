@@ -1,17 +1,21 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
 
+import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.diaSemana.DiaSemana;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 public class HorarioFuncionamentoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -25,17 +29,17 @@ public class HorarioFuncionamentoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Integer barbeariaId;
+    private Barbearia barbeariaId;
 
-    private Integer diaSemanaId;
+    private DiaSemana diaSemanaId;
 
     public HorarioFuncionamentoDTO(HorarioFuncionamento obj) {
         this.id = obj.getId();
         this.inicio = obj.getInicio();
         this.fim = obj.getFim();
         this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia() != null ? obj.getBarbearia().getId() : null;
-        this.diaSemanaId = obj.getDiaSemana() != null ? obj.getDiaSemana().getId() : null;
+        this.barbeariaId = obj.getBarbearia();
+        this.diaSemanaId = obj.getDiaSemana();
 
     }
 }

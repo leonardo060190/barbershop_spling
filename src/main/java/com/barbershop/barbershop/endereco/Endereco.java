@@ -22,7 +22,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Endereco implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -45,10 +45,10 @@ public class Endereco implements Serializable {
     private Cidade cidade;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
-    private List<Cliente> clientes = new ArrayList<>();
+    @OneToMany(mappedBy = "endereco", fetch = FetchType.EAGER)
+    private List<Cliente> clientes = new ArrayList<Cliente>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "endereco", fetch = FetchType.LAZY)
-    private List<Barbearia> barbearias = new ArrayList<>();
+    @OneToMany(mappedBy = "endereco", fetch = FetchType.EAGER)
+    private List<Barbearia> barbearias = new ArrayList<Barbearia>();
 }

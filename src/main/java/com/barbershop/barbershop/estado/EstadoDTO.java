@@ -4,11 +4,9 @@ package com.barbershop.barbershop.estado;
 
 import com.barbershop.barbershop.cidade.CidadeDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -17,10 +15,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class EstadoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -37,7 +36,8 @@ public class EstadoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private List<CidadeDTO> cidadeslist= new ArrayList<>();
+    @JsonIgnore
+    private List<CidadeDTO> cidades= new ArrayList<CidadeDTO>();
 
 
     public EstadoDTO(Estado obj) {

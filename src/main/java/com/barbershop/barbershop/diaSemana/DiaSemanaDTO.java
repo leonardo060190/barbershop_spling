@@ -3,11 +3,9 @@ package com.barbershop.barbershop.diaSemana;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -16,10 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class DiaSemanaDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -33,7 +32,8 @@ public class DiaSemanaDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<>();
+    @JsonIgnore
+    private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
 
 
 

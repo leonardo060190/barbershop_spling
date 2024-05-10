@@ -23,6 +23,7 @@ public interface HorarioFuncionamentoMapper {
     //recebendo uma lista do estados
     List<HorarioFuncionamentoDTO> toDTO(List<HorarioFuncionamento> horariosFuncionamento);
 
+
     //troca os dados de EstadoDTO par Estado(entidade)
     @Mappings({
             @Mapping(source = "horarioFuncionamentoDTO.id", target = "id"),
@@ -30,11 +31,10 @@ public interface HorarioFuncionamentoMapper {
             @Mapping(source = "horarioFuncionamentoDTO.fim", target = "fim"),
             @Mapping(source = "horarioFuncionamentoDTO.dataCriacao", target = "dataCriacao"),
             @Mapping(source = "horarioFuncionamentoDTO.barbeariaId", target = "barbearia"),
-            @Mapping(source = "horarioFuncionamentoDTO.diaSemanaId", target = "diaSemana", expression = "java(map(horarioFuncionamentoDTO.getBarbeariaId()))")
+            @Mapping(source = "horarioFuncionamentoDTO.diaSemanaId", target = "diaSemana")
     })
     HorarioFuncionamento updateEntity(HorarioFuncionamentoDTO horarioFuncionamentoDTO, HorarioFuncionamento horarioFuncionamento);
 
-    Barbearia map(Integer barbeariaId);
 
 
 }

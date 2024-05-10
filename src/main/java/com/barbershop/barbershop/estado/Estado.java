@@ -21,7 +21,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Estado implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -37,7 +37,7 @@ public class Estado implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "estado", fetch = FetchType.LAZY)
-    private List<Cidade> cidades = new ArrayList<>();
+    private List<Cidade> cidades = new ArrayList<Cidade>();
 
     public Estado(String nome, String sigla, LocalDate now) {
         this.nome = nome;

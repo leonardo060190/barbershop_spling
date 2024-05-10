@@ -2,10 +2,11 @@ package com.barbershop.barbershop.servico;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
+import com.barbershop.barbershop.barbearia.Barbearia;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -13,8 +14,11 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class ServicoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -33,11 +37,12 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Integer barbeariaId;
+    private Barbearia barbeariaId;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
+    @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 
@@ -49,6 +54,6 @@ public class ServicoDTO implements Serializable {
         this.descricao = obj.getDescricao();
         this.foto = obj.getFoto();
         this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia() != null ? obj.getBarbearia().getId() : null;
+        this.barbeariaId = obj.getBarbearia();
     }
 }

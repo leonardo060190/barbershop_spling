@@ -37,7 +37,7 @@ public class HorarioFuncionamentoController {
 
     @PutMapping("/{id}")
     public ResponseEntity<HorarioFuncionamentoDTO> update(@PathVariable Integer id, @Valid @RequestBody HorarioFuncionamentoDTO horarioFuncionamentoDTO){
-        HorarioFuncionamentoDTO update = horarioFuncionamentoService.update(id, horarioFuncionamentoService);
+        HorarioFuncionamentoDTO update = horarioFuncionamentoService.update(id, horarioFuncionamentoDTO);
         return ResponseEntity.ok(update);
     }
 

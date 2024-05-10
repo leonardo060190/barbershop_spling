@@ -20,6 +20,10 @@ public class AgendamentoDTO implements Serializable {
 
     private Integer id;
 
+    private Integer clienteId;
+
+    private Integer servicoId;
+
     @NotNull(message = "O campo DATA é requerido")
     @Temporal(TemporalType.DATE)
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")

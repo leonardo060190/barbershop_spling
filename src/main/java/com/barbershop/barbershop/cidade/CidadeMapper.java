@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.cidade;
 
-import com.barbershop.barbershop.estado.Estado;
-import com.barbershop.barbershop.estado.EstadoDTO;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -26,7 +25,8 @@ public interface CidadeMapper {
             @Mapping(source = "cidadeDTO.id", target = "id"),
             @Mapping(source = "cidadeDTO.nome", target = "nome"),
             @Mapping(source = "cidadeDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "cidadeDTO.estadoId", target = "estado")
+            @Mapping(source = "cidadeDTO.estadoId", target = "estado"),
+            @Mapping(source = "cidadeDTO.enderecos", target = "enderecos")
     })
     Cidade updateEntity(CidadeDTO cidadeDTO, Cidade cidade);
 

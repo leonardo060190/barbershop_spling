@@ -20,7 +20,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class DiaSemana implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -36,7 +36,7 @@ public class DiaSemana implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "diaSemana", fetch = FetchType.LAZY)
-    private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<>();
+    private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<HorarioFuncionamento>();
 
 
 

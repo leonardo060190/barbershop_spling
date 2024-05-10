@@ -17,7 +17,7 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class HorarioFuncionamento implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id

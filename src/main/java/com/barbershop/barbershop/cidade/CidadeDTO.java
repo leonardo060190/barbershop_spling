@@ -3,12 +3,11 @@ package com.barbershop.barbershop.cidade;
 
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.endereco.EnderecoDTO;
+import com.barbershop.barbershop.estado.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -17,10 +16,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@Getter
-@Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode(of = "id")
 public class CidadeDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -30,17 +30,18 @@ public class CidadeDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
-    private Integer estadoId;
+    private Estado estadoId;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    private List<EnderecoDTO> enderecos = new ArrayList<>();
+    @JsonIgnore
+    private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
     public CidadeDTO(Cidade obj) {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.dataCriacao = obj.getDataCriacao();
-        this.estadoId = obj.getEstado() != null ? obj.getEstado().getId() : null;
+        this.estadoId = obj.getEstado();
     }
 }

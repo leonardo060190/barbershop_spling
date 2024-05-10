@@ -29,13 +29,15 @@ public interface BarbeariaMapper {
             @Mapping(source = "barbeariaDTO.cnpj", target = "cnpj"),
             @Mapping(source = "barbeariaDTO.email", target = "email"),
             @Mapping(source = "barbeariaDTO.foto", target = "foto"),
+            @Mapping(source = "barbeariaDTO.senha", target = "senha"),
             @Mapping(source = "barbeariaDTO.razaoSocial", target = "razaoSocial"),
             @Mapping(source = "barbeariaDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "barbeariaDTO.enderecoId", target = "endereco", expression = "java(map(barbeariaDTO.getEnderecoId()))")
+            @Mapping(source = "barbeariaDTO.enderecoId", target = "endereco"),
+            @Mapping(source = "barbeariaDTO.servicos", target = "servicos"),
+            @Mapping(source = "barbeariaDTO.horarioFuncionamentos", target = "horarioFuncionamentos"),
+            @Mapping(source = "barbeariaDTO.telefones", target = "telefones")
     })
     Barbearia updateEntity(BarbeariaDTO barbeariaDTO, Barbearia barbearia);
-
-    Endereco map(Integer enderecoId);
 
 
 }

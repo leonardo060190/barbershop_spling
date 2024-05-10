@@ -43,11 +43,11 @@ public class Agendamento implements Serializable {
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "cliente_id")
+    @JoinColumn(name = "clienteId")
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "servico_id")
+    @JoinColumn(name = "servicoId")
     private Servico servico;
 
 }

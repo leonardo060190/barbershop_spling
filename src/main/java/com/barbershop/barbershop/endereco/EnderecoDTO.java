@@ -6,10 +6,10 @@ import com.barbershop.barbershop.barbearia.BarbeariaDTO;
 import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.ClienteDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -18,8 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 public class EnderecoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -44,10 +47,12 @@ public class EnderecoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Integer cidadeId;
+    private Cidade cidadeId;
 
+    @JsonIgnore
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 
+    @JsonIgnore
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 
@@ -59,7 +64,7 @@ public class EnderecoDTO implements Serializable {
         this.numero = obj.getNumero();
         this.cep = obj.getCep();
         this.dataCriacao = obj.getDataCriacao();
-        this.cidadeId = obj.getCidade() != null ? obj.getCidade().getId() : null;
+        this.cidadeId = obj.getCidade();
     }
 
 

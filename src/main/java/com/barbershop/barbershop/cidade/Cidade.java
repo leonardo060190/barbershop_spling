@@ -21,7 +21,7 @@ import java.util.List;
 @EqualsAndHashCode(of = "id")
 
 public class Cidade implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -40,6 +40,6 @@ public class Cidade implements Serializable {
 
     @JsonIgnore
     @OneToMany(mappedBy = "cidade", fetch = FetchType.LAZY)
-    private List<Endereco> enderecos = new ArrayList<>();
+    private List<Endereco> enderecos = new ArrayList<Endereco>();
 
 }
