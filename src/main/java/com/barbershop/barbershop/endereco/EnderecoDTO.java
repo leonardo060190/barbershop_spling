@@ -67,6 +67,4 @@ public class EnderecoDTO implements Serializable {
         this.cidadeId = obj.getCidade();
     }
 
-
-
 }

@@ -1,13 +1,13 @@
 package com.barbershop.barbershop.cliente;
 
-import com.barbershop.barbershop.agendamento.Agendamento;
+
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.endereco.Endereco;
-import com.barbershop.barbershop.enuns.Perfil;
-import com.barbershop.barbershop.telefone.Telefone;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -17,10 +17,8 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+
 
 
 @NoArgsConstructor
@@ -30,7 +28,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 public class ClienteDTO implements Serializable {
     @Serial
-    private static final long serialVersionUID = 1l;
+    private static final long serialVersionUID = 1L;
 
     private Integer id;
 
@@ -49,7 +47,8 @@ public class ClienteDTO implements Serializable {
     private String senha;
 
     @NotNull(message = "O campo DATANASCIMENTO é requerido")
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
 
     @NotNull(message = "O campo FOTO é requerido")

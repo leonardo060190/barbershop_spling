@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.cidade;
 
 
-import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.endereco.EnderecoDTO;
 import com.barbershop.barbershop.estado.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;

@@ -22,6 +22,7 @@ import java.util.List;
 
 public class Estado implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -44,4 +45,5 @@ public class Estado implements Serializable {
         this.sigla = sigla;
         this.dataCriacao = LocalDate.now();
     }
+
 }

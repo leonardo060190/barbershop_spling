@@ -29,7 +29,8 @@ import java.util.stream.Collectors;
 
 public class Cliente implements Serializable {
 
-    private static final long serialVersionUID = 1l;
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -50,14 +51,13 @@ public class Cliente implements Serializable {
     private String senha;
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
     private LocalDate dataNascimento;
 
 
     private String foto;
 
 
-    @Column(name = "datacriacao")
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 

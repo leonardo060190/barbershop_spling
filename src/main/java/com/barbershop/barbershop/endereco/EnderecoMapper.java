@@ -1,8 +1,6 @@
 package com.barbershop.barbershop.endereco;
 
 
-import com.barbershop.barbershop.cidade.Cidade;
-import com.barbershop.barbershop.estado.Estado;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

@@ -30,7 +30,7 @@ import java.util.stream.Collectors;
 @EqualsAndHashCode(of = "id")
 
 public class Barbearia implements Serializable {
-
+    @Serial
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -23,11 +23,11 @@ import java.util.List;
 
 public class Endereco implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
 
     private String rua;
@@ -51,4 +51,5 @@ public class Endereco implements Serializable {
     @JsonIgnore
     @OneToMany(mappedBy = "endereco", fetch = FetchType.EAGER)
     private List<Barbearia> barbearias = new ArrayList<Barbearia>();
+
 }
