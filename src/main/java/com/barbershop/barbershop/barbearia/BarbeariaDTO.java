@@ -52,7 +52,7 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Endereco enderecoId;
+    private Integer enderecoId;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
@@ -74,7 +74,7 @@ public class BarbeariaDTO implements Serializable {
         this.razaoSocial = obj.getRazaoSocial();
         this.foto = obj.getFoto();
         this.dataCriacao = obj.getDataCriacao();
-        this.enderecoId = obj.getEndereco();
+        this.enderecoId = obj.getEndereco().getId();
 
     }
 

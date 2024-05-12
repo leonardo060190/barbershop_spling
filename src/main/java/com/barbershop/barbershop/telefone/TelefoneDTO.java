@@ -23,14 +23,14 @@ public class TelefoneDTO implements Serializable {
 
     private String numero;
 
-    private Barbearia barbeariaId;
+    private Integer barbeariaId;
 
-    private Cliente clienteId;
+    private Integer clienteId;
 
     public TelefoneDTO(Telefone obj) {
         this.id = obj.getId();
         this.numero = obj.getNumero();
-        this.barbeariaId = obj.getBarbearia();
-        this.clienteId = obj.getCliente();
+        this.barbeariaId = obj.getBarbearia().getId();
+        this.clienteId = obj.getCliente().getId();
     }
 }

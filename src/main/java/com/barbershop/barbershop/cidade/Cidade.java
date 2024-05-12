@@ -37,7 +37,7 @@ public class Cidade implements Serializable {
 
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "estadoId")
+    @JoinColumn(name = "estadoId", nullable = false)
     private Estado estado;
 
     @JsonIgnore

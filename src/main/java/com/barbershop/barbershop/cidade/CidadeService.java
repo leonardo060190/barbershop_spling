@@ -36,7 +36,6 @@ public class CidadeService {
     //criando um novo estado
     public CidadeDTO create(CidadeDTO cidadeDTO){
         Cidade cidade = cidadeMapper.toEntity(cidadeDTO);
-        System.out.println(cidade);
         cidade = cidadeRepository.save(cidade);
         return cidadeMapper.toDTO(cidade);
     }

@@ -1,9 +1,6 @@
 package com.barbershop.barbershop.barbearia;
 
-import com.barbershop.barbershop.cidade.Cidade;
-import com.barbershop.barbershop.cidade.CidadeDTO;
-import com.barbershop.barbershop.cidade.CidadeMapper;
-import com.barbershop.barbershop.cidade.CidadeRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

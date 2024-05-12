@@ -47,7 +47,7 @@ public class EnderecoDTO implements Serializable {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Cidade cidadeId;
+    private Integer cidadeId;
 
     @JsonIgnore
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
@@ -64,7 +64,7 @@ public class EnderecoDTO implements Serializable {
         this.numero = obj.getNumero();
         this.cep = obj.getCep();
         this.dataCriacao = obj.getDataCriacao();
-        this.cidadeId = obj.getCidade();
+        this.cidadeId = obj.getCidade().getId();
     }
 
 }

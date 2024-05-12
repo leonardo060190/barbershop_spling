@@ -1,5 +1,7 @@
 package com.barbershop.barbershop.agendamento;
 
+import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

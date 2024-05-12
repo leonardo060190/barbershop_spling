@@ -54,7 +54,7 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Endereco enderecoId;
+    private Integer enderecoId;
 
 
     @JsonFormat(pattern = "dd/MM/yyyy")
@@ -76,7 +76,7 @@ public class ClienteDTO implements Serializable {
         this.dataNascimento = obj.getDataNascimento();
         this.foto = obj.getFoto();
         this.dataCriacao = obj.getDataCriacao();
-        this.enderecoId = obj.getEndereco();
+        this.enderecoId = obj.getEndereco().getId();
     }
 
 

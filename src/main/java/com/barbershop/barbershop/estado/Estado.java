@@ -37,10 +37,11 @@ public class Estado implements Serializable {
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "estado", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "estado", fetch = FetchType.EAGER)
     private List<Cidade> cidades = new ArrayList<Cidade>();
 
-    public Estado(String nome, String sigla, LocalDate now) {
+    public Estado(Integer id, String nome, String sigla, LocalDate now) {
+        this.id = id;
         this.nome = nome;
         this.sigla = sigla;
         this.dataCriacao = LocalDate.now();

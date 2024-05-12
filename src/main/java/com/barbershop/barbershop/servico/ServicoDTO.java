@@ -37,7 +37,7 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Barbearia barbeariaId;
+    private Integer barbeariaId;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataCriacao = LocalDate.now();
@@ -54,6 +54,6 @@ public class ServicoDTO implements Serializable {
         this.descricao = obj.getDescricao();
         this.foto = obj.getFoto();
         this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia();
+        this.barbeariaId = obj.getBarbearia().getId();
     }
 }
