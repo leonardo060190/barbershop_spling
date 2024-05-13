@@ -32,7 +32,7 @@ public class Cidade implements Serializable {
 
     private String nome;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
 
@@ -41,7 +41,7 @@ public class Cidade implements Serializable {
     private Estado estado;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "cidade", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cidade", fetch = FetchType.EAGER)
     private List<Endereco> enderecos = new ArrayList<Endereco>();
 
 }

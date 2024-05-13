@@ -2,12 +2,14 @@ package com.barbershop.barbershop.telefone;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.time.LocalDate;
 
 @Entity
 @Setter
@@ -28,11 +30,14 @@ public class Telefone implements Serializable {
     @Column(unique = true)
     private String numero;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private LocalDate dataCriacao = LocalDate.now();
+
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "barbeariaId")
     private Barbearia barbearia;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clienteId")
     private Cliente cliente;
 }

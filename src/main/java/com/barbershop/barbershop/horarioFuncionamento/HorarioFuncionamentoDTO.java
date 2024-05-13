@@ -26,7 +26,7 @@ public class HorarioFuncionamentoDTO implements Serializable {
     @NotNull(message = "O campo FIM é requerido")
     private LocalDate fim;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     private Integer barbeariaId;

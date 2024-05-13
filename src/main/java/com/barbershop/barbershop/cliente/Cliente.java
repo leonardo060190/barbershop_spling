@@ -51,27 +51,27 @@ public class Cliente implements Serializable {
     private String senha;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
 
 
     private String foto;
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "enderecoId", nullable = false)
     private Endereco endereco;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
 

@@ -33,7 +33,7 @@ public class EstadoDTO implements Serializable {
     @NotNull(message = "O campo SIGLA é requerido")
     private String sigla;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

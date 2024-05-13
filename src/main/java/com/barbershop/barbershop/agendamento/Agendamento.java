@@ -29,7 +29,7 @@ public class Agendamento implements Serializable {
 
 
     @Temporal(TemporalType.DATE)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate data;
 
 
@@ -38,15 +38,15 @@ public class Agendamento implements Serializable {
     private LocalTime hora;
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clienteId")
     private Cliente cliente;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "servicoId")
     private Servico servico;
 

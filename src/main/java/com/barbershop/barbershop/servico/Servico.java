@@ -38,15 +38,15 @@ public class Servico implements Serializable {
 
     private String foto;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "barbeariaId")
     private Barbearia barbearia;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "servico", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "servico", fetch = FetchType.EAGER)
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
 }

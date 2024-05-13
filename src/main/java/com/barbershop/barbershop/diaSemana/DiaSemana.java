@@ -32,11 +32,11 @@ public class DiaSemana implements Serializable {
     private String nome;
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "diaSemana", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "diaSemana", fetch = FetchType.EAGER)
     private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<HorarioFuncionamento>();
 
 

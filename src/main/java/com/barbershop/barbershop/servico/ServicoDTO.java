@@ -39,7 +39,7 @@ public class ServicoDTO implements Serializable {
 
     private Integer barbeariaId;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

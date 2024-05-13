@@ -44,7 +44,7 @@ public class EnderecoDTO implements Serializable {
     @NotNull(message = "O campo CEP é requerido")
     private String cep;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     private Integer cidadeId;

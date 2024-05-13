@@ -1,9 +1,5 @@
 package com.barbershop.barbershop.cliente;
 
-import com.barbershop.barbershop.servico.Servico;
-import com.barbershop.barbershop.servico.ServicoDTO;
-import com.barbershop.barbershop.servico.ServicoMapper;
-import com.barbershop.barbershop.servico.ServicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +29,7 @@ public class ClienteService {
         return clienteMapper.toDTO(cliente);
     }
 
-    //criando um novo estado
+    //criando um novo
     public ClienteDTO create(ClienteDTO clienteDTO){
         Cliente cliente = clienteMapper.toEntity(clienteDTO);
         cliente = clienteRepository.save(cliente);

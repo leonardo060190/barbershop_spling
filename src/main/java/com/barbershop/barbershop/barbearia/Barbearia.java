@@ -57,23 +57,23 @@ public class Barbearia implements Serializable {
 
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "enderecoId")
     private Endereco endereco;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Servico> servicos = new ArrayList<>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<HorarioFuncionamento>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
 

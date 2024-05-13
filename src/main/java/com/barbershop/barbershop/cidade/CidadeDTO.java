@@ -5,6 +5,7 @@ import com.barbershop.barbershop.endereco.EnderecoDTO;
 import com.barbershop.barbershop.estado.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -29,9 +30,10 @@ public class CidadeDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
+
     private Integer estadoId;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

@@ -30,7 +30,6 @@ public class CidadeController {
 
     @PostMapping
     public ResponseEntity<CidadeDTO> create(@Valid @RequestBody CidadeDTO cidadeDTO){
-        System.out.println(cidadeDTO);
         CidadeDTO create = cidadeService.create(cidadeDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

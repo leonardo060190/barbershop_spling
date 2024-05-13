@@ -47,8 +47,7 @@ public class ClienteDTO implements Serializable {
     private String senha;
 
     @NotNull(message = "O campo DATANASCIMENTO é requerido")
-    @Temporal(TemporalType.DATE)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
 
     @NotNull(message = "O campo FOTO é requerido")
@@ -57,7 +56,7 @@ public class ClienteDTO implements Serializable {
     private Integer enderecoId;
 
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

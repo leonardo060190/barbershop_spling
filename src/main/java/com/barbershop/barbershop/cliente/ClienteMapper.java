@@ -15,7 +15,7 @@ public interface ClienteMapper {
     @Mapping(source = "id", target = "id")
     ClienteDTO toDTO(Cliente cliente);
 
-    @Mapping(source = "id", target = "id")
+    @Mapping(source = "clienteDTO.id", target = "id")
     Cliente toEntity(ClienteDTO clienteDTO );
 
     //recebendo uma lista do estados
