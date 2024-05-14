@@ -41,7 +41,6 @@ public class EnderecoService {
     //update
     public EnderecoDTO update(Integer id, EnderecoDTO enderecoDTO){
         Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encotrado"));
-        enderecoDTO.setId(endereco.getId());
         enderecoMapper.updateEntity(enderecoDTO,endereco);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);

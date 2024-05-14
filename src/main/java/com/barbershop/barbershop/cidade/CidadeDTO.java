@@ -36,7 +36,7 @@ public class CidadeDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
 }
