@@ -46,36 +46,28 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo RAZÃO SOCIAL é requerido")
     private String razaoSocial;
 
+
     @NotNull(message = "O campo SENHA é requerido")
     private String senha;
 
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Integer enderecoId;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private Endereco endereco;
+
+    @JsonFormat( pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
     private List<ServicoDTO> servicos = new ArrayList<ServicoDTO>();
+
     @JsonIgnore
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
+
     @JsonIgnore
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
 
-    public BarbeariaDTO(Barbearia obj){
-        this.id = obj.getId();
-        this.nome = obj.getNome();
-        this.cnpj = obj.getCnpj();
-        this.email = obj.getEmail();
-        this.senha = obj.getSenha();
-        this.razaoSocial = obj.getRazaoSocial();
-        this.foto = obj.getFoto();
-        this.dataCriacao = obj.getDataCriacao();
-        this.enderecoId = obj.getEndereco().getId();
-
-    }
 
 }

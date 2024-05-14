@@ -38,11 +38,10 @@ public class Endereco implements Serializable {
 
     private String cep;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "cidadeId")
+    @JoinColumn(name = "cidadeId", nullable = false)
     private Cidade cidade;
 
     @JsonIgnore

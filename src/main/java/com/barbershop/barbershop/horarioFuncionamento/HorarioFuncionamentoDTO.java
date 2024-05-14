@@ -4,6 +4,7 @@ package com.barbershop.barbershop.horarioFuncionamento;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.diaSemana.DiaSemana;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -21,25 +22,20 @@ public class HorarioFuncionamentoDTO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Integer id;
+
     @NotNull(message = "O campo INICIO é requerido")
     private LocalDate inicio;
+
     @NotNull(message = "O campo FIM é requerido")
     private LocalDate fim;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Integer barbeariaId;
 
-    private Integer diaSemanaId;
+    private Barbearia barbearia;
 
-    public HorarioFuncionamentoDTO(HorarioFuncionamento obj) {
-        this.id = obj.getId();
-        this.inicio = obj.getInicio();
-        this.fim = obj.getFim();
-        this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia().getId();
-        this.diaSemanaId = obj.getDiaSemana().getId();
 
-    }
+    private DiaSemana diaSemana;
+
 }

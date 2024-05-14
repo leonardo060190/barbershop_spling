@@ -15,7 +15,7 @@ public interface ClienteMapper {
     @Mapping(source = "id", target = "id")
     ClienteDTO toDTO(Cliente cliente);
 
-    @Mapping(source = "clienteDTO.id", target = "id")
+    @Mapping(source = "id", target = "id")
     Cliente toEntity(ClienteDTO clienteDTO );
 
     //recebendo uma lista do estados
@@ -31,7 +31,7 @@ public interface ClienteMapper {
             @Mapping(source = "clienteDTO.dataNascimento", target = "dataNascimento"),
             @Mapping(source = "clienteDTO.foto", target = "foto"),
             @Mapping(source = "clienteDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "clienteDTO.enderecoId", target = "endereco.id"),
+            @Mapping(source = "clienteDTO.endereco", target = "endereco"),
             @Mapping(source = "clienteDTO.telefones", target = "telefones"),
             @Mapping(source = "clienteDTO.agendamentos", target = "agendamentos")
     })

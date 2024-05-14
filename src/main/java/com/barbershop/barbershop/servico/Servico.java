@@ -38,11 +38,11 @@ public class Servico implements Serializable {
 
     private String foto;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "barbeariaId")
+    @JoinColumn(name = "barbeariaId", nullable = false)
     private Barbearia barbearia;
 
     @JsonIgnore

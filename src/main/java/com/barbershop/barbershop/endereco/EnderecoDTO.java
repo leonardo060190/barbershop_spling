@@ -44,10 +44,11 @@ public class EnderecoDTO implements Serializable {
     @NotNull(message = "O campo CEP é requerido")
     private String cep;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Integer cidadeId;
+
+    private Cidade cidade;
 
     @JsonIgnore
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
@@ -56,15 +57,5 @@ public class EnderecoDTO implements Serializable {
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 
-
-    public EnderecoDTO(Endereco obj) {
-        this.id = obj.getId();
-        this.rua = obj.getRua();
-        this.bairro = obj.getBairro();
-        this.numero = obj.getNumero();
-        this.cep = obj.getCep();
-        this.dataCriacao = obj.getDataCriacao();
-        this.cidadeId = obj.getCidade().getId();
-    }
 
 }

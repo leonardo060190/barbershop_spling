@@ -4,6 +4,7 @@ package com.barbershop.barbershop.telefone;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import java.io.Serial;
@@ -25,18 +26,14 @@ public class TelefoneDTO implements Serializable {
 
     private String numero;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    private Integer barbeariaId;
 
-    private Integer clienteId;
+    private Barbearia barbearia;
 
-    public TelefoneDTO(Telefone obj) {
-        this.id = obj.getId();
-        this.numero = obj.getNumero();
-        this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia().getId();
-        this.clienteId = obj.getCliente().getId();
-    }
+
+    private Cliente cliente;
+
+
 }

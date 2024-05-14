@@ -4,6 +4,7 @@ import com.barbershop.barbershop.estado.Estado;
 import com.barbershop.barbershop.estado.EstadoDTO;
 import com.barbershop.barbershop.estado.EstadoMapper;
 import com.barbershop.barbershop.estado.EstadoRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -34,13 +35,16 @@ public class CidadeService {
     }
 
     //criando um novo estado
+    @Transactional
     public CidadeDTO create(CidadeDTO cidadeDTO){
+        System.out.println(cidadeDTO);
         Cidade cidade = cidadeMapper.toEntity(cidadeDTO);
         cidade = cidadeRepository.save(cidade);
         return cidadeMapper.toDTO(cidade);
     }
 
     //update estado
+    @Transactional
     public CidadeDTO update(Integer id, CidadeDTO cidadeDTO){
         Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encotrado"));
         cidadeMapper.updateEntity(cidadeDTO,cidade);

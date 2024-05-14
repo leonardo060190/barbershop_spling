@@ -29,7 +29,7 @@ public class DiaSemanaDTO implements Serializable {
     private String nome;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

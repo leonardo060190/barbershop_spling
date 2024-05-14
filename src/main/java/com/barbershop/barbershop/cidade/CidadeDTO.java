@@ -31,18 +31,12 @@ public class CidadeDTO implements Serializable {
     private String nome;
 
 
-    private Integer estadoId;
+    private Estado estado;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
     private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
-    public CidadeDTO(Cidade obj) {
-        this.id = obj.getId();
-        this.nome = obj.getNome();
-        this.dataCriacao = obj.getDataCriacao();
-        this.estadoId = obj.getEstado().getId();
-    }
 }

@@ -34,7 +34,6 @@ public class Barbearia implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
 
 
@@ -46,10 +45,9 @@ public class Barbearia implements Serializable {
     @Column(unique = true)
     private String email;
 
-
     private String razaoSocial;
 
-
+    @JsonIgnore
     private String senha;
 
 
@@ -57,11 +55,10 @@ public class Barbearia implements Serializable {
 
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "enderecoId")
+    @JoinColumn(name = "enderecoId", nullable = false)
     private Endereco endereco;
 
     @JsonIgnore
@@ -76,8 +73,19 @@ public class Barbearia implements Serializable {
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
-
-
-
+    @Override
+    public String toString() {
+        return "Barbearia{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", email='" + email + '\'' +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                ", senha='" + senha + '\'' +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                ", endereco=" + endereco +
+                '}';
+    }
 }
 

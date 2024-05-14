@@ -30,8 +30,8 @@ public interface HorarioFuncionamentoMapper {
             @Mapping(source = "horarioFuncionamentoDTO.inicio", target = "inicio"),
             @Mapping(source = "horarioFuncionamentoDTO.fim", target = "fim"),
             @Mapping(source = "horarioFuncionamentoDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "horarioFuncionamentoDTO.barbeariaId", target = "barbearia.id"),
-            @Mapping(source = "horarioFuncionamentoDTO.diaSemanaId", target = "diaSemana.id")
+            @Mapping(source = "horarioFuncionamentoDTO.barbearia", target = "barbearia"),
+            @Mapping(source = "horarioFuncionamentoDTO.diaSemana", target = "diaSemana")
     })
     HorarioFuncionamento updateEntity(HorarioFuncionamentoDTO horarioFuncionamentoDTO, HorarioFuncionamento horarioFuncionamento);
 

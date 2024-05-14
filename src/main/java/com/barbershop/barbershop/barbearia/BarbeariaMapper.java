@@ -32,7 +32,7 @@ public interface BarbeariaMapper {
             @Mapping(source = "barbeariaDTO.senha", target = "senha"),
             @Mapping(source = "barbeariaDTO.razaoSocial", target = "razaoSocial"),
             @Mapping(source = "barbeariaDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "barbeariaDTO.enderecoId", target = "endereco.id"),
+            @Mapping(source = "barbeariaDTO.endereco", target = "endereco"),
             @Mapping(source = "barbeariaDTO.servicos", target = "servicos"),
             @Mapping(source = "barbeariaDTO.horarioFuncionamentos", target = "horarioFuncionamentos"),
             @Mapping(source = "barbeariaDTO.telefones", target = "telefones")

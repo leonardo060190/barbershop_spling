@@ -32,7 +32,6 @@ public class DiaSemana implements Serializable {
     private String nome;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

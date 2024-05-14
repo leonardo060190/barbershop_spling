@@ -30,14 +30,13 @@ public class HorarioFuncionamento implements Serializable {
 
     private LocalDate fim;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "barbeariaId")
+    @JoinColumn(name = "barbeariaId", nullable = false)
     private Barbearia barbearia;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "diaSemanaId")
+    @JoinColumn(name = "diaSemanaId", nullable = false)
     private DiaSemana diaSemana;
 }

@@ -37,23 +37,14 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Integer barbeariaId;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    private Barbearia barbearia;
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 
-    public ServicoDTO(Servico obj) {
-
-        this.id = obj.getId();
-        this.nome = obj.getNome();
-        this.preco = obj.getPreco();
-        this.descricao = obj.getDescricao();
-        this.foto = obj.getFoto();
-        this.dataCriacao = obj.getDataCriacao();
-        this.barbeariaId = obj.getBarbearia().getId();
-    }
 }

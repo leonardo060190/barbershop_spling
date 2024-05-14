@@ -28,7 +28,7 @@ public interface EnderecoMapper {
             @Mapping(source = "enderecoDTO.numero", target = "numero"),
             @Mapping(source = "enderecoDTO.cep", target = "cep"),
             @Mapping(source = "enderecoDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "enderecoDTO.cidadeId", target = "cidade.id"),
+            @Mapping(source = "enderecoDTO.cidade", target = "cidade"),
             @Mapping(source = "enderecoDTO.clientes", target = "clientes"),
             @Mapping(source = "enderecoDTO.barbearias", target = "barbearias"),
 

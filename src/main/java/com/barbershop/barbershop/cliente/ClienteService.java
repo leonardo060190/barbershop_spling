@@ -1,5 +1,6 @@
 package com.barbershop.barbershop.cliente;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -30,13 +31,15 @@ public class ClienteService {
     }
 
     //criando um novo
-    public ClienteDTO create(ClienteDTO clienteDTO){
-        Cliente cliente = clienteMapper.toEntity(clienteDTO);
+    @Transactional
+    public ClienteDTO create(Cliente cliente){
+//        Cliente cliente = clienteMapper.toEntity(clienteDTO);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }
 
     //update estado
+    @Transactional
     public ClienteDTO update(Integer id, ClienteDTO clienteDTO){
         Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encotrado"));
         clienteMapper.updateEntity(clienteDTO,cliente);

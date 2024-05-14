@@ -28,7 +28,7 @@ public interface CidadeMapper {
             @Mapping(source = "cidadeDTO.id", target = "id"),
             @Mapping(source = "cidadeDTO.nome", target = "nome"),
             @Mapping(source = "cidadeDTO.dataCriacao", target = "dataCriacao"),
-            @Mapping(source = "cidadeDTO.estadoId", target = "estado.id"),
+            @Mapping(source = "cidadeDTO.estado", target = "estado"),
             @Mapping(source = "cidadeDTO.enderecos", target = "enderecos")
     })
     Cidade updateEntity(CidadeDTO cidadeDTO, Cidade cidade);

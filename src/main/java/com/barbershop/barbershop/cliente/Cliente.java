@@ -47,18 +47,16 @@ public class Cliente implements Serializable {
     @Column(unique = true)
     private String email;
 
-
+    @JsonIgnore
     private String senha;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
 
 
     private String foto;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
 
@@ -74,8 +72,20 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
-
-
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                ", endereco=" + endereco +
+                '}';
+    }
 }
 
 

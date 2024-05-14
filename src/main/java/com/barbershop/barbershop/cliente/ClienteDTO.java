@@ -43,20 +43,22 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo E-MAIL é requerido")
     private String email;
 
+
     @NotNull(message = "O campo SENHA é requerido")
     private String senha;
 
     @NotNull(message = "O campo DATANASCIMENTO é requerido")
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
 
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    private Integer enderecoId;
+
+    private Endereco endereco;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore
@@ -64,19 +66,6 @@ public class ClienteDTO implements Serializable {
 
     @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
-
-
-    public ClienteDTO(Cliente obj) {
-        this.id = obj.getId();
-        this.nome = obj.getNome();
-        this.cpf = obj.getCpf();
-        this.senha = obj.getSenha();
-        this.email = obj.getEmail();
-        this.dataNascimento = obj.getDataNascimento();
-        this.foto = obj.getFoto();
-        this.dataCriacao = obj.getDataCriacao();
-        this.enderecoId = obj.getEndereco().getId();
-    }
 
 
 

@@ -32,11 +32,10 @@ public class Cidade implements Serializable {
 
     private String nome;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "estadoId", nullable = false)
     private Estado estado;
 

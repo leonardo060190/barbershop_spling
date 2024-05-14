@@ -29,21 +29,18 @@ public class Agendamento implements Serializable {
 
 
     @Temporal(TemporalType.DATE)
-    @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
     private LocalDate data;
 
 
     @Temporal(TemporalType.TIME)
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
     private LocalTime hora;
 
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "clienteId")
+    @JoinColumn(name = "clienteId", nullable = false)
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.EAGER)

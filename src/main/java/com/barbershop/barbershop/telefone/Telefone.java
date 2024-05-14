@@ -30,7 +30,6 @@ public class Telefone implements Serializable {
     @Column(unique = true)
     private String numero;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
