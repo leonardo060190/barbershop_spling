@@ -24,8 +24,8 @@ public interface AgendomentoMapper {
             @Mapping(source = "agendamentoDTO.id", target = "id"),
             @Mapping(source = "agendamentoDTO.data", target = "data"),
             @Mapping(source = "agendamentoDTO.hora", target = "hora"),
-            @Mapping(source = "agendamentoDTO.clienteId", target = "cliente.id"),
-            @Mapping(source = "agendamentoDTO.servicoId", target = "servico.id"),
+            @Mapping(source = "agendamentoDTO.cliente", target = "cliente"),
+            @Mapping(source = "agendamentoDTO.servico", target = "servico"),
             @Mapping(source = "agendamentoDTO.dataCriacao", target = "dataCriacao"),
     })
     Agendamento updateEntity(AgendamentoDTO agendamentoDTO, Agendamento agendamento);

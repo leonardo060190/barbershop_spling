@@ -5,8 +5,7 @@ import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -14,17 +13,20 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
 @Setter
+@EqualsAndHashCode(of = "id")
 public class AgendamentoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
 
     private Integer id;
 
-    private Integer clienteId;
+    private Cliente cliente;
 
-    private Integer servicoId;
+    private Servico servico;
 
     @NotNull(message = "O campo DATA é requerido")
     @Temporal(TemporalType.DATE)
