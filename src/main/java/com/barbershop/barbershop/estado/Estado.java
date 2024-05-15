@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.estado;
 
 import com.barbershop.barbershop.cidade.Cidade;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +11,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@ToString
 @Entity
 @Setter
 @Getter

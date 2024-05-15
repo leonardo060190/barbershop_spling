@@ -1,10 +1,9 @@
 package com.barbershop.barbershop.cidade;
 
 
-import com.barbershop.barbershop.estado.Estado;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.MappingTarget;
 import org.mapstruct.Mappings;
 
 import java.util.List;

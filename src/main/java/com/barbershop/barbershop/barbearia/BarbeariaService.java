@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.barbearia;
 
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,34 +18,37 @@ public class BarbeariaService {
     private BarbeariaMapper barbeariaMapper;
 
 
-    //buscar todos s estados
-
+    //buscar todas as barbearias
     public List<BarbeariaDTO> findAll(){
         List<Barbearia> barbearias = barbeariaRepository.findAll();
         return barbearias.stream().map(barbeariaMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //buscar a barbearia pelo id
     public BarbeariaDTO findById(Integer id){
-        Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encotrado"));
+        Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         return barbeariaMapper.toDTO(barbearia);
     }
 
-    //criando um novo estado
+    //cria uma nova barbearia
+    @Transactional
     public BarbeariaDTO create(BarbeariaDTO barbeariaDTO){
         Barbearia barbearia = barbeariaMapper.toEntity(barbeariaDTO);
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
 
-    //update estado
+    //atualiza a barbearia
+    @Transactional
     public BarbeariaDTO update(Integer id, BarbeariaDTO barbeariaDTO){
-        Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encotrado"));
-        barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
+        Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
+        barbeariaDTO.setId(id);
+        barbearia = barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
 
+    //deleta uma barbearia pelo id
     public void deleteById(Integer id){
         barbeariaRepository.deleteById(id);
     }

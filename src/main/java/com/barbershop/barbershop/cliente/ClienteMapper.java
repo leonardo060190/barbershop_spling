@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.cliente;
 
-import com.barbershop.barbershop.servico.Servico;
-import com.barbershop.barbershop.servico.ServicoDTO;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

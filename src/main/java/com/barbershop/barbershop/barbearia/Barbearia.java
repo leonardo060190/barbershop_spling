@@ -2,11 +2,9 @@ package com.barbershop.barbershop.barbearia;
 
 
 import com.barbershop.barbershop.endereco.Endereco;
-import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
 import com.barbershop.barbershop.servico.Servico;
 import com.barbershop.barbershop.telefone.Telefone;
-import com.fasterxml.jackson.annotation.JsonFormat;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -17,11 +15,10 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
+
+@ToString
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -73,19 +70,5 @@ public class Barbearia implements Serializable {
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
-    @Override
-    public String toString() {
-        return "Barbearia{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cnpj='" + cnpj + '\'' +
-                ", email='" + email + '\'' +
-                ", razaoSocial='" + razaoSocial + '\'' +
-                ", senha='" + senha + '\'' +
-                ", foto='" + foto + '\'' +
-                ", dataCriacao=" + dataCriacao +
-                ", endereco=" + endereco +
-                '}';
-    }
 }
 

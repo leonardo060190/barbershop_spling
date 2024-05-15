@@ -1,6 +1,6 @@
 package com.barbershop.barbershop.cidade;
 
-import com.barbershop.barbershop.diaSemana.DiaSemanaDTO;
+
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

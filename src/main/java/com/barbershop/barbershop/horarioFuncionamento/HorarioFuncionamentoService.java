@@ -1,9 +1,7 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
-import com.barbershop.barbershop.estado.Estado;
-import com.barbershop.barbershop.estado.EstadoDTO;
-import com.barbershop.barbershop.estado.EstadoMapper;
-import com.barbershop.barbershop.estado.EstadoRepository;
+
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,34 +18,37 @@ public class HorarioFuncionamentoService {
     private HorarioFuncionamentoMapper horarioFuncionamentoMapper;
 
 
-    //buscar todos s estados
-
+    //busca todos os horarios de funcionamento
     public List<HorarioFuncionamentoDTO> findAll(){
         List<HorarioFuncionamento> horariosFuncionamento = horarioFuncionamentoRepository.findAll();
         return horariosFuncionamento.stream().map(horarioFuncionamentoMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //busca um horario pelo id
     public HorarioFuncionamentoDTO findById(Integer id){
-        HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Horario de funcionamento não encotrado"));
+        HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Horario de funcionamento não encontrado"));
         return horarioFuncionamentoMapper.toDTO(horarioFuncionamento);
     }
 
-    //criando um novo estado
+    //cria um novo horario
+    @Transactional
     public HorarioFuncionamentoDTO create(HorarioFuncionamentoDTO horarioFuncionamentoDTO){
         HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoMapper.toEntity(horarioFuncionamentoDTO);
         horarioFuncionamento = horarioFuncionamentoRepository.save(horarioFuncionamento);
         return horarioFuncionamentoMapper.toDTO(horarioFuncionamento);
     }
 
-    //update estado
+    //atualiza um horario pelo id
+    @Transactional
     public HorarioFuncionamentoDTO update(Integer id, HorarioFuncionamentoDTO horarioFuncionamentoDTO){
-        HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Horario de funcionamento não encotrado"));
-        horarioFuncionamentoMapper.updateEntity(horarioFuncionamentoDTO,horarioFuncionamento);
+        HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Horario de funcionamento não encontrado"));
+        horarioFuncionamentoDTO.setId(id);
+        horarioFuncionamento = horarioFuncionamentoMapper.updateEntity(horarioFuncionamentoDTO,horarioFuncionamento);
         horarioFuncionamento = horarioFuncionamentoRepository.save(horarioFuncionamento);
         return horarioFuncionamentoMapper.toDTO(horarioFuncionamento);
     }
 
+    //deleta um horario pelo id
     public void deleteById(Integer id){
         horarioFuncionamentoRepository.deleteById(id);
     }

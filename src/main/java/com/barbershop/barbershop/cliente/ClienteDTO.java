@@ -6,8 +6,6 @@ import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -20,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

@@ -4,7 +4,6 @@ package com.barbershop.barbershop.estado;
 
 import com.barbershop.barbershop.cidade.CidadeDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -14,7 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -36,7 +35,7 @@ public class EstadoDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private List<CidadeDTO> cidades= new ArrayList<CidadeDTO>();
 
 

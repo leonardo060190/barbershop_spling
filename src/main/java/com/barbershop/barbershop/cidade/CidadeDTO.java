@@ -4,8 +4,6 @@ package com.barbershop.barbershop.cidade;
 import com.barbershop.barbershop.endereco.EnderecoDTO;
 import com.barbershop.barbershop.estado.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -15,7 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

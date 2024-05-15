@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.servico;
 
-import com.barbershop.barbershop.cidade.CidadeDTO;
-import com.barbershop.barbershop.cidade.CidadeService;
+
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

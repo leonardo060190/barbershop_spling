@@ -1,11 +1,8 @@
 package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
-//import com.barbershop.barbershop.agendamento.AgendamentoPK;
 import com.barbershop.barbershop.endereco.Endereco;
-import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.telefone.Telefone;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -15,11 +12,10 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.stream.Collectors;
 
+
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -72,20 +68,6 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "id=" + id +
-                ", nome='" + nome + '\'' +
-                ", cpf='" + cpf + '\'' +
-                ", email='" + email + '\'' +
-                ", senha='" + senha + '\'' +
-                ", dataNascimento=" + dataNascimento +
-                ", foto='" + foto + '\'' +
-                ", dataCriacao=" + dataCriacao +
-                ", endereco=" + endereco +
-                '}';
-    }
 }
 
 

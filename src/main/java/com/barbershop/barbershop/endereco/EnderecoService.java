@@ -1,8 +1,6 @@
 package com.barbershop.barbershop.endereco;
 
-import com.barbershop.barbershop.diaSemana.DiaSemana;
-import com.barbershop.barbershop.diaSemana.DiaSemanaDTO;
-
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,33 +17,37 @@ public class EnderecoService {
     private EnderecoMapper enderecoMapper;
 
 
-    //busca todos os dias da semana
+    //busca todos os endereços
     public List<EnderecoDTO> findAll(){
         List<Endereco> enderecos = enderecoRepository.findAll();
         return  enderecos.stream().map(enderecoMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //busca o endereço pelo id
     public EnderecoDTO findById(Integer id){
-        Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encotrado"));
+        Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encontrado"));
         return enderecoMapper.toDTO(endereco);
     }
 
-    //criando
+    //cria um novo endereço
+    @Transactional
     public EnderecoDTO create(EnderecoDTO enderecoDTO){
         Endereco endereco = enderecoMapper.toEntity(enderecoDTO);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);
     }
 
-    //update
+    //atualiza o endereco pelo id
+    @Transactional
     public EnderecoDTO update(Integer id, EnderecoDTO enderecoDTO){
-        Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encotrado"));
-        enderecoMapper.updateEntity(enderecoDTO,endereco);
+        Endereco endereco = enderecoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Endereço não encontrado"));
+        enderecoDTO.setId(id);
+        endereco = enderecoMapper.updateEntity(enderecoDTO,endereco);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);
     }
 
+    //deleta um endereco pelo id
     public void deleteById(Integer id){
         enderecoRepository.deleteById(id);
     }

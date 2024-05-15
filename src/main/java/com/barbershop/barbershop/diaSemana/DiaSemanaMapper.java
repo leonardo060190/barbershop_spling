@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.diaSemana;
 
-import com.barbershop.barbershop.estado.Estado;
-import com.barbershop.barbershop.estado.EstadoDTO;
+
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;

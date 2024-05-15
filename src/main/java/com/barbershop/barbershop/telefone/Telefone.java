@@ -2,7 +2,6 @@ package com.barbershop.barbershop.telefone;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,6 +10,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
+@ToString
 @Entity
 @Setter
 @Getter

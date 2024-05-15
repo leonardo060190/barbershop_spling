@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.diaSemana;
 
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,21 +26,24 @@ public class DiaSemanaService {
 
     //buscar por id
     public DiaSemanaDTO findById(Integer id){
-        DiaSemana diaSemana = diaSemanaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Dia semana não encotrado"));
+        DiaSemana diaSemana = diaSemanaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Dia semana não encontrado"));
         return diaSemanaMapper.toDTO(diaSemana);
     }
 
     //criando
-    public DiaSemanaDTO create(DiaSemanaDTO DiaSemanaDTO){
-        DiaSemana diaSemana = diaSemanaMapper.toEntity(DiaSemanaDTO);
+    @Transactional
+    public DiaSemanaDTO create(DiaSemanaDTO diaSemanaDTO){
+        DiaSemana diaSemana = diaSemanaMapper.toEntity(diaSemanaDTO);
         diaSemana = diaSemanaRepository.save(diaSemana);
         return diaSemanaMapper.toDTO(diaSemana);
     }
 
     //update
-    public DiaSemanaDTO update(Integer id, DiaSemanaDTO DiaSemanaDTO){
-        DiaSemana diaSemana = diaSemanaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Dia semana não encotrado"));
-        diaSemanaMapper.updateEntity(DiaSemanaDTO,diaSemana);
+    @Transactional
+    public DiaSemanaDTO update(Integer id, DiaSemanaDTO diaSemanaDTO){
+        DiaSemana diaSemana = diaSemanaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Dia semana não encontrado"));
+        diaSemanaDTO.setId(id);
+        diaSemana = diaSemanaMapper.updateEntity(diaSemanaDTO,diaSemana);
         diaSemana = diaSemanaRepository.save(diaSemana);
         return diaSemanaMapper.toDTO(diaSemana);
     }

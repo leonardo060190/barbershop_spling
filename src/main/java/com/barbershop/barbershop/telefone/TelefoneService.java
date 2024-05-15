@@ -1,9 +1,7 @@
 package com.barbershop.barbershop.telefone;
 
-import com.barbershop.barbershop.servico.Servico;
-import com.barbershop.barbershop.servico.ServicoDTO;
-import com.barbershop.barbershop.servico.ServicoMapper;
-import com.barbershop.barbershop.servico.ServicoRepository;
+
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,34 +18,37 @@ public class TelefoneService {
     private TelefoneMapper telefoneMapper;
 
 
-    //buscar todos s estados
-
+    //busca todos os telefones
     public List<TelefoneDTO> findAll(){
         List<Telefone> telefones = telefoneRepository.findAll();
         return telefones.stream().map(telefoneMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //busca o telefone pelo id
     public TelefoneDTO findById(Integer id){
-        Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encotrado"));
+        Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encontrado"));
         return telefoneMapper.toDTO(telefone);
     }
 
-    //criando um novo estado
+    //cria um novo telefone
+    @Transactional
     public TelefoneDTO create(TelefoneDTO telefoneDTO){
         Telefone telefone = telefoneMapper.toEntity(telefoneDTO);
         telefone = telefoneRepository.save(telefone);
         return telefoneMapper.toDTO(telefone);
     }
 
-    //update estado
+    //atualiza o telefone pelo id
+    @Transactional
     public TelefoneDTO update(Integer id, TelefoneDTO telefoneDTO){
-        Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encotrado"));
-        telefoneMapper.updateEntity(telefoneDTO,telefone);
+        Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encontrado"));
+        telefoneDTO.setId(id);
+        telefone = telefoneMapper.updateEntity(telefoneDTO,telefone);
         telefone = telefoneRepository.save(telefone);
         return telefoneMapper.toDTO(telefone);
     }
 
+    //deleta um telefone pelo id
     public void deleteById(Integer id){
         telefoneRepository.deleteById(id);
     }

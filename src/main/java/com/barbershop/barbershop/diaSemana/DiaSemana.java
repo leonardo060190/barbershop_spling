@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.diaSemana;
 
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,6 +11,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@ToString
 @Entity
 @Getter
 @Setter

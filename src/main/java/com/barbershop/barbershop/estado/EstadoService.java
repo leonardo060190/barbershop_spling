@@ -1,5 +1,6 @@
 package com.barbershop.barbershop.estado;
 
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,34 +17,37 @@ public class EstadoService {
     private EstadoMapper estadoMapper;
 
 
-    //buscar todos s estados
-
+    //buscar todos os estados
     public List<EstadoDTO> findAll(){
         List<Estado> estados = estadoRepository.findAll();
         return estados.stream().map(estadoMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //busca o estado pelo id
     public EstadoDTO findById(Integer id){
-        Estado estado = estadoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Estado não encotrado"));
+        Estado estado = estadoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Estado não encontrado"));
         return estadoMapper.toDTO(estado);
     }
 
-    //criando um novo estado
+    //cria um novo estado
+    @Transactional
     public EstadoDTO create(EstadoDTO estadoDTO){
         Estado estado = estadoMapper.toEntity(estadoDTO);
         estado = estadoRepository.save(estado);
         return estadoMapper.toDTO(estado);
     }
 
-    //update estado
+    //atualiza o endereco pelo id
+    @Transactional
     public EstadoDTO update(Integer id, EstadoDTO estadoDTO){
-        Estado estado = estadoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Estado não encotrado"));
-        estadoMapper.updateEntity(estadoDTO,estado);
+        Estado estado = estadoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Estado não encontrado"));
+        estadoDTO.setId(id);
+        estado = estadoMapper.updateEntity(estadoDTO,estado);
         estado = estadoRepository.save(estado);
         return estadoMapper.toDTO(estado);
     }
 
+    //deleta um endereco pelo id
     public void deleteById(Integer id){
         estadoRepository.deleteById(id);
     }

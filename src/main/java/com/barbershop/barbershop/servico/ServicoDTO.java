@@ -1,10 +1,8 @@
 package com.barbershop.barbershop.servico;
 
-import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -14,6 +12,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -43,7 +42,7 @@ public class ServicoDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 

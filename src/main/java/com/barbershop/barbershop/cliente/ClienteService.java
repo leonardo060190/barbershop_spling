@@ -17,36 +17,37 @@ public class ClienteService {
     private ClienteMapper clienteMapper;
 
 
-    //buscar todos s estados
-
+    //buscar todos os clientes
     public List<ClienteDTO> findAll(){
         List<Cliente> clientes = clienteRepository.findAll();
         return clientes.stream().map(clienteMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //buscar um cliente pelo id
     public ClienteDTO findById(Integer id){
-        Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encotrado"));
+        Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encontrado"));
         return clienteMapper.toDTO(cliente);
     }
 
-    //criando um novo
+    //cria uma novo criente
     @Transactional
-    public ClienteDTO create(Cliente cliente){
-//        Cliente cliente = clienteMapper.toEntity(clienteDTO);
+    public ClienteDTO create(ClienteDTO clienteDTO){
+        Cliente cliente = clienteMapper.toEntity(clienteDTO);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }
 
-    //update estado
+    //atualiza um cliente pelo id
     @Transactional
     public ClienteDTO update(Integer id, ClienteDTO clienteDTO){
-        Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encotrado"));
-        clienteMapper.updateEntity(clienteDTO,cliente);
+        Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encontrado"));
+        clienteDTO.setId(id);
+        cliente = clienteMapper.updateEntity(clienteDTO,cliente);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }
 
+    //deleta uma cliente pelo id
     public void deleteById(Integer id){
         clienteRepository.deleteById(id);
     }

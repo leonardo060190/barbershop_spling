@@ -2,7 +2,6 @@ package com.barbershop.barbershop.cidade;
 
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.estado.Estado;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -13,13 +12,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@ToString
 @Entity
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
-
 public class Cidade implements Serializable {
 
     @Serial

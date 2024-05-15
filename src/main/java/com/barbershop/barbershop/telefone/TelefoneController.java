@@ -1,7 +1,6 @@
 package com.barbershop.barbershop.telefone;
 
-import com.barbershop.barbershop.servico.ServicoDTO;
-import com.barbershop.barbershop.servico.ServicoService;
+
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

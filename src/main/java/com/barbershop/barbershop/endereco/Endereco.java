@@ -3,7 +3,6 @@ package com.barbershop.barbershop.endereco;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.Cliente;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -14,6 +13,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@ToString
 @Entity
 @Setter
 @Getter

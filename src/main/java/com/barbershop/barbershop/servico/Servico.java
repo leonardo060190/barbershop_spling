@@ -1,9 +1,7 @@
 package com.barbershop.barbershop.servico;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
-//import com.barbershop.barbershop.agendamento.AgendamentoPK;
 import com.barbershop.barbershop.barbearia.Barbearia;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
@@ -14,6 +12,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@ToString
 @Entity
 @Getter
 @Setter

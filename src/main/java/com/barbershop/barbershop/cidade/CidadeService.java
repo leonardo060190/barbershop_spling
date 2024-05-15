@@ -1,11 +1,7 @@
 package com.barbershop.barbershop.cidade;
 
-import com.barbershop.barbershop.estado.Estado;
-import com.barbershop.barbershop.estado.EstadoDTO;
-import com.barbershop.barbershop.estado.EstadoMapper;
-import com.barbershop.barbershop.estado.EstadoRepository;
+
 import jakarta.transaction.Transactional;
-import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,39 +18,39 @@ public class CidadeService {
     private CidadeMapper cidadeMapper;
 
 
-    //buscar todos s estados
-
+    //buscar todas as cidades
     public List<CidadeDTO> findAll(){
         List<Cidade> cidades = cidadeRepository.findAll();
         return cidades.stream().map(cidadeMapper::toDTO).collect(Collectors.toList());
     }
 
-    //buscar por id
+    //buscar a cidade pelo id
     public CidadeDTO findById(Integer id){
-        Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encotrado"));
+        Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encontrada"));
         return cidadeMapper.toDTO(cidade);
     }
 
-    //criando um novo estado
+    //criando uma nova cidade
     @Transactional
     public CidadeDTO create(CidadeDTO cidadeDTO){
-        System.out.println(cidadeDTO);
         Cidade cidade = cidadeMapper.toEntity(cidadeDTO);
         cidade = cidadeRepository.save(cidade);
         return cidadeMapper.toDTO(cidade);
     }
 
-    //update estado
+    //atualiza a cidade
     @Transactional
     public CidadeDTO update(Integer id, CidadeDTO cidadeDTO){
-        Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encotrado"));
-//        cidadeMapper.updateEntity(cidadeDTO,cidade);
-//        cidade = cidadeRepository.save(cidade);
-        BeanUtils.copyProperties(cidadeDTO, cidade, "id");
+        Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encontrada"));
+        cidadeDTO.setId(id);
+        System.out.println("cidadeDTO" + cidadeDTO);
+        cidade = cidadeMapper.updateEntity(cidadeDTO,cidade);
+        System.out.println("cidade" + cidade);
         cidade = cidadeRepository.save(cidade);
         return cidadeMapper.toDTO(cidade);
     }
 
+    //deleta a cidade pelo id
     public void deleteById(Integer id){
         cidadeRepository.deleteById(id);
     }
