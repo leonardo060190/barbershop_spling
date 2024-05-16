@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController //Habilita o REST
-@RequestMapping("/HorarioFuncionamento")
+@RequestMapping("/horarioFuncionamentos")
 public class HorarioFuncionamentoController {
 
     @Autowired

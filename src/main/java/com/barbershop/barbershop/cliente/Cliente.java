@@ -33,26 +33,30 @@ public class Cliente implements Serializable {
 
     private Integer id;
 
-
+    @Column(length=50, nullable=false)
     private String nome;
 
-    @Column(unique = true)
+    @Column(length=50, nullable=false)
+    private String sobreNome;
+
+    @Column(length = 14, unique = true)
     @CPF
     private String cpf;
 
-    @Column(unique = true)
+    @Column(length = 200, unique = true, nullable = false)
     private String email;
 
     @JsonIgnore
+    @Column(length = 150, nullable = false, unique = true)
     private String senha;
 
-
+    @Column(length = 10, nullable = false)
     private LocalDate dataNascimento;
 
-
+    @Column(length=3000, nullable=false)
     private String foto;
 
-
+    @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
 
 

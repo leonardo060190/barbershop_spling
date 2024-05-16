@@ -30,14 +30,19 @@ public class Endereco implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(length=250, nullable=false)
     private String rua;
 
+    @Column(length=100, nullable=false)
     private String bairro;
 
+    @Column(length=10, nullable=false)
     private Integer numero;
 
+    @Column(length=10, nullable=false)
     private String cep;
 
+    @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)

@@ -8,6 +8,7 @@ import com.barbershop.barbershop.telefone.Telefone;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 import java.io.Serial;
@@ -33,25 +34,27 @@ public class Barbearia implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-
+    @Column(length=50, nullable=false)
     private String nome;
 
-    @Column(unique = true)
+    @Column(unique = true, length = 18, nullable = false)
     private String cnpj;
 
-    @Column(unique = true)
+    @Column(unique = true, length = 200, nullable = false)
     private String email;
 
+    @Column(length=200, nullable=false)
     private String razaoSocial;
 
     @JsonIgnore
+    @Column(length=150, nullable=false)
     private String senha;
 
-
+    @Column(length=3000, nullable=false)
     private String foto;
 
 
-
+    @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)

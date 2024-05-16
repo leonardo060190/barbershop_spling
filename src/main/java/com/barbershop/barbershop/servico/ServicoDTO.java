@@ -3,6 +3,7 @@ package com.barbershop.barbershop.servico;
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -43,6 +44,7 @@ public class ServicoDTO implements Serializable {
     private LocalDate dataCriacao = LocalDate.now();
 
 
+    @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 

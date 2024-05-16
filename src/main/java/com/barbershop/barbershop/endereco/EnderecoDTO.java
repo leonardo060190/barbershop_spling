@@ -6,6 +6,7 @@ import com.barbershop.barbershop.barbearia.BarbeariaDTO;
 import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.ClienteDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -51,9 +52,11 @@ public class EnderecoDTO implements Serializable {
     private Cidade cidade;
 
 
+    @JsonIgnore
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 
 
+    @JsonIgnore
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 

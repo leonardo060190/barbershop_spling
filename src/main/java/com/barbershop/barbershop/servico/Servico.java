@@ -29,15 +29,19 @@ public class Servico implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(length=100, nullable=false)
     private String nome;
 
+    @Column(length=10, nullable=false)
     private Double preco;
 
+    @Column(length=3000, nullable=false)
     private String descricao;
 
+    @Column(length=3000, nullable=false)
     private String foto;
 
-
+    @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)

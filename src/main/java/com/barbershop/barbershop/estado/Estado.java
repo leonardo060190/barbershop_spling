@@ -28,11 +28,13 @@ public class Estado implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(length=20, nullable=false)
     private String nome;
 
+    @Column(length=2, nullable=false)
     private String sigla;
 
-
+    @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

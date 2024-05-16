@@ -28,10 +28,10 @@ public class DiaSemana implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-
+    @Column(length=20, nullable=false)
     private String nome;
 
-
+    @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
     @JsonIgnore

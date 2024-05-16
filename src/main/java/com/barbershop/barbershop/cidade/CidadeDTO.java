@@ -4,6 +4,7 @@ package com.barbershop.barbershop.cidade;
 import com.barbershop.barbershop.endereco.EnderecoDTO;
 import com.barbershop.barbershop.estado.Estado;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -34,7 +35,7 @@ public class CidadeDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
-
+    @JsonIgnore
     private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
 }

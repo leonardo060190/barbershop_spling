@@ -24,18 +24,19 @@ public class Agendamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
 
 
     @Temporal(TemporalType.DATE)
+    @Column(length=10, nullable=false)
     private LocalDate data;
 
 
     @Temporal(TemporalType.TIME)
+    @Column(length=6, nullable=false)
     private LocalTime hora;
 
-
+    @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
 

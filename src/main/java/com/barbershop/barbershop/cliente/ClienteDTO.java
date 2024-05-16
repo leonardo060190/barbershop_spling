@@ -33,6 +33,9 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
+    @NotNull(message = "O campo Nome é requerido")
+    private String sobreNome;
+
     @NotNull(message = "O campo CPF é requerido")
     @CPF
     private String cpf;

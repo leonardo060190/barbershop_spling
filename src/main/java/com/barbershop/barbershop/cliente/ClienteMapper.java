@@ -24,6 +24,7 @@ public interface ClienteMapper {
     @Mappings({
             @Mapping(source = "clienteDTO.id", target = "id"),
             @Mapping(source = "clienteDTO.nome", target = "nome"),
+            @Mapping(source = "clienteDTO.sobreNome", target = "sobreNome"),
             @Mapping(source = "clienteDTO.cpf", target = "cpf"),
             @Mapping(source = "clienteDTO.email", target = "email"),
             @Mapping(source = "clienteDTO.senha", target = "senha"),

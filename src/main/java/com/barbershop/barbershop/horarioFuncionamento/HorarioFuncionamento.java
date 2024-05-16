@@ -8,6 +8,7 @@ import lombok.*;
 import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 @ToString
 @Entity
@@ -17,19 +18,20 @@ import java.time.LocalDate;
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class HorarioFuncionamento implements Serializable {
-
     @Serial
     private static final long serialVersionUID = 1L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Integer id;
 
-    private LocalDate inicio;
+    @Column(length=6, nullable=false)
+    private LocalTime inicio;
 
-    private LocalDate fim;
+    @Column(length=6, nullable=false)
+    private LocalTime fim;
 
+    @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -39,4 +41,8 @@ public class HorarioFuncionamento implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "diaSemanaId", nullable = false)
     private DiaSemana diaSemana;
+
+
+
+
 }
