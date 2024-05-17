@@ -16,20 +16,21 @@ public class HorarioFuncionamentoController {
     @Autowired
     private HorarioFuncionamentoService horarioFuncionamentoService;
 
-    @GetMapping //retorna uma lista de estados
+    @GetMapping
     public ResponseEntity<List<HorarioFuncionamentoDTO>> getAll(){
-        List<HorarioFuncionamentoDTO> horariosFuncionamentoDTO = horarioFuncionamentoService.findAll();
-        return ResponseEntity.ok(horariosFuncionamentoDTO);
+        List<HorarioFuncionamentoDTO> horarioFuncionamentoDTO = horarioFuncionamentoService.findAll();
+        return ResponseEntity.ok(horarioFuncionamentoDTO);
     }
 
-    @GetMapping("/{id}") //pegar por id
-    public ResponseEntity<HorarioFuncionamentoDTO> getEstadoById(@PathVariable Integer id){
+    @GetMapping("/{id}")
+    public ResponseEntity<HorarioFuncionamentoDTO> getById(@PathVariable Integer id){
         HorarioFuncionamentoDTO horarioFuncionamentoDTO = horarioFuncionamentoService.findById(id);
         return ResponseEntity.ok(horarioFuncionamentoDTO);
     }
 
-    @PostMapping //salvar no banco
+    @PostMapping
     public ResponseEntity<HorarioFuncionamentoDTO> create(@Valid @RequestBody HorarioFuncionamentoDTO horarioFuncionamentoDTO){
+        System.out.println("horario funcinamento "+horarioFuncionamentoDTO);
         HorarioFuncionamentoDTO create = horarioFuncionamentoService.create(horarioFuncionamentoDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

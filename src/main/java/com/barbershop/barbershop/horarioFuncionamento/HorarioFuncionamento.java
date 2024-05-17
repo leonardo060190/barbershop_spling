@@ -2,6 +2,7 @@ package com.barbershop.barbershop.horarioFuncionamento;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.diaSemana.DiaSemana;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,6 +11,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+
 @ToString
 @Entity
 @Getter
@@ -17,6 +19,7 @@ import java.time.LocalTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
+
 public class HorarioFuncionamento implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -25,9 +28,13 @@ public class HorarioFuncionamento implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Temporal(TemporalType.TIME)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
     @Column(length=6, nullable=false)
     private LocalTime inicio;
 
+    @Temporal(TemporalType.TIME)
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
     @Column(length=6, nullable=false)
     private LocalTime fim;
 
@@ -41,8 +48,5 @@ public class HorarioFuncionamento implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "diaSemanaId", nullable = false)
     private DiaSemana diaSemana;
-
-
-
 
 }
