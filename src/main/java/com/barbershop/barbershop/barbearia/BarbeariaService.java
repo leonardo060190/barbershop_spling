@@ -33,10 +33,6 @@ public class BarbeariaService {
     //busca pelo nome com a utilização do like
     public List<BarbeariaDTO> findByName(String nome) {
         List<Barbearia> barbearias = barbeariaRepository.findByNomeContainingIgnoreCase(nome);
-        if (barbearias.isEmpty()) {
-            throw new IllegalArgumentException("Nenhuma barbearia encontrada com o nome: " + nome);
-        }
-
         return barbearias.stream()
                 .map(barbeariaMapper::toDTO)
                 .collect(Collectors.toList());
