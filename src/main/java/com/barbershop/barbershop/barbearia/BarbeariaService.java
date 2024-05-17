@@ -30,6 +30,15 @@ public class BarbeariaService {
         return barbeariaMapper.toDTO(barbearia);
     }
 
+    //busca pelo nome com a utilização do like
+    public List<BarbeariaDTO> findByName(String nome) {
+        List<Barbearia> barbearias = barbeariaRepository.findByNomeContainingIgnoreCase(nome);
+        return barbearias.stream()
+                .map(barbeariaMapper::toDTO)
+                .collect(Collectors.toList());
+    }
+
+
     //cria uma nova barbearia
     @Transactional
     public BarbeariaDTO create(BarbeariaDTO barbeariaDTO){
@@ -37,6 +46,7 @@ public class BarbeariaService {
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
+
 
     //atualiza a barbearia
     @Transactional

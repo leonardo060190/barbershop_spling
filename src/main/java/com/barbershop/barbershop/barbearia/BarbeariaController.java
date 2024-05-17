@@ -22,11 +22,20 @@ public class BarbeariaController {
         return ResponseEntity.ok(barbeariasDTO);
     }
 
+    //pesquisa pelo id
     @GetMapping("/{id}")
     public ResponseEntity<BarbeariaDTO> getById(@PathVariable Integer id){
         BarbeariaDTO barbeariasDTO = barbeariaService.findById(id);
         return ResponseEntity.ok(barbeariasDTO);
     }
+
+    //pesquisa com like
+    @GetMapping("/search/{nome}")
+    public ResponseEntity<List<BarbeariaDTO>> searchByName(@PathVariable String nome) {
+        List<BarbeariaDTO> barbeariasDTO = barbeariaService.findByName(nome);
+        return ResponseEntity.ok(barbeariasDTO);
+    }
+
 
     @PostMapping
     public ResponseEntity<BarbeariaDTO> create(@Valid @RequestBody BarbeariaDTO barbeariasDTO){

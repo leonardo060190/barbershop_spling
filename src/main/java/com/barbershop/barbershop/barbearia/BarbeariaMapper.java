@@ -17,6 +17,7 @@ public interface BarbeariaMapper {
     @Mapping(source = "id", target = "id")
     Barbearia toEntity(BarbeariaDTO barbeariaDTO );
 
+
     //recebendo uma lista do estados
     List<BarbeariaDTO> toDTO(List<Barbearia> barbearias);
 
