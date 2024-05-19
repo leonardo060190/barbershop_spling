@@ -3,6 +3,7 @@ package com.barbershop.barbershop.agendamento;
 import com.barbershop.barbershop.cliente.Cliente;
 import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -24,8 +25,9 @@ public class AgendamentoDTO implements Serializable {
 
     private Integer id;
 
+    @JsonIgnore
     private Cliente cliente;
-
+    @JsonIgnore
     private Servico servico;
 
     @NotNull(message = "O campo DATA é requerido")

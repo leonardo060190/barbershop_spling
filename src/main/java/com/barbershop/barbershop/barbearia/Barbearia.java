@@ -46,7 +46,7 @@ public class Barbearia implements Serializable {
     @Column(length=200, nullable=false)
     private String razaoSocial;
 
-    @JsonIgnore
+
     @Column(length=150, nullable=false)
     private String senha;
 

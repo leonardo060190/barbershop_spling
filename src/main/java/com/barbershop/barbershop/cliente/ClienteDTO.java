@@ -44,7 +44,7 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo E-MAIL é requerido")
     private String email;
 
-
+    @JsonIgnore
     @NotNull(message = "O campo SENHA é requerido")
     private String senha;
 
@@ -55,7 +55,7 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-
+    @JsonIgnore
     private Endereco endereco;
 
 

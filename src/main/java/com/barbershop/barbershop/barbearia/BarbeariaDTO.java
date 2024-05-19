@@ -6,6 +6,7 @@ import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
 import com.barbershop.barbershop.servico.ServicoDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CNPJ;
@@ -41,26 +42,26 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo RAZÃO SOCIAL é requerido")
     private String razaoSocial;
 
-
+    @JsonIgnore
     @NotNull(message = "O campo SENHA é requerido")
     private String senha;
 
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-
+    @JsonIgnore
     private Endereco endereco;
 
     @JsonFormat( pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-
+    @JsonIgnore
     private List<ServicoDTO> servicos = new ArrayList<ServicoDTO>();
 
-
+    @JsonIgnore
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
 
-
+    @JsonIgnore
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
 

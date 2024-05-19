@@ -5,6 +5,7 @@ import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.diaSemana.DiaSemana;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -41,10 +42,10 @@ public class HorarioFuncionamentoDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-
+    @JsonIgnore
     private Barbearia barbearia;
 
-
+    @JsonIgnore
     private DiaSemana diaSemana;
 
 

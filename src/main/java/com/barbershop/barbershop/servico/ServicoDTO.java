@@ -37,7 +37,7 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-
+    @JsonIgnore
     private Barbearia barbearia;
 
     @JsonFormat(pattern = "yyyy-MM-dd")

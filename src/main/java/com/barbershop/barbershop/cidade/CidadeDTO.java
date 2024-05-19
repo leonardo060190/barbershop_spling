@@ -29,7 +29,7 @@ public class CidadeDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
-
+    @JsonIgnore
     private Estado estado;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
