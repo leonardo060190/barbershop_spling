@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController //Habilita o REST
 @RequestMapping("/horarioFuncionamentos")
+@CrossOrigin(origins = " http://localhost:5173")
 public class HorarioFuncionamentoController {
 
     @Autowired

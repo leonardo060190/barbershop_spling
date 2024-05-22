@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/barbearias")
+@CrossOrigin(origins = " http://localhost:5173")
 public class BarbeariaController {
 
     @Autowired

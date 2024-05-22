@@ -10,6 +10,7 @@ import java.util.List;
 
 @RestController //Habilita o REST
 @RequestMapping("/estados")
+@CrossOrigin(origins = " http://localhost:5173")
 public class EstadoController {
 
     @Autowired
