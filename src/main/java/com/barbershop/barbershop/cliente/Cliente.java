@@ -60,7 +60,7 @@ public class Cliente implements Serializable {
 
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "enderecoId", nullable = false)
+    @JoinColumn(name = "enderecoId")
     private Endereco endereco;
 
     @JsonIgnore

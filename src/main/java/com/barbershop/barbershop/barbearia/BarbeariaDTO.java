@@ -42,7 +42,7 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo RAZÃO SOCIAL é requerido")
     private String razaoSocial;
 
-    @JsonIgnore
+
     @NotNull(message = "O campo SENHA é requerido")
     private String senha;
 

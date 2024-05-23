@@ -58,7 +58,7 @@ public class Barbearia implements Serializable {
     private LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "enderecoId", nullable = false)
+    @JoinColumn(name = "enderecoId")
     private Endereco endereco;
 
     @JsonIgnore
