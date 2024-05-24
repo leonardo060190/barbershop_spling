@@ -44,4 +44,10 @@ public class Cidade implements Serializable {
     @OneToMany(mappedBy = "cidade", fetch = FetchType.EAGER)
     private List<Endereco> enderecos = new ArrayList<Endereco>();
 
+    public Cidade(Integer id, String nome, Estado estato, LocalDate now) {
+        this.id = id;
+        this.nome = nome;
+        this.estado = estato;
+        this.dataCriacao = LocalDate.now();
+    }
 }

@@ -46,7 +46,7 @@ public class Endereco implements Serializable {
     protected LocalDate dataCriacao = LocalDate.now();
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "cidadeId", nullable = false)
+    @JoinColumn(name = "cidadeId")
     private Cidade cidade;
 
     @JsonIgnore

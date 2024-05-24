@@ -48,7 +48,7 @@ public class EnderecoDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private Cidade cidade;
 
 

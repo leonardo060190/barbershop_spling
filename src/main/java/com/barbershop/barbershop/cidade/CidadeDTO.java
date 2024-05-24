@@ -29,7 +29,6 @@ public class CidadeDTO implements Serializable {
     @NotNull(message = "O campo Nome é requerido")
     private String nome;
 
-    @JsonIgnore
     private Estado estado;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -38,4 +37,11 @@ public class CidadeDTO implements Serializable {
     @JsonIgnore
     private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
+    public CidadeDTO(Cidade obj) {
+        this.id = obj.getId();
+        this.nome = obj.getNome();
+        this.estado = obj.getEstado();
+        this.dataCriacao = obj.getDataCriacao();
+
+    }
 }
