@@ -27,7 +27,7 @@ public class Telefone implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(unique = true, length = 16)
+    @Column(unique = true, length = 19, nullable=false)
     private String numero;
 
     @Column(length=10, nullable=false)

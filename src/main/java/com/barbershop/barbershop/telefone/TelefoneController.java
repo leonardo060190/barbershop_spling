@@ -31,6 +31,7 @@ public class TelefoneController {
 
     @PostMapping
     public ResponseEntity<TelefoneDTO> create(@Valid @RequestBody TelefoneDTO telefoneDTO){
+        System.out.println(telefoneDTO);
         TelefoneDTO create = telefoneService.create(telefoneDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

@@ -29,10 +29,10 @@ public class TelefoneDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private Barbearia barbearia;
 
-    @JsonIgnore
+
     private Cliente cliente;
 
 

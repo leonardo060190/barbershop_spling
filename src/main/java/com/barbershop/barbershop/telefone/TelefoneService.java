@@ -33,7 +33,9 @@ public class TelefoneService {
     //cria um novo telefone
     @Transactional
     public TelefoneDTO create(TelefoneDTO telefoneDTO){
+        System.out.println(telefoneDTO);
         Telefone telefone = telefoneMapper.toEntity(telefoneDTO);
+        System.out.println(telefone);
         telefone = telefoneRepository.save(telefone);
         return telefoneMapper.toDTO(telefone);
     }
