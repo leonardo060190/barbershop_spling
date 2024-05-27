@@ -3,6 +3,7 @@ package com.barbershop.barbershop.barbearia;
 
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,6 +17,9 @@ public class BarbeariaService {
 
     @Autowired
     private BarbeariaMapper barbeariaMapper;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
 
     //buscar todas as barbearias
@@ -43,6 +47,7 @@ public class BarbeariaService {
     @Transactional
     public BarbeariaDTO create(BarbeariaDTO barbeariaDTO){
         Barbearia barbearia = barbeariaMapper.toEntity(barbeariaDTO);
+        barbearia.setSenha(passwordEncoder.encode(barbearia.getSenha()));
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
@@ -54,6 +59,9 @@ public class BarbeariaService {
         Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         barbeariaDTO.setId(id);
         barbearia = barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
+        if (barbearia.getSenha()!=null){
+            barbearia.setSenha(passwordEncoder.encode(barbearia.getSenha()));
+        }
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
