@@ -33,6 +33,7 @@ public class DiaSemanaService {
     //criando
     @Transactional
     public DiaSemanaDTO create(DiaSemanaDTO diaSemanaDTO){
+        diaSemanaDTO.setId(null);
         DiaSemana diaSemana = diaSemanaMapper.toEntity(diaSemanaDTO);
         diaSemana = diaSemanaRepository.save(diaSemana);
         return diaSemanaMapper.toDTO(diaSemana);

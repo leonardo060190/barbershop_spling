@@ -46,8 +46,8 @@ public class BarbeariaService {
     //cria uma nova barbearia
     @Transactional
     public BarbeariaDTO create(BarbeariaDTO barbeariaDTO){
+        barbeariaDTO.setId(null);
         Barbearia barbearia = barbeariaMapper.toEntity(barbeariaDTO);
-        barbearia.setSenha(passwordEncoder.encode(barbearia.getSenha()));
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
@@ -59,9 +59,6 @@ public class BarbeariaService {
         Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         barbeariaDTO.setId(id);
         barbearia = barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
-        if (barbearia.getSenha()!=null){
-            barbearia.setSenha(passwordEncoder.encode(barbearia.getSenha()));
-        }
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }

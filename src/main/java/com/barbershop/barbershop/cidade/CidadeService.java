@@ -33,6 +33,7 @@ public class CidadeService {
     //criando uma nova cidade
     @Transactional
     public CidadeDTO create(CidadeDTO cidadeDTO){
+        cidadeDTO.setId(null);
         Cidade cidade = cidadeMapper.toEntity(cidadeDTO);
         cidade = cidadeRepository.save(cidade);
         return cidadeMapper.toDTO(cidade);

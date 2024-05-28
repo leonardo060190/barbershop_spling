@@ -32,6 +32,7 @@ public class EnderecoService {
     //cria um novo endereço
     @Transactional
     public EnderecoDTO create(EnderecoDTO enderecoDTO){
+        enderecoDTO.setId(null);
         Endereco endereco = enderecoMapper.toEntity(enderecoDTO);
         endereco = enderecoRepository.save(endereco);
         return enderecoMapper.toDTO(endereco);

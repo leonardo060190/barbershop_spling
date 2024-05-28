@@ -26,7 +26,7 @@ public class LoginGetDTO implements Serializable {
 
     private Integer id;
 
-    @JsonIgnore
+
     private String email;
 
     @JsonIgnore

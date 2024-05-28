@@ -33,6 +33,7 @@ public class ServicoService {
     //criando um novo serviço
     @Transactional
     public ServicoDTO create(ServicoDTO servicoDTO){
+        servicoDTO.setId(null);
         Servico servico = servicoMapper.toEntity(servicoDTO);
         servico = servicoRepository.save(servico);
         return servicoMapper.toDTO(servico);

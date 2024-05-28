@@ -32,6 +32,7 @@ public class EstadoService {
     //cria um novo estado
     @Transactional
     public EstadoDTO create(EstadoDTO estadoDTO){
+        estadoDTO.setId(null);
         Estado estado = estadoMapper.toEntity(estadoDTO);
         estado = estadoRepository.save(estado);
         return estadoMapper.toDTO(estado);

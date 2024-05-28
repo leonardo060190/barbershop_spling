@@ -34,6 +34,7 @@ public class AgendamentoService {
     //cria um novo agendamento
     @Transactional
     public AgendamentoDTO create(AgendamentoDTO agendamentoDTO){
+        agendamentoDTO.setId(null);
         Agendamento agendamento = agendomentoMapper.toEntity(agendamentoDTO);
         agendamento = agendamentoRepository.save(agendamento);
         return agendomentoMapper.toDTO(agendamento);

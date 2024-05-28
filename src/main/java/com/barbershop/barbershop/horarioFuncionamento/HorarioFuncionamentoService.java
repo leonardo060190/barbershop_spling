@@ -33,6 +33,7 @@ public class HorarioFuncionamentoService {
     //cria um novo horario
     @Transactional
     public HorarioFuncionamentoDTO create(HorarioFuncionamentoDTO horarioFuncionamentoDTO){
+        horarioFuncionamentoDTO.setId(null);
         HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoMapper.toEntity(horarioFuncionamentoDTO);
         horarioFuncionamento = horarioFuncionamentoRepository.save(horarioFuncionamento);
         return horarioFuncionamentoMapper.toDTO(horarioFuncionamento);
