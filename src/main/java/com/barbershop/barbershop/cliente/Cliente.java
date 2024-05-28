@@ -2,6 +2,7 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
@@ -43,12 +44,6 @@ public class Cliente implements Serializable {
     @CPF
     private String cpf;
 
-    @Column(length = 200, unique = true, nullable = false)
-    private String email;
-
-    @Column(length = 150, nullable = false, unique = true)
-    private String senha;
-
     @Column(length = 10, nullable = false)
     private LocalDate dataNascimento;
 
@@ -71,6 +66,9 @@ public class Cliente implements Serializable {
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    private List<Login> logins = new ArrayList<Login>();
 }
 
 

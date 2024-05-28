@@ -3,6 +3,7 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.login.LoginGetDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -40,13 +41,6 @@ public class ClienteDTO implements Serializable {
     @CPF
     private String cpf;
 
-    @Email
-    @NotNull(message = "O campo E-MAIL é requerido")
-    private String email;
-
-
-    @NotNull(message = "O campo SENHA é requerido")
-    private String senha;
 
     @NotNull(message = "O campo DATANASCIMENTO é requerido")
     @JsonFormat(pattern = "yyyy-MM-dd")
@@ -55,7 +49,7 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    @JsonIgnore
+
     private Endereco endereco;
 
 
@@ -67,6 +61,9 @@ public class ClienteDTO implements Serializable {
 
     @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
+
+    @JsonIgnore
+    private List<LoginGetDTO> loginGetDTOS = new ArrayList<LoginGetDTO>();
 
 
 

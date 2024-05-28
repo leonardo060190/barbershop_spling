@@ -1,8 +1,10 @@
 package com.barbershop.barbershop.barbearia;
 
 
+import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
+import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.servico.Servico;
 import com.barbershop.barbershop.telefone.Telefone;
 
@@ -40,15 +42,9 @@ public class Barbearia implements Serializable {
     @Column(unique = true, length = 18, nullable = false)
     private String cnpj;
 
-    @Column(unique = true, length = 200, nullable = false)
-    private String email;
-
     @Column(length=200, nullable=false)
     private String razaoSocial;
 
-
-    @Column(length=150, nullable=false)
-    private String senha;
 
     @Column(length=3000, nullable=false)
     private String foto;
@@ -73,5 +69,8 @@ public class Barbearia implements Serializable {
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    private List<Login> logins = new ArrayList<Login>();
 }
 
