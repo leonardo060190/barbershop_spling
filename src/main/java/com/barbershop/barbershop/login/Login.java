@@ -26,10 +26,10 @@ public class Login implements Serializable {
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Integer id;
 
-        @Column(length = 200, unique = true, nullable = false)
+        @Column(length = 200, unique = true)
         private String email;
 
-        @Column(length = 150, nullable = false, unique = true)
+        @Column(length = 150, unique = true)
         private String senha;
 
         @Column(length=10, nullable=false)

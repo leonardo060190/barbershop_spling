@@ -18,15 +18,15 @@ public class LoginController {
     private LoginService loginService;
 
     @GetMapping
-    public ResponseEntity<List<LoginGetDTO>> getAll(){
-        List<LoginGetDTO> loginsGetDTO = loginService.findAll();
-        return ResponseEntity.ok(loginsGetDTO);
+    public ResponseEntity<List<LoginDTO>> getAll(){
+        List<LoginDTO> loginsDTO = loginService.findAll();
+        return ResponseEntity.ok(loginsDTO);
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<LoginGetDTO> getById(@PathVariable Integer id){
-        LoginGetDTO loginGetDTO = loginService.findById(id);
-        return ResponseEntity.ok(loginGetDTO);
+    public ResponseEntity<LoginDTO> getById(@PathVariable Integer id){
+        LoginDTO loginDTO = loginService.findById(id);
+        return ResponseEntity.ok(loginDTO);
     }
 
     @PostMapping

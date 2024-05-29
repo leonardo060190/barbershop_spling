@@ -3,7 +3,7 @@ package com.barbershop.barbershop.barbearia;
 
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
-import com.barbershop.barbershop.login.LoginGetDTO;
+import com.barbershop.barbershop.login.LoginDTO;
 import com.barbershop.barbershop.servico.ServicoDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -61,7 +61,7 @@ public class BarbeariaDTO implements Serializable {
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
     @JsonIgnore
-    private List<LoginGetDTO> loginGetDTOS = new ArrayList<LoginGetDTO>();
+    private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
 
 

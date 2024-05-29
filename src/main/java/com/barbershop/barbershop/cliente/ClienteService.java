@@ -2,7 +2,6 @@ package com.barbershop.barbershop.cliente;
 
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,9 +15,6 @@ public class ClienteService {
 
     @Autowired
     private ClienteMapper clienteMapper;
-
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
 
     //buscar todos os clientes
@@ -36,8 +32,8 @@ public class ClienteService {
     //cria uma novo criente
     @Transactional
     public ClienteDTO create(ClienteDTO clienteDTO){
+        clienteDTO.setId(null);
         Cliente cliente = clienteMapper.toEntity(clienteDTO);
-        cliente.setSenha(passwordEncoder.encode(cliente.getSenha()));
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }
@@ -48,9 +44,6 @@ public class ClienteService {
         Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encontrado"));
         clienteDTO.setId(id);
         cliente = clienteMapper.updateEntity(clienteDTO,cliente);
-        if (clienteDTO.getSenha()!=null){
-            cliente.setSenha(passwordEncoder.encode(cliente.getSenha()));
-        }
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }

@@ -3,11 +3,10 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.endereco.Endereco;
-import com.barbershop.barbershop.login.LoginGetDTO;
+import com.barbershop.barbershop.login.LoginDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
@@ -63,7 +62,7 @@ public class ClienteDTO implements Serializable {
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
     @JsonIgnore
-    private List<LoginGetDTO> loginGetDTOS = new ArrayList<LoginGetDTO>();
+    private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
 
 

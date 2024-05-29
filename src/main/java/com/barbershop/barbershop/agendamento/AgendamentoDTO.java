@@ -27,6 +27,7 @@ public class AgendamentoDTO implements Serializable {
 
     @JsonIgnore
     private Cliente cliente;
+
     @JsonIgnore
     private Servico servico;
 

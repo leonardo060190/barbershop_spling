@@ -18,19 +18,16 @@ import java.time.LocalDate;
 @Setter
 @EqualsAndHashCode(of = "id")
 public class LoginDTO implements Serializable {
-
-
     @Serial
     private static final long serialVersionUID = 1L;
 
 
     private Integer id;
 
-
-
+    @NotNull(message = "O campo E-mail é requerido")
     private String email;
 
-
+    @NotNull(message = "O campo Senha é requerido")
     private String senha;
 
 

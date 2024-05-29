@@ -1,11 +1,9 @@
 package com.barbershop.barbershop.login;
 
-import com.barbershop.barbershop.telefone.Telefone;
-import com.barbershop.barbershop.telefone.TelefoneDTO;
-import com.barbershop.barbershop.telefone.TelefoneMapper;
-import com.barbershop.barbershop.telefone.TelefoneRepository;
+
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,19 +19,19 @@ public class LoginService {
     private LoginMapper loginMapper;
 
     @Autowired
-    private LoginGetMapper loginGetMapper;
+    private PasswordEncoder passwordEncoder;
 
 
     //busca todos os logins
-    public List<LoginGetDTO> findAll(){
+    public List<LoginDTO> findAll(){
         List<Login> logins = loginRepository.findAll();
-        return logins.stream().map(loginGetMapper::toDTO).collect(Collectors.toList());
+        return logins.stream().map(loginMapper::toDTO).collect(Collectors.toList());
     }
 
     //busca o login pelo id
-    public LoginGetDTO findById(Integer id){
+    public LoginDTO findById(Integer id){
         Login login = loginRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Login não encontrado"));
-        return loginGetMapper.toDTO(login);
+        return loginMapper.toDTO(login);
     }
 
     //cria um novo login
@@ -41,6 +39,7 @@ public class LoginService {
     public LoginDTO create(LoginDTO loginDTO){
         loginDTO.setId(null);
         Login login = loginMapper.toEntity(loginDTO);
+        login.setSenha(passwordEncoder.encode(login.getSenha()));
         login = loginRepository.save(login);
         return loginMapper.toDTO(login);
     }
@@ -51,6 +50,9 @@ public class LoginService {
         Login login = loginRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Login não encontrado"));
         loginDTO.setId(id);
         login = loginMapper.updateEntity(loginDTO,login);
+        if (loginDTO.getSenha()!=null){
+            login.setSenha(passwordEncoder.encode(login.getSenha()));
+        }
         login = loginRepository.save(login);
         return loginMapper.toDTO(login);
     }
