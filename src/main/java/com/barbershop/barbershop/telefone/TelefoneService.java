@@ -2,6 +2,7 @@ package com.barbershop.barbershop.telefone;
 
 
 import jakarta.transaction.Transactional;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +42,7 @@ public class TelefoneService {
 
     //atualiza o telefone pelo id
     @Transactional
-    public TelefoneDTO update(Integer id, TelefoneDTO telefoneDTO){
+    public TelefoneDTO update(Integer id,@Valid TelefoneDTO telefoneDTO){
         Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encontrado"));
         telefoneDTO.setId(id);
         telefone = telefoneMapper.updateEntity(telefoneDTO,telefone);
