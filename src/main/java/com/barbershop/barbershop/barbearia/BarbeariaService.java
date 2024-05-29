@@ -18,8 +18,6 @@ public class BarbeariaService {
     @Autowired
     private BarbeariaMapper barbeariaMapper;
 
-    @Autowired
-    private PasswordEncoder passwordEncoder;
 
 
     //buscar todas as barbearias

@@ -70,7 +70,7 @@ public class Barbearia implements Serializable {
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
     private List<Login> logins = new ArrayList<Login>();
 }
 
