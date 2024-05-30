@@ -38,6 +38,7 @@ public class LoginService {
     @Transactional
     public LoginDTO create(LoginDTO loginDTO){
         loginDTO.setId(null);
+
         Login login = loginMapper.toEntity(loginDTO);
         login.setSenha(passwordEncoder.encode(login.getSenha()));
         login = loginRepository.save(login);
