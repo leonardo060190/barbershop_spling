@@ -7,6 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -38,7 +39,6 @@ public class LoginService {
     @Transactional
     public LoginDTO create(LoginDTO loginDTO){
         loginDTO.setId(null);
-
         Login login = loginMapper.toEntity(loginDTO);
         login.setSenha(passwordEncoder.encode(login.getSenha()));
         login = loginRepository.save(login);
@@ -63,5 +63,16 @@ public class LoginService {
         loginRepository.deleteById(id);
     }
 
+    public LoginDTO loginUser(LoginRequest loginRequest){
+        Optional<Login>loginOptional = loginRepository.findByEmail(loginRequest.getEmail());
+        if (loginOptional.isEmpty()){
+            return null;
+        }
+        Login login = loginOptional.get();
+        if (!passwordEncoder.matches(loginRequest.getSenha(), login.getSenha())){
+            return null;
+        }
+        return loginMapper.toDTO(login);
+    }
 
 }

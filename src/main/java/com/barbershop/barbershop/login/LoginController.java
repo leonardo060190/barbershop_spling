@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/login")
@@ -46,4 +47,15 @@ public class LoginController {
         loginService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PostMapping("/authenticade")
+    public ResponseEntity<LoginDTO> loginUser(@RequestBody LoginRequest loginRequest){
+        LoginDTO loginDTO = loginService.loginUser(loginRequest);
+        if(loginDTO == null){
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+        return ResponseEntity.ok(loginDTO);
+    }
+
+
 }
