@@ -1,6 +1,10 @@
 package com.barbershop.barbershop.barbearia;
 
 
+import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.endereco.EnderecoDTO;
+import com.barbershop.barbershop.servico.Servico;
+import com.barbershop.barbershop.servico.ServicoDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -37,5 +41,12 @@ public interface BarbeariaMapper {
     })
     Barbearia updateEntity(BarbeariaDTO barbeariaDTO, Barbearia barbearia);
 
+    EnderecoDTO toEnderecoDTO(Endereco endereco);
+
+    Endereco toEndereco(EnderecoDTO enderecoDTO);
+
+    ServicoDTO toServicoDTO(Servico servico);
+
+    Servico toServico(ServicoDTO servicoDTO);
 
 }

@@ -26,7 +26,9 @@ public class ClienteController {
 
     @GetMapping("/{id}")
     public ResponseEntity<ClienteDTO> getById(@PathVariable Integer id){
+
         ClienteDTO clienteDTO = clienteService.findById(id);
+        System.out.println(clienteDTO);
         return ResponseEntity.ok(clienteDTO);
     }
 

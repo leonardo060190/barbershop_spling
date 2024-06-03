@@ -29,6 +29,10 @@ public class ClienteService {
         return clienteMapper.toDTO(cliente);
     }
 
+    public Cliente findClienteById(Integer id) {
+        return clienteRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"));
+    }
+
     //cria uma novo criente
     @Transactional
     public ClienteDTO create(ClienteDTO clienteDTO){

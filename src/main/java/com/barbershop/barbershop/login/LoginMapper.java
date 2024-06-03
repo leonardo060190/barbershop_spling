@@ -11,10 +11,14 @@ import java.util.List;
 public interface LoginMapper {
 
     //Conversor Entity(Model) para DTO
-    @Mapping(source = "id", target = "id")
+    @Mappings({
+            @Mapping(source = "id", target = "id"),
+    })
     LoginDTO toDTO(Login login);
 
-    @Mapping(source = "id", target = "id")
+    @Mappings({
+            @Mapping(source = "id", target = "id"),
+    })
     Login toEntity(LoginDTO loginDTO);
 
     List<LoginDTO> toDTO(List<Login> logins);

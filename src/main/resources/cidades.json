@@ -1,0 +1,9234 @@
+
+  [
+    {
+      "nome": "Afonso Cláudio",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Água Doce do Norte",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Águia Branca",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Alegre",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Alfredo Chaves",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Alto Rio Novo",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Anchieta",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Apiacá",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Aracruz",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Atilio Vivacqua",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Baixo Guandu",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Barra de São Francisco",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Boa Esperança",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Bom Jesus do Norte",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Brejetuba",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Cachoeiro de Itapemirim",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Cariacica",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Castelo",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Colatina",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Conceição da Barra",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Conceição do Castelo",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Divino de São Lourenço",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Domingos Martins",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Dores do Rio Preto",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Ecoporanga",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Fundão",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Governador Lindenberg",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Guaçuí",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Guarapari",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Ibatiba",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Ibiraçu",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Ibitirama",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Iconha",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Irupi",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Itaguaçu",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Itapemirim",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Itarana",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Iúna",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Jaguaré",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Jerônimo Monteiro",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "João Neiva",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Laranja da Terra",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Linhares",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Mantenópolis",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Marataízes",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Marechal Floriano",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Marilândia",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Mimoso do Sul",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Montanha",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Mucurici",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Muniz Freire",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Muqui",
+      "estado": {
+        "id": 8
+      }
+    },
+    {
+      "nome": "Nova Venécia",
+      "estado": {
+        "id": 8
+      }
+    },
+      {
+        "nome": "Acrelândia",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Assis Brasil",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Brasiléia",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Bujari",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Capixaba",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Cruzeiro do Sul",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Epitaciolândia",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Feijó",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Jordão",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Mâncio Lima",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Manoel Urbano",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Marechal Thaumaturgo",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Plácido de Castro",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Porto Acre",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Porto Walter",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Rio Branco",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Rodrigues Alves",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Santa Rosa do Purus",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Sena Madureira",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Senador Guiomard",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Tarauacá",
+        "estado": {
+          "id": 1
+        }
+      },
+      {
+        "nome": "Xapuri",
+        "estado": {
+          "id": 1
+        }
+      },
+    {
+      "nome": "Água Branca",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Anadia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Arapiraca",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Atalaia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Barra de Santo Antônio",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Barra de São Miguel",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Batalha",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Belém",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Belo Monte",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Boca da Mata",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Branquinha",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Cacimbinhas",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Cajueiro",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Campestre",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Campo Alegre",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Campo Grande",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Canapi",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Capela",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Carneiros",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Chã Preta",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Coité do Nóia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Colônia Leopoldina",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Coqueiro Seco",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Coruripe",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Craíbas",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Delmiro Gouveia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Dois Riachos",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Estrela de Alagoas",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Feira Grande",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Feliz Deserto",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Flexeiras",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Girau do Ponciano",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Ibateguara",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Igaci",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Igreja Nova",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Inhapi",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Jacaré dos Homens",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Jacuípe",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Japaratinga",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Jaramataia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Jequiá da Praia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Joaquim Gomes",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Jundiá",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Junqueiro",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Lagoa da Canoa",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Limoeiro de Anadia",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Maceió",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Major Isidoro",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Mar Vermelho",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Maragogi",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Maravilha",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Marechal Deodoro",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Maribondo",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Mata Grande",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Matriz de Camaragibe",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Messias",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Minador do Negrão",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Monteirópolis",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Murici",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Novo Lino",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Olho d`Água das Flores",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Olho d`Água do Casado",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Olho d`Água Grande",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Olivença",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Ouro Branco",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Palestina",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Palmeira dos Índios",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Pão de Açúcar",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Pariconha",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Paripueira",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Passo de Camaragibe",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Paulo Jacinto",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Penedo",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Piaçabuçu",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Pilar",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Pindoba",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Piranhas",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Poço das Trincheiras",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Porto Calvo",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Porto de Pedras",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Porto Real do Colégio",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Quebrangulo",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Rio Largo",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Roteiro",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Santa Luzia do Norte",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Santana do Ipanema",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Santana do Mundaú",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São Brás",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São José da Laje",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São José da Tapera",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São Luís do Quitunde",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São Miguel dos Campos",
+      "estado":  {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São Miguel dos Milagres",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "São Sebastião",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Satuba",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Senador Rui Palmeira",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Tanque d`Arca",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Taquarana",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Teotônio Vilela",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Traipu",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "União dos Palmares",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Viçosa",
+      "estado": {
+        "id": 2
+      }
+    },
+    {
+      "nome": "Amapá",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Calçoene",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Cutias",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Ferreira Gomes",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Itaubal",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Laranjal do Jari",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Macapá",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Mazagão",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Oiapoque",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Pedra Branca do Amaparí",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Porto Grande",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Pracuúba",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Santana",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Serra do Navio",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Tartarugalzinho",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Vitória do Jari",
+      "estado": {
+        "id": 4
+      }
+    },
+    {
+      "nome": "Alvarães",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Amaturá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Anamã",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Anori",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Apuí",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Atalaia do Norte",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Autazes",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Barcelos",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Barreirinha",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Benjamin Constant",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Beruri",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Boa Vista do Ramos",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Boca do Acre",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Borba",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Caapiranga",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Canutama",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Carauari",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Careiro",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Careiro da Várzea",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Coari",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Codajás",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Eirunepé",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Envira",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Fonte Boa",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Guajará",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Humaitá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Ipixuna",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Iranduba",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Itacoatiara",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Itamarati",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Itapiranga",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Japurá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Juruá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Jutaí",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Lábrea",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Manacapuru",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Manaquiri",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Manaus",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Manicoré",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Maraã",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Maués",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Nhamundá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Nova Olinda do Norte",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Novo Airão",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Novo Aripuanã",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Parintins",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Pauini",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Presidente Figueiredo",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Rio Preto da Eva",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Santa Isabel do Rio Negro",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Santo Antônio do Içá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "São Gabriel da Cachoeira",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "São Paulo de Olivença",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "São Sebastião do Uatumã",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Silves",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Tabatinga",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Tapauá",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Tefé",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Tonantins",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Uarini",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Urucará",
+      "estado": {
+        "id": 3
+      }
+    },
+    {
+      "nome": "Urucurituba",
+      "estado": {
+        "id": 3
+      }
+    },
+      {
+        "nome": "Abaíra",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Abaré",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Acajutiba",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Adustina",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Água Fria",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aiquara",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Alagoinhas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Alcobaça",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Almadina",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Amargosa",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Amélia Rodrigues",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "América Dourada",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Anagé",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Andaraí",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Andorinha",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Angical",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Anguera",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Antas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Antônio Cardoso",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Antônio Gonçalves",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aporá",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Apuarema",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Araças",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aracatu",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Araci",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aramari",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Arataca",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aratuípe",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Aurelino Leal",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Baianópolis",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Baixa Grande",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Banzaê",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barra",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barra da Estiva",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barra do Choça",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barra do Mendes",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barra do Rocha",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barreiras",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barro Alto",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barro Preto (antigo Gov. Lomanto Jr.)",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Barrocas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Belmonte",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Belo Campo",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Biritinga",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Boa Nova",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Boa Vista do Tupim",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Bom Jesus da Lapa",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Bom Jesus da Serra",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Boninal",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Bonito",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Boquira",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Botuporã",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Brejões",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Brejolândia",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Brotas de Macaúbas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Brumado",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Buerarema",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Buritirama",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caatiba",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cabaceiras do Paraguaçu",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cachoeira",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caculé",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caém",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caetanos",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caetité",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cafarnaum",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cairu",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caldeirão Grande",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Camacan",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Camaçari",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Camamu",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Campo Alegre de Lourdes",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Campo Formoso",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Canápolis",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Canarana",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Canavieiras",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Candeal",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Candeias",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Candiba",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cândido Sales",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cansanção",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Canudos",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Capela do Alto Alegre",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Capim Grosso",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caraíbas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caravelas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cardeal da Silva",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Carinhanha",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Casa Nova",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Castro Alves",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Catolândia",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Catu",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Caturama",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Central",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Chorrochó",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cícero Dantas",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cipó",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Coaraci",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Cocos",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Conceição da Feira",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Conceição do Almeida",
+        "estado": {
+        "id": 5
+      }
+      },
+      {
+        "nome": "Conceição do Coité",
+        "estado": {
+          "id": 5
+      }
+  },
+  {
+    "nome": "Conceição do Jacuípe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Conde",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Condeúba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Contendas do Sincorá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Coração de Maria",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Cordeiros",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Coribe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Coronel João Sá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Correntina",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Cotegipe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Cravolândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Crisópolis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Cristópolis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Cruz das Almas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Curaçá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Dário Meira",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Dias d`Ávila",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Dom Basílio",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Dom Macedo Costa",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Elísio Medrado",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Encruzilhada",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Entre Rios",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Érico Cardoso",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Esplanada",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Euclides da Cunha",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Eunápolis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Fátima",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Feira da Mata",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Feira de Santana",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Filadélfia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Firmino Alves",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Floresta Azul",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Formosa do Rio Preto",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Gandu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Gavião",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Gentio do Ouro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Glória",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Gongogi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Governador Mangabeira",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Guajeru",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Guanambi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Guaratinga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Heliópolis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Iaçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibiassucê",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibicaraí",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibicoara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibicuí",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibipeba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibipitanga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibiquera",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibirapitanga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibirapuã",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibirataia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibitiara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibititá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ibotirama",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ichu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Igaporã",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Igrapiúna",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Iguaí",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ilhéus",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Inhambupe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ipecaetá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ipiaú",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ipirá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ipupiara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Irajuba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Iramaia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Iraquara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Irará",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Irecê",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itabela",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaberaba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itabuna",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itacaré",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaeté",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itagi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itagibá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itagimirim",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaguaçu da Bahia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaju do Colônia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itajuípe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itamaraju",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itamari",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itambé",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itanagra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itanhém",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaparica",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itapé",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itapebi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itapetinga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itapicuru",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itapitanga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itaquara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itarantim",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itatim",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itiruçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itiúba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Itororó",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ituaçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ituberá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Iuiú",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jaborandi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jacaraci",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jacobina",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jaguaquara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jaguarari",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jaguaripe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jandaíra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jequié",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jeremoabo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jiquiriçá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jitaúna",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "João Dourado",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Juazeiro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jucuruçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jussara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jussari",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Jussiape",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lafaiete Coutinho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lagoa Real",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Laje",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lajedão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lajedinho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lajedo do Tabocal",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lamarão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lapão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lauro de Freitas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Lençóis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Licínio de Almeida",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Livramento de Nossa Senhora",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Luís Eduardo Magalhães",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Macajuba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Macarani",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Macaúbas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Macururé",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Madre de Deus",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Maetinga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Maiquinique",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mairi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Malhada",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Malhada de Pedras",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Manoel Vitorino",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mansidão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Maracás",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Maragogipe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Maraú",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Marcionílio Souza",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mascote",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mata de São João",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Matina",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Medeiros Neto",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Miguel Calmon",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Milagres",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mirangaba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mirante",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Monte Santo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Morpará",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Morro do Chapéu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mortugaba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mucugê",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mucuri",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mulungu do Morro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mundo Novo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Muniz Ferreira",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Muquém de São Francisco",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Muritiba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Mutuípe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nazaré",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nilo Peçanha",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nordestina",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Canaã",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Fátima",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Ibiá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Itarana",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Redenção",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Soure",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Nova Viçosa",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Novo Horizonte",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Novo Triunfo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Olindina",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Oliveira dos Brejinhos",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ouriçangas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ourolândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Palmas de Monte Alto",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Palmeiras",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Paramirim",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Paratinga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Paripiranga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pau Brasil",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Paulo Afonso",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pé de Serra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pedrão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pedro Alexandre",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Piatã",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pilão Arcado",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pindaí",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pindobaçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pintadas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Piraí do Norte",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Piripá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Piritiba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Planaltino",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Planalto",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Poções",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Pojuca",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ponto Novo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Porto Seguro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Potiraguá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Prado",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Presidente Dutra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Presidente Jânio Quadros",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Presidente Tancredo Neves",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Queimadas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Quijingue",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Quixabeira",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rafael Jambeiro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Remanso",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Retirolândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Riachão das Neves",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Riachão do Jacuípe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Riacho de Santana",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ribeira do Amparo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ribeira do Pombal",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ribeirão do Largo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rio de Contas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rio do Antônio",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rio do Pires",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rio Real",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Rodelas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ruy Barbosa",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Salinas da Margarida",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Salvador",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Bárbara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Brígida",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Cruz Cabrália",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Cruz da Vitória",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Inês",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Luzia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Maria da Vitória",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Rita de Cássia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santa Teresinha",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santaluz",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santana",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santanópolis",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santo Amaro",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santo Antônio de Jesus",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Santo Estêvão",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Desidério",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Domingos",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Felipe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Félix",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Félix do Coribe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Francisco do Conde",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Gabriel",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Gonçalo dos Campos",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São José da Vitória",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São José do Jacuípe",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Miguel das Matas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "São Sebastião do Passé",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sapeaçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sátiro Dias",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Saubara",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Saúde",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Seabra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sebastião Laranjeiras",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Senhor do Bonfim",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sento Sé",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Serra do Ramalho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Serra Dourada",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Serra Preta",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Serrinha",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Serrolândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Simões Filho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sítio do Mato",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sítio do Quinto",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Sobradinho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Souto Soares",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tabocas do Brejo Velho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tanhaçu",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tanque Novo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tanquinho",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Taperoá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tapiramutá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Teixeira de Freitas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Teodoro Sampaio",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Teofilândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Teolândia",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Terra Nova",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tremedal",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Tucano",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Uauá",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ubaíra",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ubaitaba",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Ubatã",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Uibaí",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Umburanas",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Una",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Urandi",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Uruçuca",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Utinga",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Valença",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Valente",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Várzea da Roça",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Várzea do Poço",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Várzea Nova",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Varzedo",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Vera Cruz",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Vereda",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Vitória da Conquista",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Wagner",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Wanderley",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Wenceslau Guimarães",
+    "estado": {
+        "id": 5
+      }
+  },
+  {
+    "nome": "Xique-Xique",
+    "estado": {
+        "id": 5
+      }
+  },
+      {
+        "nome": "Abaiara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Acarape",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Acaraú",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Acopiara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aiuaba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Alcântaras",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Altaneira",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Alto Santo",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Amontada",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Antonina do Norte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Apuiarés",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aquiraz",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aracati",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aracoiaba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ararendá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Araripe",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aratuba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Arneiroz",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Assaré",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Aurora",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Baixio",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Banabuiú",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Barbalha",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Barreira",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Barro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Barroquinha",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Baturité",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Beberibe",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Bela Cruz",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Boa Viagem",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Brejo Santo",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Camocim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Campos Sales",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Canindé",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Capistrano",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Caridade",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Cariré",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Caririaçu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Cariús",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Carnaubal",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Cascavel",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Catarina",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Catunda",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Caucaia",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Cedro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Chaval",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Choró",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Chorozinho",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Coreaú",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Crateús",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Crato",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Croatá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Cruz",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Deputado Irapuan Pinheiro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ererê",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Eusébio",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Farias Brito",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Forquilha",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Fortaleza",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Fortim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Frecheirinha",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "General Sampaio",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Graça",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Granja",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Granjeiro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Groaíras",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Guaiúba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Guaraciaba do Norte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Guaramiranga",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Hidrolândia",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Horizonte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ibaretama",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ibiapina",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ibicuitinga",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Icapuí",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Icó",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Iguatu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Independência",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ipaporanga",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ipaumirim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ipu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ipueiras",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Iracema",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Irauçuba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itaiçaba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itaitinga",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itapagé",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itapipoca",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itapiúna",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itarema",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Itatira",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jaguaretama",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jaguaribara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jaguaribe",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jaguaruana",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jardim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jati",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jijoca de Jericoacoara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Juazeiro do Norte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Jucás",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Lavras da Mangabeira",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Limoeiro do Norte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Madalena",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Maracanaú",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Maranguape",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Marco",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Martinópole",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Massapê",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Mauriti",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Meruoca",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Milagres",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Milhã",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Miraíma",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Missão Velha",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Mombaça",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Monsenhor Tabosa",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Morada Nova",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Moraújo",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Morrinhos",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Mucambo",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Mulungu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Nova Olinda",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Nova Russas",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Novo Oriente",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ocara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Orós",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pacajus",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pacatuba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pacoti",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pacujá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Palhano",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Palmácia",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Paracuru",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Paraipaba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Parambu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Paramoti",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pedra Branca",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Penaforte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pentecoste",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pereiro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pindoretama",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Piquet Carneiro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Pires Ferreira",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Poranga",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Porteiras",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Potengi",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Potiretama",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Quiterianópolis",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Quixadá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Quixelô",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Quixeramobim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Quixeré",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Redenção",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Reriutaba",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Russas",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Saboeiro",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Salitre",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Santa Quitéria",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Santana do Acaraú",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Santana do Cariri",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "São Benedito",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "São Gonçalo do Amarante",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "São João do Jaguaribe",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "São Luís do Curu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Senador Pompeu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Senador Sá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Sobral",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Solonópole",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tabuleiro do Norte",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tamboril",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tarrafas",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tauá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tejuçuoca",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tianguá",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Trairi",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Tururu",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Ubajara",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Umari",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Umirim",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Uruburetama",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Uruoca",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Varjota",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Várzea Alegre",
+        "estado": {
+        "id": 6
+      }
+      },
+      {
+        "nome": "Viçosa do Ceará",
+        "estado": {
+        "id": 6
+      }
+      },
+    {
+
+      "nome": "Brasília",
+      "estado":  {
+        "id": 6
+      }
+    },
+    {
+      "nome": "Abadia de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Abadiânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Acreúna",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Adelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Água Fria de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Água Limpa",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Águas Lindas de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Alexânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aloândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Alto Horizonte",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Alto Paraíso de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Alvorada do Norte",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Amaralina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Americano do Brasil",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Amorinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Anápolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Anhanguera",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Anicuns",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aparecida de Goiânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aparecida do Rio Doce",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aporé",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Araçu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aragarças",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aragoiânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Araguapaz",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Arenópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aruanã",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Aurilândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Avelinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Baliza",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Barro Alto",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Bela Vista de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Bom Jardim de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Bom Jesus de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Bonfinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Bonópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Brazabrantes",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Britânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Buriti Alegre",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Buriti de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Buritinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cabeceiras",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cachoeira Alta",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cachoeira de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cachoeira Dourada",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Caçu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Caiapônia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Caldas Novas",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Caldazinha",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campestre de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campinaçu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campinorte",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campo Alegre de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campo Limpo de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campos Belos",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Campos Verdes",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Carmo do Rio Verde",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Castelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Catalão",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Caturaí",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Chapadão do Céu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ceres",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cezarina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Chapadão do Céu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cidade Ocidental",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cocalzinho de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Colinas do Sul",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Córrego do Ouro",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Corumbá de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Corumbaíba",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cristalina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cristianópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Crixás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cromínia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Cumari",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Damianópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Damolândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Davinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Diorama",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Divinópolis de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Doverlândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Edealina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Edéia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Estrela do Norte",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Faina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Fazenda Nova",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Firminópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Flores de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Formosa",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Formoso",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Gameleira de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goianápolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goiandira",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goianésia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goiânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goianira",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Goiatuba",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Gouvelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Guapó",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Guaraíta",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Guarani de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Guarinos",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Heitoraí",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Hidrolândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Hidrolina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Iaciara",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Inaciolândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Indiara",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Inhumas",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ipameri",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ipiranga de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Iporá",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Israelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itaberaí",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itaguari",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itaguaru",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itajá",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itapaci",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itapirapuã",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itapuranga",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itarumã",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itauçu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Itumbiara",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ivolândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jandaia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jaraguá",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jataí",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jaupaci",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jesúpolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Joviânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Jussara",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Lagoa Santa",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Leopoldo de Bulhões",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Luziânia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mairipotaba",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mambaí",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mara Rosa",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Marzagão",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Matrinchã",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Maurilândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mimoso de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Minaçu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mineiros",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Moiporá",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Monte Alegre de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Montes Claros de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Montividiu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Montividiu do Norte",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Morrinhos",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Morro Agudo de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mossâmedes",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mozarlândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mundo Novo",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Mutunópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nazário",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nerópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Niquelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova América",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Aurora",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Crixás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Glória",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Iguaçu de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Roma",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Nova Veneza",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Novo Brasil",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Novo Gama",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Novo Planalto",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Orizona",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ouro Verde de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Ouvidor",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Padre Bernardo",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Palestina de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Palmeiras de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Palmelo",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Palminópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Panamá",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Paranaiguara",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Paraúna",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Perolândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Petrolina de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Pilar de Goiás",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Piracanjuba",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Piranhas",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Pirenópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Pires do Rio",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Planaltina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Pontalina",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Porangatu",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Porteirão",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Portelândia",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Posse",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Professor Jamil",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Quirinópolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Rialma",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Rianápolis",
+      "estado": {
+        "id": 9
+      }
+    },
+    {
+      "nome": "Rio Quente",
+      "estado": {
+        "id": 9
+      }
+    },
+      {
+        "nome": "Rio Verde",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Rubiataba",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Sanclerlândia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Bárbara de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Cruz de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Fé de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Helena de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Isabel",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Rita do Araguaia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Rita do Novo Destino",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Rosa de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Tereza de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santa Terezinha de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santo Antônio da Barra",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santo Antônio de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Santo Antônio do Descoberto",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Domingos",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Francisco de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São João d`Aliança",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São João da Paraúna",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Luís de Montes Belos",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Luíz do Norte",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Miguel do Araguaia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Miguel do Passa Quatro",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Patrício",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "São Simão",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Senador Canedo",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Serranópolis",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Silvânia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Simolândia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Sítio d`Abadia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Taquaral de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Teresina de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Terezópolis de Goiás",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Três Ranchos",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Trindade",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Trombas",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Turvânia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Turvelândia",
+        "estado": {
+        "id": 9
+      }
+      },
+      {
+        "nome": "Uirapuru",
+        "estado": {
+        "id": 9
+      }
+      },
+        {
+          "nome": "Uruaçu",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Uruana",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Urutaí",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Valparaíso de Goiás",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Varjão",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Vianópolis",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Vicentinópolis",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Vila Boa",
+          "estado": {
+        "id": 9
+      }
+        },
+        {
+          "nome": "Vila Propício",
+          "estado": {
+        "id": 9
+      }
+        },
+      {
+        "nome": "Açailândia",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Afonso Cunha",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Água Doce do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Alcântara",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Aldeias Altas",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Altamira do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Alto Alegre do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Alto Alegre do Pindaré",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Alto Parnaíba",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Amapá do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Amarante do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Anajatuba",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Anapurus",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Apicum-Açu",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Araguanã",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Araioses",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Arame",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Arari",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Axixá",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bacabal",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bacabeira",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bacuri",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bacurituba",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Balsas",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Barão de Grajaú",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Barra do Corda",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Barreirinhas",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bela Vista do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Belágua",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Benedito Leite",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bequimão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bernardo do Mearim",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Boa Vista do Gurupi",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bom Jardim",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bom Jesus das Selvas",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Bom Lugar",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Brejo",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Brejo de Areia",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Buriti",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Buriti Bravo",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Buriticupu",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Buritirana",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cachoeira Grande",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cajapió",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cajari",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Campestre do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cândido Mendes",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cantanhede",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Capinzal do Norte",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Carolina",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Carutapera",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Caxias",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Cedral",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Central do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Centro do Guilherme",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Centro Novo do Maranhão",
+        "estado": {
+        "id": 10
+      }
+      },
+      {
+        "nome": "Chapadinha",
+        "estado": {
+        "id": 10
+      }
+      },
+        {
+          "nome": "Cidelândia",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Codó",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Coelho Neto",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Colinas",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Conceição do Lago-Açu",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Coroatá",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Cururupu",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Davinópolis",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Dom Pedro",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Duque Bacelar",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Esperantinópolis",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Estreito",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Feira Nova do Maranhão",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Fernando Falcão",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Formosa da Serra Negra",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Fortaleza dos Nogueiras",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Fortuna",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Godofredo Viana",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Gonçalves Dias",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Archer",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Edison Lobão",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Eugênio Barros",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Luiz Rocha",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Newton Bello",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Governador Nunes Freire",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Graça Aranha",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Grajaú",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Guimarães",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Humberto de Campos",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Icatu",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Igarapé do Meio",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Igarapé Grande",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Imperatriz",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Itaipava do Grajaú",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Itapecuru Mirim",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Itinga do Maranhão",
+          "estado": {
+        "id": 10
+      }
+        },
+        {
+          "nome": "Jatobá",
+          "estado": {
+        "id": 10
+      }
+        },
+          {
+            "nome": "Jenipapo dos Vieiras",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "João Lisboa",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Joselândia",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Junco do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lago da Pedra",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lago do Junco",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lago dos Rodrigues",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lago Verde",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lagoa do Mato",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lagoa Grande do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lajeado Novo",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Lima Campos",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Loreto",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Luís Domingues",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Magalhães de Almeida",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Maracaçumé",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Marajá do Sena",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Maranhãozinho",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Mata Roma",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Matinha",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Matões",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Matões do Norte",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Milagres do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Mirador",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Miranda do Norte",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Mirinzal",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Monção",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Montes Altos",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Morros",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Nina Rodrigues",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Nova Colinas",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Nova Iorque",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Nova Olinda do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Olho d`Água das Cunhãs",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Olinda Nova do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Paço do Lumiar",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Palmeirândia",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Paraibano",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Parnarama",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Passagem Franca",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pastos Bons",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Paulino Neves",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Paulo Ramos",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pedreiras",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pedro do Rosário",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Penalva",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Peri Mirim",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Peritoró",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pindaré-Mirim",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pinheiro",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pio XII",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Pirapemas",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Poção de Pedras",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Porto Franco",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Porto Rico do Maranhão",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Presidente Dutra",
+            "estado": {
+        "id": 10
+      }
+          },
+          {
+            "nome": "Presidente Juscelino",
+            "estado": {
+        "id": 10
+      }
+          },
+            {
+              "nome": "Presidente Médici",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Presidente Sarney",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Presidente Vargas",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Primeira Cruz",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Raposa",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Riachão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Ribamar Fiquene",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Rosário",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Sambaíba",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Filomena do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Helena",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Inês",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Luzia",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Luzia do Paruá",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Quitéria do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santa Rita",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santana do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santo Amaro do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Santo Antônio dos Lopes",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Benedito do Rio Preto",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Bento",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Bernardo",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Domingos do Azeitão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Domingos do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Félix de Balsas",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Francisco do Brejão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Francisco do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São João Batista",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São João do Carú",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São João do Paraíso",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São João do Soter",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São João dos Patos",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São José de Ribamar",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São José dos Basílios",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Luís",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Luís Gonzaga do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Mateus do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Pedro da Água Branca",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Pedro dos Crentes",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Raimundo das Mangabeiras",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Raimundo do Doca Bezerra",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Roberto",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "São Vicente Ferrer",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Satubinha",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Senador Alexandre Costa",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Senador La Rocque",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Serrano do Maranhão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Sítio Novo",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Sucupira do Norte",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Sucupira do Riachão",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Tasso Fragoso",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Timbiras",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Timon",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Trizidela do Vale",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Tufilândia",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Tuntum",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Turiaçu",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Turilândia",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Tutóia",
+              "estado": {
+        "id": 10
+      }
+            },
+            {
+              "nome": "Urbano Santos",
+              "estado": {
+        "id": 10
+      }
+            },
+              {
+                "nome": "Vargem Grande",
+                "estado": {
+        "id": 10
+      }
+              },
+              {
+                "nome": "Viana",
+                "estado": {
+        "id": 10
+      }
+              },
+              {
+                "nome": "Vila Nova dos Martírios",
+                "estado": {
+        "id": 10
+      }
+              },
+              {
+                "nome": "Vitória do Mearim",
+                "estado": {
+        "id": 10
+      }
+              },
+              {
+                "nome": "Vitorino Freire",
+                "estado": {
+        "id": 10
+      }
+              },
+              {
+                "nome": "Zé Doca",
+                "estado": {
+        "id": 10
+      }
+              },
+    
+      {
+        "nome": "Acorizal",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Água Boa",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alta Floresta",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alto Araguaia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alto Boa Vista",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alto Garças",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alto Paraguai",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Alto Taquari",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Apiacás",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Araguaiana",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Araguainha",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Araputanga",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Arenápolis",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Aripuanã",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Barão de Melgaço",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Barra do Bugres",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Barra do Garças",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Bom Jesus do Araguaia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Brasnorte",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Cáceres",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Campinápolis",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Campo Novo do Parecis",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Campo Verde",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Campos de Júlio",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Canabrava do Norte",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Canarana",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Carlinda",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Castanheira",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Chapada dos Guimarães",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Cláudia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Cocalinho",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Colíder",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Colniza",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Comodoro",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Confresa",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Conquista d`Oeste",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Cotriguaçu",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Cuiabá",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Curvelândia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Denise",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Diamantino",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Dom Aquino",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Feliz Natal",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Figueirópolis d`Oeste",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Gaúcha do Norte",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "General Carneiro",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Glória d`Oeste",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Guarantã do Norte",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Guiratinga",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Indiavaí",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Ipiranga do Norte",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Itanhangá",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Itaúba",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Itiquira",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Jaciara",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Jangada",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Jauru",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Juara",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Juína",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Juruena",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Juscimeira",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Lambari d`Oeste",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Lucas do Rio Verde",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Luciára",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Marcelândia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Matupá",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Mirassol d`Oeste",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Nobres",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Nortelândia",
+        "estado": {
+        "id": 13
+      }
+      },
+      {
+        "nome": "Nossa Senhora do Livramento",
+        "estado": {
+        "id": 13
+      }
+      },
+        {
+          "nome": "Nova Bandeirantes",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Brasilândia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Canaã do Norte",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Guarita",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Lacerda",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Marilândia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Maringá",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Monte verde",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Mutum",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Olímpia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Santa Helena",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Ubiratã",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Nova Xavantina",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Novo Horizonte do Norte",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Novo Mundo",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Novo Santo Antônio",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Novo São Joaquim",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Paranaíta",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Paranatinga",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Pedra Preta",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Peixoto de Azevedo",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Planalto da Serra",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Poconé",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Pontal do Araguaia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Ponte Branca",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Pontes e Lacerda",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Porto Alegre do Norte",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Porto dos Gaúchos",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Porto Esperidião",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Porto Estrela",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Poxoréo",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Primavera do Leste",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Querência",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Reserva do Cabaçal",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Ribeirão Cascalheira",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Ribeirãozinho",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Rio Branco",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Rondolândia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Rondonópolis",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Rosário Oeste",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Salto do Céu",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santa Carmem",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santa Cruz do Xingu",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santa Rita do Trivelato",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santa Terezinha",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santo Afonso",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santo Antônio do Leste",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "Santo Antônio do Leverger",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "São Félix do Araguaia",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "São José do Povo",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "São José do Rio Claro",
+          "estado": {
+        "id": 13
+      }
+        },
+        {
+          "nome": "São José do Xingu",
+          "estado": {
+        "id": 13
+      }
+        },
+          {
+            "nome": "São José dos Quatro Marcos",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "São Pedro da Cipa",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Sapezal",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Serra Nova Dourada",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Sinop",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Sorriso",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Tabaporã",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Tangará da Serra",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Tapurah",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Terra Nova do Norte",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Tesouro",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Torixoréu",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "União do Sul",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Vale de São Domingos",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Várzea Grande",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Vera",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Vila Bela da Santíssima Trindade",
+            "estado": {
+        "id": 13
+      }
+          },
+          {
+            "nome": "Vila Rica",
+            "estado": {
+        "id": 13
+      }
+          },
+      {
+        "nome": "Água Clara",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Alcinópolis",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Amambaí",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Anastácio",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Anaurilândia",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Angélica",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Antônio João",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Aparecida do Taboado",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Aquidauana",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Aral Moreira",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bandeirantes",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bataguassu",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bataiporã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bela Vista",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bodoquena",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Bonito",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Brasilândia",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Caarapó",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Camapuã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Campo Grande",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Caracol",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Cassilândia",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Chapadão do Sul",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Corguinho",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Coronel Sapucaia",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Corumbá",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Costa Rica",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Coxim",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Deodápolis",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Dois Irmãos do Buriti",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Douradina",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Dourados",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Eldorado",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Fátima do Sul",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Figueirão",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Glória de Dourados",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Guia Lopes da Laguna",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Iguatemi",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Inocência",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Itaporã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Itaquiraí",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Ivinhema",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Japorã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Jaraguari",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Jardim",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Jateí",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Juti",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Ladário",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Laguna Carapã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Maracaju",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Miranda",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Mundo Novo",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Naviraí",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Nioaque",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Nova Alvorada do Sul",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Nova Andradina",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Novo Horizonte do Sul",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Paranaíba",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Paranhos",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Pedro Gomes",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Ponta Porã",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Porto Murtinho",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Ribas do Rio Pardo",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Rio Brilhante",
+        "estado": {
+        "id": 12
+      }
+      },
+      {
+        "nome": "Rio Negro",
+        "estado": {
+        "id": 12
+      }
+      },
+        {
+          "nome": "Rio Verde de Mato Grosso",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Rochedo",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Santa Rita do Pardo",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "São Gabriel do Oeste",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Selvíria",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Sete Quedas",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Sidrolândia",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Sonora",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Tacuru",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Taquarussu",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Terenos",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Três Lagoas",
+          "estado": {
+        "id": 12
+      }
+        },
+        {
+          "nome": "Vicentina",
+          "estado": {
+        "id": 12
+      }
+        }
+    ]
+

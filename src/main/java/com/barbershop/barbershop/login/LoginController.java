@@ -32,6 +32,7 @@ public class LoginController {
 
     @PostMapping
     public ResponseEntity<LoginDTO> create(@Valid @RequestBody LoginDTO loginDTO){
+        System.out.println("ola" + loginDTO);
         LoginDTO create = loginService.create(loginDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

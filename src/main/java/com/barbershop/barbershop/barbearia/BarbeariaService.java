@@ -1,6 +1,8 @@
 package com.barbershop.barbershop.barbearia;
 
 
+import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.endereco.EnderecoService;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,6 +20,8 @@ public class BarbeariaService {
     @Autowired
     private BarbeariaMapper barbeariaMapper;
 
+    @Autowired
+    private EnderecoService enderecoService;
 
 
     //buscar todas as barbearias
@@ -30,6 +34,10 @@ public class BarbeariaService {
     public BarbeariaDTO findById(Integer id){
         Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         return barbeariaMapper.toDTO(barbearia);
+    }
+
+    public Barbearia findBarbeariaById(Integer id) {
+        return barbeariaRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Cliente não encontrado"));
     }
 
     //busca pelo nome com a utilização do like
