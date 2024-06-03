@@ -56,7 +56,7 @@ public class EnderecoDTO implements Serializable {
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 
 
-    @JsonIgnore
+
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 

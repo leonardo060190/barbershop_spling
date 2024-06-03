@@ -51,7 +51,7 @@ public class BarbeariaDTO implements Serializable {
     @JsonFormat( pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private List<ServicoDTO> servicos = new ArrayList<ServicoDTO>();
 
     @JsonIgnore

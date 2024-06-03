@@ -41,12 +41,5 @@ public interface BarbeariaMapper {
     })
     Barbearia updateEntity(BarbeariaDTO barbeariaDTO, Barbearia barbearia);
 
-    EnderecoDTO toEnderecoDTO(Endereco endereco);
-
-    Endereco toEndereco(EnderecoDTO enderecoDTO);
-
-    ServicoDTO toServicoDTO(Servico servico);
-
-    Servico toServico(ServicoDTO servicoDTO);
 
 }
