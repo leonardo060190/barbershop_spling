@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/agendamentos")
+@RequestMapping("/agendamento")
 @CrossOrigin(origins = " http://localhost:5173")
 public class AgendamentoController {
 
@@ -42,7 +42,7 @@ public class AgendamentoController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Valid> dalete(@PathVariable Integer id){
+    public ResponseEntity<Valid> delete(@PathVariable Integer id){
         agendamentoService.deleteById(id);
         return ResponseEntity.noContent().build();
     }

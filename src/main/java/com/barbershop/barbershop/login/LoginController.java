@@ -44,7 +44,7 @@ public class LoginController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Valid> dalete(@PathVariable Integer id){
+    public ResponseEntity<Valid> delete(@PathVariable Integer id){
         loginService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
