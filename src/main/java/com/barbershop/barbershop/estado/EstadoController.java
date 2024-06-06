@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController //Habilita o REST
-@RequestMapping("/estados")
+@RequestMapping("/estado")
 @CrossOrigin(origins = " http://localhost:5173")
 public class EstadoController {
 
