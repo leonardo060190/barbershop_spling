@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController //Habilita o REST
-@RequestMapping("/horarioFuncionamentos")
+@RequestMapping("/horarioFuncionamento")
 @CrossOrigin(origins = " http://localhost:5173")
 public class HorarioFuncionamentoController {
 

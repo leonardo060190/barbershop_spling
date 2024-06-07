@@ -31,6 +31,7 @@ public class ServicoController {
 
     @PostMapping
     public ResponseEntity<ServicoDTO> create(@Valid @RequestBody ServicoDTO servicoDTO){
+        System.out.println("Aki"+servicoDTO);
         ServicoDTO create = servicoService.create(servicoDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }

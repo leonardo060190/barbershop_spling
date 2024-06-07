@@ -4,6 +4,7 @@ import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
@@ -37,7 +38,7 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    @JsonIgnore
+    @JsonIgnoreProperties(ignoreUnknown = true)
     private Barbearia barbearia;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
