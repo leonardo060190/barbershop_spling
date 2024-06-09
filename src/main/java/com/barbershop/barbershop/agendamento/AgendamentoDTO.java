@@ -25,10 +25,10 @@ public class AgendamentoDTO implements Serializable {
 
     private Integer id;
 
-    @JsonIgnore
+
     private Cliente cliente;
 
-    @JsonIgnore
+
     private Servico servico;
 
     @NotNull(message = "O campo DATA é requerido")

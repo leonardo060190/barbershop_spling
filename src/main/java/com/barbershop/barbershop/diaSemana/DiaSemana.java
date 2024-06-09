@@ -34,7 +34,7 @@ public class DiaSemana implements Serializable {
     @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     @OneToMany(mappedBy = "diaSemana", fetch = FetchType.EAGER)
     private List<HorarioFuncionamento> horarioFuncionamento = new ArrayList<HorarioFuncionamento>();
 

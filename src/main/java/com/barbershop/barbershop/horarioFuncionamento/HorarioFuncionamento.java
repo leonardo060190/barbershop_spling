@@ -30,12 +30,12 @@ public class HorarioFuncionamento implements Serializable {
 
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    @Column(length=6, nullable=false)
+    @Column(length=6)
     private LocalTime inicio;
 
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    @Column(length=6, nullable=false)
+    @Column(length=6)
     private LocalTime fim;
 
     @Column(length=10, nullable=false)

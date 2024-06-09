@@ -24,11 +24,11 @@ public class DataLoaderDiaSemana implements CommandLineRunner {
         if (diaSemanaRepository.count() == 0) {
         // Inserir dados iniciais
         List<DiaSemana> diasSemana = Arrays.asList(
-                new DiaSemana("Segunda-feira", LocalDate.now()),
-                new DiaSemana("Terça-feira", LocalDate.now()),
-                new DiaSemana("Quarta-feira", LocalDate.now()),
-                new DiaSemana("Quinta-feira", LocalDate.now()),
-                new DiaSemana("Sexta-feira", LocalDate.now()),
+                new DiaSemana("Segunda", LocalDate.now()),
+                new DiaSemana("Terça", LocalDate.now()),
+                new DiaSemana("Quarta", LocalDate.now()),
+                new DiaSemana("Quinta", LocalDate.now()),
+                new DiaSemana("Sexta", LocalDate.now()),
                 new DiaSemana("Sábado", LocalDate.now()),
                 new DiaSemana("Domingo", LocalDate.now())
         );

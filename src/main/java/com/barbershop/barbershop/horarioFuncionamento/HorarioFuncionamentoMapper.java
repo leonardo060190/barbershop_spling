@@ -24,7 +24,7 @@ public interface HorarioFuncionamentoMapper {
     HorarioFuncionamento toEntity(HorarioFuncionamentoDTO horarioFuncionamentoDTO);
 
     //recebendo uma lista do estados
-    List<HorarioFuncionamentoDTO> toDTO(List<HorarioFuncionamento> horariosFuncionamentos);
+    List<HorarioFuncionamentoDTO> toDTO(List<HorarioFuncionamento> horariosFuncionamento);
 
 
     //troca os dados de EstadoDTO par Estado(entidade)

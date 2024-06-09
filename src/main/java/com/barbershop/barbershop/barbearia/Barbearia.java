@@ -58,19 +58,19 @@ public class Barbearia implements Serializable {
     private Endereco endereco;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<Servico> servicos = new ArrayList<>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<HorarioFuncionamento>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
     @JsonIgnore
-    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
     private List<Login> logins = new ArrayList<Login>();
 }
 

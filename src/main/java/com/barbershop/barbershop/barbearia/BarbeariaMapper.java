@@ -42,4 +42,5 @@ public interface BarbeariaMapper {
     Barbearia updateEntity(BarbeariaDTO barbeariaDTO, Barbearia barbearia);
 
 
+
 }

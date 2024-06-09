@@ -57,7 +57,6 @@ public class BarbeariaDTO implements Serializable {
     @JsonIgnore
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
 
-
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
     @JsonIgnore
