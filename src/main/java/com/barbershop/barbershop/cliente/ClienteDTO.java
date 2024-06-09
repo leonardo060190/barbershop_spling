@@ -61,7 +61,7 @@ public class ClienteDTO implements Serializable {
     @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
-    @JsonIgnore
+
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
 
