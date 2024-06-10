@@ -40,6 +40,7 @@ public class BarbeariaController {
 
     @PostMapping
     public ResponseEntity<BarbeariaDTO> create(@Valid @RequestBody BarbeariaDTO barbeariasDTO){
+        System.out.println("AKI"+barbeariasDTO);
         BarbeariaDTO create = barbeariaService.create(barbeariasDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }
