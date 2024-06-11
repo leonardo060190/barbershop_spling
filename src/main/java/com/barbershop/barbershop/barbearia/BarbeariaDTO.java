@@ -59,7 +59,7 @@ public class BarbeariaDTO implements Serializable {
 
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
-    @JsonIgnore
+
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
 
