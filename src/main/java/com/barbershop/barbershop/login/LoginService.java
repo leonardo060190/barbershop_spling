@@ -53,7 +53,7 @@ public class LoginService {
         loginDTO.setId(null);
         Login login = loginMapper.toEntity(loginDTO);
         login.setSenha(passwordEncoder.encode(login.getSenha()));
-        setClienteOuBarbearia(loginDTO, login);
+//        setClienteOuBarbearia(loginDTO, login);
         login = loginRepository.save(login);
         return loginMapper.toDTO(login);
     }
@@ -90,15 +90,15 @@ public class LoginService {
 
     }
 
-    private void setClienteOuBarbearia(LoginDTO loginDTO, Login login){
-        if (loginDTO.getCliente() != null && loginDTO.getCliente().getId() != null){
-            Cliente cliente = clienteService.findClienteById(loginDTO.getCliente().getId());
-            login.setCliente(cliente);
-        } else if (loginDTO.getBarbearia() != null && loginDTO.getBarbearia().getId() != null){
-            Barbearia barbearia = barbeariaService.findBarbeariaById(loginDTO.getBarbearia().getId());
-                login.setBarbearia(barbearia);
-            }
-        }
+//    private void setClienteOuBarbearia(LoginDTO loginDTO, Login login){
+//        if (loginDTO.getCliente() != null && loginDTO.getCliente().getId() != null){
+//            Cliente cliente = clienteService.findClienteById(loginDTO.getCliente().getId());
+//            login.setCliente(cliente);
+//        } else if (loginDTO.getBarbearia() != null && loginDTO.getBarbearia().getId() != null){
+//            Barbearia barbearia = barbeariaService.findBarbeariaById(loginDTO.getBarbearia().getId());
+//                login.setBarbearia(barbearia);
+//            }
+//        }
 
     }
 
