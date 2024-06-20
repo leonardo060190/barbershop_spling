@@ -7,6 +7,7 @@ import com.barbershop.barbershop.login.LoginDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
@@ -30,13 +31,13 @@ public class ClienteDTO implements Serializable {
 
     private Integer id;
 
-    @NotNull(message = "O campo Nome é requerido")
+    @NotBlank(message = "O campo Nome é requerido")
     private String nome;
 
-    @NotNull(message = "O campo Nome é requerido")
+    @NotBlank(message = "O campo Nome é requerido")
     private String sobreNome;
 
-    @NotNull(message = "O campo CPF é requerido")
+    @NotBlank(message = "O campo CPF é requerido")
     @CPF
     private String cpf;
 

@@ -16,6 +16,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 
@@ -29,6 +30,30 @@ public class EstadoTest {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    @Test
+    @DisplayName("Verifica um id inexistente")
+    void idInexitente() throws Exception{
+        mockMvc.perform(get("/estado/30"))
+                .andExpect(status().isNotFound());
+//                .andExpect(content().string("Estado não encontrado"));
+    }
+
+    @Test
+    @DisplayName("Verifica se exite o id")
+    void findById() throws Exception{
+        mockMvc.perform(get("/estado/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.nome").value("Acre"));
+    }
+
+    @Test
+    @DisplayName("verifica se está deletando")
+    void deleteById() throws Exception{
+        mockMvc.perform(delete("/estado/1"))
+                .andExpect(status().isOk());
+//
+    }
 
     @Test
     @DisplayName("Verificar se a rota estado está respondendo corretamente")
