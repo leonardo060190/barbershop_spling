@@ -30,6 +30,10 @@ public class AgendamentoService {
         Agendamento agendamento = agendamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Agendamento não encontrado"));
         return agendomentoMapper.toDTO(agendamento);
     }
+    //buscar o agendamento pelo id do cliente
+    public List<Agendamento> findByClienteId(Integer clienteId) {
+        return agendamentoRepository.findByClienteId(clienteId);
+    }
 
     //cria um novo agendamento
     @Transactional

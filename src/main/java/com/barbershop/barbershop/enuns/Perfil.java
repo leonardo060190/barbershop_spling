@@ -8,8 +8,8 @@ import lombok.Setter;
 
 public enum Perfil {
     ADMIN(0, "Administrador"),
-    CLIENTE(0, "Cliente"),
-    BARBEARIA(0, "Barbearia");
+    CLIENTE(1, "Cliente"),
+    BARBEARIA(2, "Barbearia");
     private Integer codigo;
     private String decricao;
 

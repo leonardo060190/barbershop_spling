@@ -5,6 +5,8 @@ import com.barbershop.barbershop.cliente.Cliente;
 import com.barbershop.barbershop.endereco.EnderecoService;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -28,6 +30,11 @@ public class BarbeariaService {
     public List<BarbeariaDTO> findAll(){
         List<Barbearia> barbearias = barbeariaRepository.findAll();
         return barbearias.stream().map(barbeariaMapper::toDTO).collect(Collectors.toList());
+    }
+    // buscar todas as barbearias com paginação
+    public Page<BarbeariaDTO> findAllPage(Pageable pageable) {
+        Page<Barbearia> barbearias = barbeariaRepository.findAll(pageable);
+        return barbearias.map(barbeariaMapper::toDTO);
     }
 
     //buscar a barbearia pelo id
