@@ -35,6 +35,11 @@ public class AgendamentoController {
         return ResponseEntity.ok(agendamentos);
     }
 
+    @GetMapping("/servico/barbearia/{barbeariaId}")
+    public List<AgendamentoDTO> getAgendamentosByBarbearia(@PathVariable Integer barbeariaId) {
+        return agendamentoService.findByBarbeariaId(barbeariaId);
+    }
+
     @PostMapping
     public ResponseEntity<AgendamentoDTO> create(@Valid @RequestBody AgendamentoDTO agendamentosDTO){
         System.out.println("aki"+ agendamentosDTO);

@@ -7,5 +7,7 @@ import java.util.List;
 
 @Repository
 public interface AgendamentoRepository extends JpaRepository<Agendamento, Integer> {
+    List<Agendamento> findByServico_Barbearia_Id(Integer barbeariaId);
+
     List<Agendamento> findByClienteId(Integer clienteId);
 }
