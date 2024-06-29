@@ -57,7 +57,6 @@ public class Cliente implements Serializable {
     @JoinColumn(name = "enderecoId")
     private Endereco endereco;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
     private List<Telefone> telefones = new ArrayList<Telefone>();
 

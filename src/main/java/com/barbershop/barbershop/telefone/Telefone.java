@@ -10,7 +10,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-@ToString
+
 @Entity
 @Setter
 @Getter
@@ -40,4 +40,13 @@ public class Telefone implements Serializable {
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clienteId")
     private Cliente cliente;
+
+    @Override
+    public String toString() {
+        return "Telefone{" +
+                "id=" + id +
+                ", numero='" + numero + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

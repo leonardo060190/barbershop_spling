@@ -56,7 +56,7 @@ public class ClienteDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
+
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
     @JsonIgnore
