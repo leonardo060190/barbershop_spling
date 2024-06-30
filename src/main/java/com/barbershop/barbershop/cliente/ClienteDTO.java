@@ -19,12 +19,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class ClienteDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -59,12 +59,23 @@ public class ClienteDTO implements Serializable {
 
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
-    @JsonIgnore
+
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
 
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
 
-
+    @Override
+    public String toString() {
+        return "ClienteDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

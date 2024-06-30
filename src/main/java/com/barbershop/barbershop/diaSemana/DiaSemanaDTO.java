@@ -12,12 +12,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class DiaSemanaDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -31,7 +31,6 @@ public class DiaSemanaDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
 
 
@@ -40,5 +39,14 @@ public class DiaSemanaDTO implements Serializable {
         this.id = obj.getId();
         this.nome = obj.getNome();
         this.dataCriacao = obj.getDataCriacao();
+    }
+
+    @Override
+    public String toString() {
+        return "DiaSemanaDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
     }
 }

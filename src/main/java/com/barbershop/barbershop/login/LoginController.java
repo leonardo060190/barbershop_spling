@@ -30,6 +30,18 @@ public class LoginController {
         return ResponseEntity.ok(loginDTO);
     }
 
+    @GetMapping("/barbearia/{barbeariaId}")
+    public ResponseEntity<LoginDTO> getByBarbeariaId(@PathVariable Integer barbeariaId){
+        LoginDTO loginDTO = loginService.findByBarbeariaId(barbeariaId);
+        return ResponseEntity.ok(loginDTO);
+    }
+
+    @GetMapping("/cliente/{clienteId}")
+    public ResponseEntity<LoginDTO> getByClienteId(@PathVariable Integer clienteId){
+        LoginDTO loginDTO = loginService.findByClienteId(clienteId);
+        return ResponseEntity.ok(loginDTO);
+    }
+
     @PostMapping
     public ResponseEntity<LoginDTO> create(@Valid @RequestBody LoginDTO loginDTO){
         System.out.println("ola" + loginDTO);

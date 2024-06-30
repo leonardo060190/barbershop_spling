@@ -30,10 +30,9 @@ public class TelefoneController {
     }
 
     @GetMapping("/cliente/{clienteId}")
-    public ResponseEntity<TelefoneDTO> findByClienteId(@PathVariable Integer clienteId){
-
-        TelefoneDTO telefoneDTO = telefoneService.findByClienteId(clienteId);
-        return ResponseEntity.ok(telefoneDTO);
+    public ResponseEntity<List<TelefoneDTO>> findByClienteId(@PathVariable Integer clienteId){
+        List<TelefoneDTO> telefonesDTO = telefoneService.findByClienteId(clienteId);
+        return ResponseEntity.ok(telefonesDTO);
     }
 
     @PostMapping

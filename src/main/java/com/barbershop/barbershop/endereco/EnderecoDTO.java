@@ -18,12 +18,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class EnderecoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -52,7 +52,6 @@ public class EnderecoDTO implements Serializable {
     private Cidade cidade;
 
 
-    @JsonIgnore
     private List<ClienteDTO> clientes = new ArrayList<ClienteDTO>();
 
 
@@ -60,5 +59,15 @@ public class EnderecoDTO implements Serializable {
     private List<BarbeariaDTO> barbearias = new ArrayList<BarbeariaDTO>();
 
 
-
+    @Override
+    public String toString() {
+        return "EnderecoDTO{" +
+                "id=" + id +
+                ", rua='" + rua + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", numero=" + numero +
+                ", cep='" + cep + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

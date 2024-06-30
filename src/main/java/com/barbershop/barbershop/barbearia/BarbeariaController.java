@@ -22,6 +22,7 @@ public class BarbeariaController {
     @GetMapping
     public ResponseEntity<List<BarbeariaDTO>> getAll(){
         List<BarbeariaDTO> barbeariasDTO = barbeariaService.findAll();
+        System.out.println("Barbearias DTO: " + barbeariasDTO);
         return ResponseEntity.ok(barbeariasDTO);
     }
 

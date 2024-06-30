@@ -13,7 +13,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -45,6 +44,15 @@ public class AgendamentoDTO implements Serializable {
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
-
-
+    @Override
+    public String toString() {
+        return "AgendamentoDTO{" +
+                "id=" + id +
+                ", cliente=" + cliente +
+                ", servico=" + servico +
+                ", data=" + data +
+                ", hora=" + hora +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

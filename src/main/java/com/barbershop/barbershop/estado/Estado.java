@@ -2,6 +2,7 @@ package com.barbershop.barbershop.estado;
 
 import com.barbershop.barbershop.cidade.Cidade;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -11,7 +12,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @Entity
 @Setter
 @Getter
@@ -37,8 +37,8 @@ public class Estado implements Serializable {
     @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
     @OneToMany(mappedBy = "estado", fetch = FetchType.EAGER)
+    @JsonManagedReference("estado_cidades")
     private List<Cidade> cidades = new ArrayList<Cidade>();
 
     public Estado(Integer id, String nome, String sigla, LocalDate now) {
@@ -48,4 +48,13 @@ public class Estado implements Serializable {
         this.dataCriacao = LocalDate.now();
     }
 
+    @Override
+    public String toString() {
+        return "Estado{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", sigla='" + sigla + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

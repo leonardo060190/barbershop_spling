@@ -2,6 +2,8 @@ package com.barbershop.barbershop.agendamento;
 
 import com.barbershop.barbershop.cliente.Cliente;
 import com.barbershop.barbershop.servico.Servico;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -10,7 +12,6 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-@ToString
 @Entity
 @Getter
 @Setter
@@ -42,10 +43,21 @@ public class Agendamento implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clienteId", nullable = false)
+    @JsonBackReference("cliente_agendamentos")
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "servicoId", nullable = false)
+    @JsonBackReference("servico_agendamentos")
     private Servico servico;
 
+    @Override
+    public String toString() {
+        return "Agendamento{" +
+                "id=" + id +
+                ", data=" + data +
+                ", hora=" + hora +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

@@ -2,7 +2,9 @@ package com.barbershop.barbershop.cidade;
 
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.estado.Estado;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -12,13 +14,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @Entity
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
+
 public class Cidade implements Serializable {
 
     @Serial
@@ -38,10 +40,11 @@ public class Cidade implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "estadoId", nullable = false)
+    @JsonBackReference("estado_cidades")
     private Estado estado;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "cidade", fetch = FetchType.EAGER)
+    @JsonManagedReference("cidade_enderecos")
     private List<Endereco> enderecos = new ArrayList<Endereco>();
 
     public Cidade(Integer id, String nome, Estado estado, LocalDate now) {
@@ -49,5 +52,14 @@ public class Cidade implements Serializable {
         this.nome = nome;
         this.estado = estado;
         this.dataCriacao = LocalDate.now();
+    }
+
+    @Override
+    public String toString() {
+        return "Cidade{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
     }
 }

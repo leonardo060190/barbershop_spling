@@ -2,6 +2,7 @@ package com.barbershop.barbershop.horarioFuncionamento;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.diaSemana.DiaSemana;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import lombok.*;
@@ -12,7 +13,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 
-@ToString
 @Entity
 @Getter
 @Setter
@@ -43,10 +43,21 @@ public class HorarioFuncionamento implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "barbeariaId", nullable = false)
+    @JsonBackReference("barbearia_horarioFuncionamentos")
     private Barbearia barbearia;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "diaSemanaId", nullable = false)
+    @JsonBackReference("diaSemana_horarioFuncionamentos")
     private DiaSemana diaSemana;
 
+    @Override
+    public String toString() {
+        return "HorarioFuncionamento{" +
+                "id=" + id +
+                ", inicio=" + inicio +
+                ", fim=" + fim +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

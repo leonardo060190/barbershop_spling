@@ -46,6 +46,18 @@ public class LoginService {
         Login login = loginRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Login não encontrado"));
         return loginMapper.toDTO(login);
     }
+    //busca o login pelo id da barbearia
+    public LoginDTO findByBarbeariaId(Integer barbeariaId){
+        Login login = loginRepository.findByBarbeariaId(barbeariaId).orElseThrow(()-> new IllegalArgumentException("Login não encontrado"));
+        return loginMapper.toDTO(login);
+    }
+
+    //busca o login pelo id da cliente
+    public LoginDTO findByClienteId(Integer clienteId){
+        Login login = loginRepository.findByClienteId(clienteId).orElseThrow(()-> new IllegalArgumentException("Login não encontrado"));
+        return loginMapper.toDTO(login);
+    }
+
 
     //cria um novo login
     @Transactional

@@ -17,7 +17,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -43,11 +42,17 @@ public class HorarioFuncionamentoDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
     private Barbearia barbearia;
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
     private DiaSemana diaSemana;
 
-
+    @Override
+    public String toString() {
+        return "HorarioFuncionamentoDTO{" +
+                "id=" + id +
+                ", inicio=" + inicio +
+                ", fim=" + fim +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

@@ -14,12 +14,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class CidadeDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -34,7 +34,6 @@ public class CidadeDTO implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd")
     protected LocalDate dataCriacao = LocalDate.now();
 
-    @JsonIgnore
     private List<EnderecoDTO> enderecos = new ArrayList<EnderecoDTO>();
 
     public CidadeDTO(Cidade obj) {
@@ -43,5 +42,14 @@ public class CidadeDTO implements Serializable {
         this.estado = obj.getEstado();
         this.dataCriacao = obj.getDataCriacao();
 
+    }
+
+    @Override
+    public String toString() {
+        return "CidadeDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
     }
 }

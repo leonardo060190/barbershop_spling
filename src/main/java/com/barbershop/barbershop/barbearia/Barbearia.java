@@ -8,7 +8,9 @@ import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.servico.Servico;
 import com.barbershop.barbershop.telefone.Telefone;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -21,7 +23,6 @@ import java.util.ArrayList;
 
 import java.util.List;
 
-@ToString
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -55,22 +56,37 @@ public class Barbearia implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "enderecoId")
+    @JsonBackReference("endereco_barbearias")
     private Endereco endereco;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @JsonManagedReference("barbearia_servicos")
     private List<Servico> servicos = new ArrayList<>();
 
-    @JsonIgnore
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @JsonManagedReference("barbearia_horarioFuncionamentos")
     private List<HorarioFuncionamento> horarioFuncionamentos = new ArrayList<HorarioFuncionamento>();
 
-    @JsonIgnore
+
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @JsonManagedReference("barbearia_telefones")
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
-    @JsonIgnore
+
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.LAZY)
+    @JsonManagedReference("barbearia_logins")
     private List<Login> logins = new ArrayList<Login>();
+
+    @Override
+    public String toString() {
+        return "Barbearia{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }
 

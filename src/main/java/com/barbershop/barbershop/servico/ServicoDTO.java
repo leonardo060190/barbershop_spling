@@ -14,12 +14,12 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class ServicoDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -38,15 +38,23 @@ public class ServicoDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-    @JsonIgnoreProperties(ignoreUnknown = true)
     private Barbearia barbearia;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
 
-    @JsonIgnore
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
 
-
+    @Override
+    public String toString() {
+        return "ServicoDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", preco=" + preco +
+                ", descricao='" + descricao + '\'' +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

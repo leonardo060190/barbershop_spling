@@ -2,6 +2,7 @@ package com.barbershop.barbershop.telefone;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -35,10 +36,12 @@ public class Telefone implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "barbeariaId")
+    @JsonBackReference("barbearia_telefones")
     private Barbearia barbearia;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clienteId")
+    @JsonBackReference("cliente_telefones")
     private Cliente cliente;
 
     @Override

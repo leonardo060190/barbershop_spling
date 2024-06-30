@@ -11,12 +11,12 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
 @EqualsAndHashCode(of = "id")
+
 public class LoginDTO implements Serializable {
     @Serial
     private static final long serialVersionUID = 1L;
@@ -38,4 +38,14 @@ public class LoginDTO implements Serializable {
     private Barbearia barbearia;
 
     private Cliente cliente;
+
+    @Override
+    public String toString() {
+        return "LoginDTO{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", senha='" + senha + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

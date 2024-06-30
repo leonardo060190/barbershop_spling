@@ -18,7 +18,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -54,14 +53,23 @@ public class BarbeariaDTO implements Serializable {
 
     private List<ServicoDTO> servicos = new ArrayList<ServicoDTO>();
 
-    @JsonIgnore
     private List<HorarioFuncionamentoDTO> horarioFuncionamentos = new ArrayList<HorarioFuncionamentoDTO>();
+
 
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
 
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
-
-
+    @Override
+    public String toString() {
+        return "BarbeariaDTO{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", cnpj='" + cnpj + '\'' +
+                ", razaoSocial='" + razaoSocial + '\'' +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }

@@ -31,9 +31,12 @@ public class TelefoneService {
         return telefoneMapper.toDTO(telefone);
     }
 
-    public TelefoneDTO findByClienteId(Integer id){
-        Telefone telefone = telefoneRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Telefone não encontrado"));
-        return telefoneMapper.toDTO(telefone);
+    public List<TelefoneDTO> findByClienteId(Integer clienteId){
+        List<Telefone> telefones = telefoneRepository.findByClienteId(clienteId);
+        return telefones.stream()
+                .map(telefoneMapper::toDTO)
+                .collect(Collectors.toList());
+
     }
 
     //cria um novo telefone

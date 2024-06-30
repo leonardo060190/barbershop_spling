@@ -2,6 +2,7 @@ package com.barbershop.barbershop.login;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -9,7 +10,6 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.time.LocalDate;
 
-@ToString
 @Entity
 @Setter
 @Getter
@@ -37,9 +37,21 @@ public class Login implements Serializable {
 
         @ManyToOne(fetch = FetchType.EAGER)
         @JoinColumn(name = "barbeariaId")
+        @JsonBackReference("barbearia_logins")
         private Barbearia barbearia;
 
         @ManyToOne(fetch = FetchType.EAGER)
         @JoinColumn(name = "clienteId")
+        @JsonBackReference("cliente_logins")
         private Cliente cliente;
-    }
+
+        @Override
+        public String toString() {
+                return "Login{" +
+                        "id=" + id +
+                        ", email='" + email + '\'' +
+                        ", senha='" + senha + '\'' +
+                        ", dataCriacao=" + dataCriacao +
+                        '}';
+        }
+}

@@ -4,7 +4,9 @@ import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.telefone.Telefone;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.validator.constraints.br.CPF;
@@ -16,7 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
@@ -55,18 +56,34 @@ public class Cliente implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "enderecoId")
+    @JsonBackReference("endereco_clientes")
     private Endereco endereco;
 
+
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    @JsonManagedReference("cliente_telefones")
     private List<Telefone> telefones = new ArrayList<Telefone>();
 
-    @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    @JsonManagedReference("cliente_agendamentos")
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
 
-    @JsonIgnore
     @OneToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
+    @JsonManagedReference("cliente_logins")
     private List<Login> logins = new ArrayList<Login>();
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "id=" + id +
+                ", nome='" + nome + '\'' +
+                ", sobreNome='" + sobreNome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                ", dataNascimento=" + dataNascimento +
+                ", foto='" + foto + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }
 
 

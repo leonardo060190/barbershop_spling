@@ -3,7 +3,9 @@ package com.barbershop.barbershop.endereco;
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cidade.Cidade;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -13,7 +15,6 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-@ToString
 @Entity
 @Setter
 @Getter
@@ -47,14 +48,26 @@ public class Endereco implements Serializable {
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "cidadeId")
+    @JsonBackReference("cidade_enderecos")
     private Cidade cidade;
 
-    @JsonIgnore
     @OneToMany(mappedBy = "endereco", fetch = FetchType.EAGER)
+    @JsonManagedReference("endereco_clientes")
     private List<Cliente> clientes = new ArrayList<Cliente>();
 
-    @JsonIgnore
     @OneToMany(mappedBy = "endereco", fetch = FetchType.EAGER)
+    @JsonManagedReference("endereco_barbearias")
     private List<Barbearia> barbearias = new ArrayList<Barbearia>();
 
+    @Override
+    public String toString() {
+        return "Endereco{" +
+                "id=" + id +
+                ", rua='" + rua + '\'' +
+                ", bairro='" + bairro + '\'' +
+                ", numero=" + numero +
+                ", cep='" + cep + '\'' +
+                ", dataCriacao=" + dataCriacao +
+                '}';
+    }
 }
