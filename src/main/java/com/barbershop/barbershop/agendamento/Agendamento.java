@@ -53,8 +53,10 @@ public class Agendamento implements Serializable {
 
     @Override
     public String toString() {
-        return "Agendamento{" +
+        return "AgendamentoDTO{" +
                 "id=" + id +
+                ", cliente=" + cliente +
+                ", servico=" + servico +
                 ", data=" + data +
                 ", hora=" + hora +
                 ", dataCriacao=" + dataCriacao +

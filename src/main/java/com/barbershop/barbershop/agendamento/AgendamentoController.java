@@ -30,9 +30,9 @@ public class AgendamentoController {
     }
 
     @GetMapping("/cliente/{clienteId}")
-    public ResponseEntity<List<Agendamento>> getByClienteId(@PathVariable Integer clienteId) {
-        List<Agendamento> agendamentos = agendamentoService.findByClienteId(clienteId);
-        return ResponseEntity.ok(agendamentos);
+    public ResponseEntity<List<AgendamentoDTO>> getByClienteId(@PathVariable Integer clienteId) {
+        List<AgendamentoDTO> agendamentosDTO = agendamentoService.findByClienteId(clienteId);
+        return ResponseEntity.ok(agendamentosDTO);
     }
 
     @GetMapping("/servico/barbearia/{barbeariaId}")

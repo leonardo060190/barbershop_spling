@@ -37,8 +37,9 @@ public class AgendamentoService {
         return agendomentoMapper.toDTO(agendamento);
     }
     //buscar o agendamento pelo id do cliente
-    public List<Agendamento> findByClienteId(Integer clienteId) {
-        return agendamentoRepository.findByClienteId(clienteId);
+    public List<AgendamentoDTO> findByClienteId(Integer clienteId) {
+        List<Agendamento> agendamentos = agendamentoRepository.findByClienteId(clienteId);
+        return agendamentos.stream().map(agendomentoMapper::toDTO).collect(Collectors.toList());
     }
 
     //cria um novo agendamento
