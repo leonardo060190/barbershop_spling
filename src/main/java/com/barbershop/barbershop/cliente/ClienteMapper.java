@@ -32,7 +32,8 @@ public interface ClienteMapper {
             @Mapping(source = "clienteDTO.endereco", target = "endereco"),
             @Mapping(source = "clienteDTO.telefones", target = "telefones"),
             @Mapping(source = "clienteDTO.agendamentos", target = "agendamentos"),
-            @Mapping(source = "clienteDTO.logins", target = "logins")
+            @Mapping(source = "clienteDTO.logins", target = "logins"),
+            @Mapping(source = "clienteDTO.perfil", target = "perfil")
     })
     Cliente updateEntity(ClienteDTO clienteDTO, Cliente cliente);
 

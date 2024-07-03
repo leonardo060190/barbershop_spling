@@ -3,6 +3,7 @@ package com.barbershop.barbershop.barbearia;
 
 import com.barbershop.barbershop.cliente.Cliente;
 import com.barbershop.barbershop.endereco.EnderecoService;
+import com.barbershop.barbershop.enuns.Perfil;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -61,6 +62,7 @@ public class BarbeariaService {
     public BarbeariaDTO create(BarbeariaDTO barbeariaDTO){
         barbeariaDTO.setId(null);
         Barbearia barbearia = barbeariaMapper.toEntity(barbeariaDTO);
+        barbearia.setPerfil(Perfil.BARBEARIA);
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }

@@ -3,6 +3,7 @@ package com.barbershop.barbershop.barbearia;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
 import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.servico.Servico;
@@ -14,6 +15,7 @@ import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
+import org.aspectj.weaver.patterns.PerFromSuper;
 
 import java.io.Serial;
 import java.io.Serializable;
@@ -50,6 +52,8 @@ public class Barbearia implements Serializable {
     @Column(length=3000, nullable=false)
     private String foto;
 
+    @Enumerated(EnumType.STRING)
+    private Perfil perfil;
 
     @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();

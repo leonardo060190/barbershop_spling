@@ -2,6 +2,7 @@ package com.barbershop.barbershop.barbearia;
 
 
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
 import com.barbershop.barbershop.login.LoginDTO;
 import com.barbershop.barbershop.servico.ServicoDTO;
@@ -44,6 +45,8 @@ public class BarbeariaDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
+    private Perfil perfil;
+
 
     private Endereco endereco;
 
@@ -61,6 +64,7 @@ public class BarbeariaDTO implements Serializable {
 
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
 
+
     @Override
     public String toString() {
         return "BarbeariaDTO{" +
@@ -69,6 +73,8 @@ public class BarbeariaDTO implements Serializable {
                 ", cnpj='" + cnpj + '\'' +
                 ", razaoSocial='" + razaoSocial + '\'' +
                 ", foto='" + foto + '\'' +
+                ", perfil=" + perfil +
+                ", endereco=" + endereco +
                 ", dataCriacao=" + dataCriacao +
                 '}';
     }

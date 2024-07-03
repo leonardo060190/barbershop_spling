@@ -3,6 +3,7 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.login.LoginDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -49,13 +50,12 @@ public class ClienteDTO implements Serializable {
     @NotNull(message = "O campo FOTO é requerido")
     private String foto;
 
-
-    private Endereco endereco;
-
+    private Perfil perfil;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
 
+    private Endereco endereco;
 
     private List<TelefoneDTO> telefones = new ArrayList<TelefoneDTO>();
 
@@ -75,7 +75,9 @@ public class ClienteDTO implements Serializable {
                 ", cpf='" + cpf + '\'' +
                 ", dataNascimento=" + dataNascimento +
                 ", foto='" + foto + '\'' +
+                ", perfil=" + perfil +
                 ", dataCriacao=" + dataCriacao +
+                ", endereco=" + endereco +
                 '}';
     }
 }

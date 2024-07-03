@@ -2,6 +2,7 @@ package com.barbershop.barbershop.cliente;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.endereco.Endereco;
+import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.login.Login;
 import com.barbershop.barbershop.telefone.Telefone;
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -52,6 +53,9 @@ public class Cliente implements Serializable {
 
     @Column(length=10, nullable=false)
     private LocalDate dataCriacao = LocalDate.now();
+
+    @Enumerated(EnumType.STRING)
+    private Perfil perfil;
 
 
     @ManyToOne(fetch = FetchType.EAGER)

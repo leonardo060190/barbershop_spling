@@ -1,5 +1,6 @@
 package com.barbershop.barbershop.cliente;
 
+import com.barbershop.barbershop.enuns.Perfil;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -38,6 +39,7 @@ public class ClienteService {
     public ClienteDTO create(ClienteDTO clienteDTO){
         clienteDTO.setId(null);
         Cliente cliente = clienteMapper.toEntity(clienteDTO);
+        cliente.setPerfil(Perfil.CLIENTE);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }

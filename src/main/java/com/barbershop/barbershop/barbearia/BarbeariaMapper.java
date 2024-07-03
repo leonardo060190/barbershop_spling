@@ -37,7 +37,9 @@ public interface BarbeariaMapper {
             @Mapping(source = "barbeariaDTO.servicos", target = "servicos"),
             @Mapping(source = "barbeariaDTO.horarioFuncionamentos", target = "horarioFuncionamentos"),
             @Mapping(source = "barbeariaDTO.telefones", target = "telefones"),
-            @Mapping(source = "barbeariaDTO.logins", target = "logins")
+            @Mapping(source = "barbeariaDTO.logins", target = "logins"),
+            @Mapping(source = "barbeariaDTO.perfil", target = "perfil")
+
     })
     Barbearia updateEntity(BarbeariaDTO barbeariaDTO, Barbearia barbearia);
 
