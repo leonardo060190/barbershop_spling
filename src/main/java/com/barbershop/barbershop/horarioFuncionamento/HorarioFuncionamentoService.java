@@ -1,6 +1,8 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
 
+import com.barbershop.barbershop.agendamento.Agendamento;
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +30,12 @@ public class HorarioFuncionamentoService {
     public HorarioFuncionamentoDTO findById(Integer id){
         HorarioFuncionamento horarioFuncionamento = horarioFuncionamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Horario de funcionamento não encontrado"));
         return horarioFuncionamentoMapper.toDTO(horarioFuncionamento);
+    }
+
+    // Buscar horario pela barbearia
+    public List<HorarioFuncionamentoDTO> findByBarbeariaId(Integer barbeariaId) {
+        List<HorarioFuncionamento> horarioFuncionamentos = horarioFuncionamentoRepository.findByBarbeariaId(barbeariaId);
+        return horarioFuncionamentos.stream().map(horarioFuncionamentoMapper::toDTO).collect(Collectors.toList());
     }
 
     //cria um novo horario

@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.horarioFuncionamento;
 
 
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,6 +28,11 @@ public class HorarioFuncionamentoController {
     public ResponseEntity<HorarioFuncionamentoDTO> getById(@PathVariable Integer id){
         HorarioFuncionamentoDTO horarioFuncionamentoDTO = horarioFuncionamentoService.findById(id);
         return ResponseEntity.ok(horarioFuncionamentoDTO);
+    }
+
+    @GetMapping("/barbearia/{barbeariaId}")
+    public List<HorarioFuncionamentoDTO> getHorarioFuncionamentoByBarbearia(@PathVariable Integer barbeariaId) {
+        return horarioFuncionamentoService.findByBarbeariaId(barbeariaId);
     }
 
     @PostMapping
