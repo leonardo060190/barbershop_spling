@@ -31,12 +31,12 @@ public class HorarioFuncionamento implements Serializable {
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
     @Column(length=6)
-    private LocalTime inicio;
+    private LocalTime abri;
 
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
     @Column(length=6)
-    private LocalTime fim;
+    private LocalTime fecha;
 
     @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
@@ -55,8 +55,8 @@ public class HorarioFuncionamento implements Serializable {
     public String toString() {
         return "HorarioFuncionamento{" +
                 "id=" + id +
-                ", inicio=" + inicio +
-                ", fim=" + fim +
+                ", abri=" + abri +
+                ", fecha=" + fecha +
                 ", dataCriacao=" + dataCriacao +
                 '}';
     }

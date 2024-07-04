@@ -15,8 +15,8 @@ public interface HorarioFuncionamentoMapper {
     HorarioFuncionamentoDTO toDTO(HorarioFuncionamento horarioFuncionamento);
 
     @Mappings({
-            @Mapping(source = "horarioFuncionamentoDTO.inicio", target = "inicio"),
-            @Mapping(source = "horarioFuncionamentoDTO.fim", target = "fim"),
+            @Mapping(source = "horarioFuncionamentoDTO.abri", target = "abri"),
+            @Mapping(source = "horarioFuncionamentoDTO.fecha", target = "fecha"),
             @Mapping(source = "horarioFuncionamentoDTO.dataCriacao", target = "dataCriacao"),
             @Mapping(source = "horarioFuncionamentoDTO.barbearia", target = "barbearia"),
             @Mapping(source = "horarioFuncionamentoDTO.diaSemana", target = "diaSemana")
@@ -30,8 +30,8 @@ public interface HorarioFuncionamentoMapper {
     //troca os dados de EstadoDTO par Estado(entidade)
     @Mappings({
             @Mapping(source = "horarioFuncionamentoDTO.id", target = "id"),
-            @Mapping(source = "horarioFuncionamentoDTO.inicio", target = "inicio"),
-            @Mapping(source = "horarioFuncionamentoDTO.fim", target = "fim"),
+            @Mapping(source = "horarioFuncionamentoDTO.abri", target = "abri"),
+            @Mapping(source = "horarioFuncionamentoDTO.fecha", target = "fecha"),
             @Mapping(source = "horarioFuncionamentoDTO.dataCriacao", target = "dataCriacao"),
             @Mapping(source = "horarioFuncionamentoDTO.barbearia", target = "barbearia"),
             @Mapping(source = "horarioFuncionamentoDTO.diaSemana", target = "diaSemana")

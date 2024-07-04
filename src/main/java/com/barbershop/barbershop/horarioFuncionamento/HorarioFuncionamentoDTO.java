@@ -32,12 +32,12 @@ public class HorarioFuncionamentoDTO implements Serializable {
     @NotNull(message = "O campo INICIO é requerido")
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    private LocalTime inicio;
+    private LocalTime abri;
 
     @NotNull(message = "O campo FIM é requerido")
     @Temporal(TemporalType.TIME)
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "HH:mm")
-    private LocalTime fim;
+    private LocalTime fecha;
 
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCriacao = LocalDate.now();
@@ -50,8 +50,8 @@ public class HorarioFuncionamentoDTO implements Serializable {
     public String toString() {
         return "HorarioFuncionamentoDTO{" +
                 "id=" + id +
-                ", inicio=" + inicio +
-                ", fim=" + fim +
+                ", abri=" + abri +
+                ", fecha=" + fecha +
                 ", dataCriacao=" + dataCriacao +
                 '}';
     }
