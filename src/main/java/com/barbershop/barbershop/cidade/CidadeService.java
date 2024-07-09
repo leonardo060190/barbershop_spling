@@ -30,6 +30,12 @@ public class CidadeService {
         return cidadeMapper.toDTO(cidade);
     }
 
+    //buscar o a cidade pelo estado
+    public List<CidadeDTO> findByEstadoId(Integer estadoId) {
+        List<Cidade> cidades = cidadeRepository.findByEstadoId(estadoId);
+        return cidades.stream().map(cidadeMapper::toDTO).collect(Collectors.toList());
+    }
+
     //criando uma nova cidade
     @Transactional
     public CidadeDTO create(CidadeDTO cidadeDTO){
