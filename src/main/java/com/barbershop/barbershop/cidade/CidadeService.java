@@ -1,6 +1,8 @@
 package com.barbershop.barbershop.cidade;
 
 
+import com.barbershop.barbershop.agendamento.Agendamento;
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,6 +30,12 @@ public class CidadeService {
     public CidadeDTO findById(Integer id){
         Cidade cidade = cidadeRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cidade não encontrada"));
         return cidadeMapper.toDTO(cidade);
+    }
+
+    //buscar o agendamento pelo id do cliente
+    public List<CidadeDTO> findByEstadoId(Integer estadoId) {
+        List<Cidade> cidades = cidadeRepository.findByEstadoId(estadoId);
+        return cidades.stream().map(cidadeMapper::toDTO).collect(Collectors.toList());
     }
 
     //criando uma nova cidade

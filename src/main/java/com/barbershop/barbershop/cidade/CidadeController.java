@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.cidade;
 
 
+import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,6 +28,12 @@ public class CidadeController {
     public ResponseEntity<CidadeDTO> getById(@PathVariable Integer id){
         CidadeDTO cidadeDTO = cidadeService.findById(id);
         return ResponseEntity.ok(cidadeDTO);
+    }
+
+    @GetMapping("/estado/{estadoId}")
+    public ResponseEntity<List<CidadeDTO>> getByEstadoId(@PathVariable Integer estadoId) {
+        List<CidadeDTO> cidadeDTOS = cidadeService.findByEstadoId(estadoId);
+        return ResponseEntity.ok(cidadeDTOS);
     }
 
     @PostMapping
