@@ -1,8 +1,6 @@
 package com.barbershop.barbershop.cidade;
 
 
-import com.barbershop.barbershop.agendamento.Agendamento;
-import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

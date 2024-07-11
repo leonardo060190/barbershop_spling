@@ -1,6 +1,5 @@
 package com.barbershop.barbershop.cidade;
 
-import com.barbershop.barbershop.agendamento.Agendamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -10,5 +9,4 @@ import java.util.List;
 public interface CidadeRepository extends JpaRepository<Cidade, Integer> {
 
     List<Cidade> findByEstadoId(Integer estadoId);
-
 }
