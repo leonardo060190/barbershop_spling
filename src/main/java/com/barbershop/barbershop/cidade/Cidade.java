@@ -34,7 +34,6 @@ public class Cidade implements Serializable {
     @Column(length=50, nullable=false)
     private String nome;
 
-    @Column(length=10, nullable=false)
     protected LocalDate dataCriacao = LocalDate.now();
 
 
