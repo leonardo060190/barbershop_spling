@@ -57,7 +57,7 @@ public class BarbeariaController {
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<BarbeariaDTO> update(@PathVariable Integer id, @Valid @RequestBody BarbeariaDTO barbeariasDTO){
         BarbeariaDTO update= barbeariaService.update(id, barbeariasDTO);
         return ResponseEntity.ok(update);

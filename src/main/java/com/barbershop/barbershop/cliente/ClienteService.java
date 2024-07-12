@@ -1,5 +1,6 @@
 package com.barbershop.barbershop.cliente;
 
+import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,6 +51,7 @@ public class ClienteService {
         Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encontrado"));
         clienteDTO.setId(id);
         cliente = clienteMapper.updateEntity(clienteDTO,cliente);
+        cliente.setPerfil(Perfil.CLIENTE);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }

@@ -39,7 +39,7 @@ public class ClienteController {
         return ResponseEntity.status(HttpStatus.CREATED).body(create);
     }
 
-    @PutMapping("/{id}")
+    @PatchMapping("/{id}")
     public ResponseEntity<ClienteDTO> update(@PathVariable Integer id, @Valid @RequestBody ClienteDTO clienteDTO){
         ClienteDTO update= clienteService.update(id, clienteDTO);
         return ResponseEntity.ok(update);
