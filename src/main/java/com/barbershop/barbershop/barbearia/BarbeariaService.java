@@ -2,6 +2,7 @@ package com.barbershop.barbershop.barbearia;
 
 
 import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.endereco.EnderecoService;
 import com.barbershop.barbershop.enuns.Perfil;
 import jakarta.transaction.Transactional;
@@ -74,6 +75,7 @@ public class BarbeariaService {
         Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         barbeariaDTO.setId(id);
         barbearia = barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
+        barbearia.setPerfil(Perfil.BARBEARIA);
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }

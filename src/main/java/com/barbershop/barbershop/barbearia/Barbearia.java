@@ -89,7 +89,9 @@ public class Barbearia implements Serializable {
                 ", cnpj='" + cnpj + '\'' +
                 ", razaoSocial='" + razaoSocial + '\'' +
                 ", foto='" + foto + '\'' +
+                ", perfil=" + perfil +
                 ", dataCriacao=" + dataCriacao +
+                ", endereco=" + endereco +
                 '}';
     }
 }
