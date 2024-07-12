@@ -41,7 +41,7 @@ public class ClienteController {
 
     @PatchMapping("/{id}")
     public ResponseEntity<ClienteDTO> update(@PathVariable Integer id, @Valid @RequestBody ClienteDTO clienteDTO){
-        ClienteDTO update= clienteService.update(id, clienteDTO);
+        ClienteDTO update = clienteService.update(id, clienteDTO);
         return ResponseEntity.ok(update);
     }
 

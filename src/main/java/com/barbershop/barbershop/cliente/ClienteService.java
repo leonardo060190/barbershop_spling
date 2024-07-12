@@ -50,8 +50,11 @@ public class ClienteService {
     public ClienteDTO update(Integer id, ClienteDTO clienteDTO){
         Cliente cliente = clienteRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Cliente não encontrado"));
         clienteDTO.setId(id);
+        Endereco end = cliente.getEndereco();
+
         cliente = clienteMapper.updateEntity(clienteDTO,cliente);
         cliente.setPerfil(Perfil.CLIENTE);
+        cliente.setEndereco(end);
         cliente = clienteRepository.save(cliente);
         return clienteMapper.toDTO(cliente);
     }

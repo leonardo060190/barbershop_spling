@@ -74,8 +74,11 @@ public class BarbeariaService {
     public BarbeariaDTO update(Integer id, BarbeariaDTO barbeariaDTO){
         Barbearia barbearia = barbeariaRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Barbearia não encontrada"));
         barbeariaDTO.setId(id);
+        Endereco end = barbearia.getEndereco();
+
         barbearia = barbeariaMapper.updateEntity(barbeariaDTO,barbearia);
         barbearia.setPerfil(Perfil.BARBEARIA);
+        barbearia.setEndereco(end);
         barbearia = barbeariaRepository.save(barbearia);
         return barbeariaMapper.toDTO(barbearia);
     }
