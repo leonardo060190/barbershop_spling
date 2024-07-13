@@ -52,6 +52,8 @@ public class Login implements Serializable {
                         ", email='" + email + '\'' +
                         ", senha='" + senha + '\'' +
                         ", dataCriacao=" + dataCriacao +
+                        ", barbearia=" + barbearia +
+                        ", cliente=" + cliente +
                         '}';
         }
 }
