@@ -78,8 +78,10 @@ public class Barbearia implements Serializable {
 
 
     @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
-    @JsonManagedReference("barbearia_logins")
+    @JsonManagedReference("barbeariaId_logins")
     private List<Login> logins = new ArrayList<Login>();
+
+
 
     @Override
     public String toString() {

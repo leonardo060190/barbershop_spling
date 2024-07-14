@@ -37,7 +37,7 @@ public class Login implements Serializable {
 
         @ManyToOne(fetch = FetchType.EAGER)
         @JoinColumn(name = "barbeariaId")
-        @JsonBackReference("barbearia_logins")
+        @JsonBackReference("barbeariaId_logins")
         private Barbearia barbearia;
 
         @ManyToOne(fetch = FetchType.EAGER)
