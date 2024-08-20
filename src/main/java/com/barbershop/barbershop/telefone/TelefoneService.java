@@ -39,6 +39,14 @@ public class TelefoneService {
 
     }
 
+    public List<TelefoneDTO> findByprofissionalId(Integer profissionalId){
+        List<Telefone> telefones = telefoneRepository.findByprofissionalId(profissionalId);
+        return telefones.stream()
+                .map(telefoneMapper::toDTO)
+                .collect(Collectors.toList());
+
+    }
+
     //cria um novo telefone
     @Transactional
     public TelefoneDTO create(TelefoneDTO telefoneDTO){

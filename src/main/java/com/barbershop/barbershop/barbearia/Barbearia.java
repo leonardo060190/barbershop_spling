@@ -6,6 +6,7 @@ import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamento;
 import com.barbershop.barbershop.login.Login;
+import com.barbershop.barbershop.profissional.Profissional;
 import com.barbershop.barbershop.servico.Servico;
 import com.barbershop.barbershop.telefone.Telefone;
 
@@ -81,6 +82,9 @@ public class Barbearia implements Serializable {
     @JsonManagedReference("barbeariaId_logins")
     private List<Login> logins = new ArrayList<Login>();
 
+    @OneToMany(mappedBy = "barbearia", fetch = FetchType.EAGER)
+    @JsonManagedReference("barbearia_profissional")
+    private List<Profissional> profissionais = new ArrayList<Profissional>();
 
 
     @Override

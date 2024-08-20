@@ -5,6 +5,7 @@ import com.barbershop.barbershop.endereco.Endereco;
 import com.barbershop.barbershop.enuns.Perfil;
 import com.barbershop.barbershop.horarioFuncionamento.HorarioFuncionamentoDTO;
 import com.barbershop.barbershop.login.LoginDTO;
+import com.barbershop.barbershop.profissional.Profissional;
 import com.barbershop.barbershop.servico.ServicoDTO;
 import com.barbershop.barbershop.telefone.TelefoneDTO;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -63,6 +64,9 @@ public class BarbeariaDTO implements Serializable {
 
 
     private List<LoginDTO> logins = new ArrayList<LoginDTO>();
+
+    private List<Profissional> profissionais = new ArrayList<Profissional>();
+
 
 
     @Override

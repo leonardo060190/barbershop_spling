@@ -35,6 +35,12 @@ public class TelefoneController {
         return ResponseEntity.ok(telefonesDTO);
     }
 
+    @GetMapping("/profissional/{profissionalId}")
+    public ResponseEntity<List<TelefoneDTO>> findByprofissionalId(@PathVariable Integer profissionalId){
+        List<TelefoneDTO> telefonesDTO = telefoneService.findByprofissionalId(profissionalId);
+        return ResponseEntity.ok(telefonesDTO);
+    }
+
     @PostMapping
     public ResponseEntity<TelefoneDTO> create(@Valid @RequestBody TelefoneDTO telefoneDTO){
         System.out.println(telefoneDTO);

@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.agendamento;
 
 import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.profissionalServico.ProfissionalServico;
 import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -30,6 +31,9 @@ public class AgendamentoDTO implements Serializable {
 
     private Servico servico;
 
+    private ProfissionalServico profissionalServico;
+
+
     @NotNull(message = "O campo DATA é requerido")
     @Temporal(TemporalType.DATE)
     @JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "yyyy-MM-dd")
@@ -50,6 +54,7 @@ public class AgendamentoDTO implements Serializable {
                 "id=" + id +
                 ", cliente=" + cliente +
                 ", servico=" + servico +
+                ", profissionalServico=" + profissionalServico +
                 ", data=" + data +
                 ", hora=" + hora +
                 ", dataCriacao=" + dataCriacao +

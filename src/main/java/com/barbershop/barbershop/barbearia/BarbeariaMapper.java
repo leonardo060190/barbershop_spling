@@ -36,6 +36,7 @@ public interface BarbeariaMapper {
             @Mapping(source = "barbeariaDTO.endereco", target = "endereco"),
             @Mapping(source = "barbeariaDTO.servicos", target = "servicos"),
             @Mapping(source = "barbeariaDTO.horarioFuncionamentos", target = "horarioFuncionamentos"),
+            @Mapping(source = "barbeariaDTO.profissionais", target = "profissionais"),
             @Mapping(source = "barbeariaDTO.telefones", target = "telefones"),
             @Mapping(source = "barbeariaDTO.logins", target = "logins"),
             @Mapping(source = "barbeariaDTO.perfil", target = "perfil")

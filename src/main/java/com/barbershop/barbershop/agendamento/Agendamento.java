@@ -1,6 +1,7 @@
 package com.barbershop.barbershop.agendamento;
 
 import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.profissionalServico.ProfissionalServico;
 import com.barbershop.barbershop.servico.Servico;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -51,15 +52,21 @@ public class Agendamento implements Serializable {
     @JsonBackReference("servico_agendamentos")
     private Servico servico;
 
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "profissionalServicoId", nullable = false)
+    @JsonBackReference("profissionalServico_agendamentos")
+    private ProfissionalServico profissionalServico;
+
     @Override
     public String toString() {
-        return "AgendamentoDTO{" +
+        return "Agendamento{" +
                 "id=" + id +
-                ", cliente=" + cliente +
-                ", servico=" + servico +
                 ", data=" + data +
                 ", hora=" + hora +
                 ", dataCriacao=" + dataCriacao +
+                ", cliente=" + cliente +
+                ", servico=" + servico +
+                ", profissionalServico=" + profissionalServico +
                 '}';
     }
 }

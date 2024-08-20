@@ -2,6 +2,7 @@ package com.barbershop.barbershop.servico;
 
 import com.barbershop.barbershop.agendamento.Agendamento;
 import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.profissionalServico.ProfissionalServico;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
@@ -53,6 +54,10 @@ public class Servico implements Serializable {
     @OneToMany(mappedBy = "servico", fetch = FetchType.EAGER)
     @JsonManagedReference("servico_agendamentos")
     private List<Agendamento> agendamentos = new ArrayList<Agendamento>();
+
+    @OneToMany(mappedBy = "servico", fetch = FetchType.EAGER)
+    @JsonManagedReference("servico_profissionalServico")
+    private List<ProfissionalServico> profissionalServicos = new ArrayList<ProfissionalServico>();
 
     @Override
     public String toString() {

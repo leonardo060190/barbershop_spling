@@ -2,6 +2,7 @@ package com.barbershop.barbershop.servico;
 
 import com.barbershop.barbershop.agendamento.AgendamentoDTO;
 import com.barbershop.barbershop.barbearia.Barbearia;
+import com.barbershop.barbershop.profissionalServico.ProfissionalServico;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -45,6 +46,8 @@ public class ServicoDTO implements Serializable {
 
 
     private List<AgendamentoDTO> agendamentos = new ArrayList<AgendamentoDTO>();
+
+    private List<ProfissionalServico> profissionalServicos = new ArrayList<ProfissionalServico>();
 
     @Override
     public String toString() {

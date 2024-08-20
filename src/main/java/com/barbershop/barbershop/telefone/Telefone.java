@@ -2,6 +2,7 @@ package com.barbershop.barbershop.telefone;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.profissional.Profissional;
 import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
 import lombok.*;
@@ -43,6 +44,11 @@ public class Telefone implements Serializable {
     @JoinColumn(name = "clienteId")
     @JsonBackReference("cliente_telefones")
     private Cliente cliente;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "profissionalId")
+    @JsonBackReference("profissional_telefones")
+    private Profissional profissional;
 
     @Override
     public String toString() {

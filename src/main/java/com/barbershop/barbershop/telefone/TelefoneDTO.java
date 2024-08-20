@@ -3,6 +3,7 @@ package com.barbershop.barbershop.telefone;
 
 import com.barbershop.barbershop.barbearia.Barbearia;
 import com.barbershop.barbershop.cliente.Cliente;
+import com.barbershop.barbershop.profissional.Profissional;
 import com.fasterxml.jackson.annotation.*;
 import lombok.*;
 
@@ -32,6 +33,9 @@ public class TelefoneDTO implements Serializable {
     private Barbearia barbearia;
 
     private Cliente cliente;
+
+    private Profissional profissional;
+
 
     @Override
     public String toString() {
