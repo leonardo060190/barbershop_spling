@@ -11,9 +11,15 @@ public interface AgendomentoMapper {
 
     //Conversor Entity(Model) para DTO
     @Mapping(source = "id", target = "id")
+    @Mapping(source = "cliente", target = "cliente")
+    @Mapping(source = "servico", target = "servico")
+    @Mapping(source = "profissionalServico", target = "profissionalServico")
     AgendamentoDTO toDTO(Agendamento agendamento);
 
     @Mapping(source = "id", target = "id")
+    @Mapping(source = "cliente", target = "cliente")
+    @Mapping(source = "servico", target = "servico")
+    @Mapping(source = "profissionalServico", target = "profissionalServico")
     Agendamento toEntity(AgendamentoDTO agendamentoDTO );
 
     //recebendo uma lista do estados

@@ -35,9 +35,15 @@ public class AgendamentoController {
         return ResponseEntity.ok(agendamentosDTO);
     }
 
-    @GetMapping("/servico/barbearia/{barbeariaId}")
+    @GetMapping("/profissionalservico/barbearia/{barbeariaId}")
     public List<AgendamentoDTO> getAgendamentosByBarbearia(@PathVariable Integer barbeariaId) {
-        return agendamentoService.findByBarbeariaId(barbeariaId);
+        return agendamentoService.findAgendamentosWithServiceAndProfessionalByBarbeariaId(barbeariaId);
+    }
+
+    @GetMapping("/profissionalservico/profissional/{profissionalId}")
+    public ResponseEntity<List<AgendamentoDTO>> getByProfissionalId(@PathVariable Integer profissionalId) {
+        List<AgendamentoDTO> agendamentosDTO = agendamentoService.findByProfissionalId(profissionalId);
+        return ResponseEntity.ok(agendamentosDTO);
     }
 
     @PostMapping

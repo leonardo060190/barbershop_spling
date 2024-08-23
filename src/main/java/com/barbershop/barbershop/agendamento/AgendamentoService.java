@@ -25,9 +25,9 @@ public class AgendamentoService {
         return agendamentos.stream().map(agendomentoMapper::toDTO).collect(Collectors.toList());
     }
 
-    // Buscar agendamentos pela barbearia
-    public List<AgendamentoDTO> findByBarbeariaId(Integer barbeariaId) {
-        List<Agendamento> agendamentos = agendamentoRepository.findByServico_Barbearia_Id(barbeariaId);
+    // Buscar agendamentos pela barbearia com informações do serviço e profissional
+    public List<AgendamentoDTO> findAgendamentosWithServiceAndProfessionalByBarbeariaId(Integer barbeariaId) {
+        List<Agendamento> agendamentos = agendamentoRepository.findAgendamentosWithServiceAndProfessionalByBarbeariaId(barbeariaId);
         return agendamentos.stream().map(agendomentoMapper::toDTO).collect(Collectors.toList());
     }
 
@@ -35,6 +35,11 @@ public class AgendamentoService {
     public AgendamentoDTO findById(Integer id){
         Agendamento agendamento = agendamentoRepository.findById(id).orElseThrow(()-> new IllegalArgumentException("Agendamento não encontrado"));
         return agendomentoMapper.toDTO(agendamento);
+    }
+
+    public List<AgendamentoDTO> findByProfissionalId(Integer profissionalId) {
+        List<Agendamento> agendamentos = agendamentoRepository.findByProfissionalId(profissionalId);
+        return agendamentos.stream().map(agendomentoMapper::toDTO).collect(Collectors.toList());
     }
     //buscar o agendamento pelo id do cliente
     public List<AgendamentoDTO> findByClienteId(Integer clienteId) {

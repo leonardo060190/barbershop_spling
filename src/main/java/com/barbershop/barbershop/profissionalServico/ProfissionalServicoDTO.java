@@ -42,6 +42,7 @@ public class ProfissionalServicoDTO implements Serializable {
                 "id=" + id +
                 ", servico=" + servico +
                 ", profissional=" + profissional +
+                ", agendamentos=" + agendamentos +
                 '}';
     }
 }

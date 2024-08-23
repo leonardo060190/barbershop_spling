@@ -48,12 +48,12 @@ public class Agendamento implements Serializable {
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "servicoId", nullable = false)
+    @JoinColumn(name = "servicoId")
     @JsonBackReference("servico_agendamentos")
     private Servico servico;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "profissionalServicoId", nullable = false)
+    @JoinColumn(name = "profissionalServico", nullable = false)
     @JsonBackReference("profissionalServico_agendamentos")
     private ProfissionalServico profissionalServico;
 

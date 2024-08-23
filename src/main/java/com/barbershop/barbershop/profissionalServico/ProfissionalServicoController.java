@@ -23,7 +23,7 @@ public class ProfissionalServicoController {
         List<ProfissionalServicoDTO> profissionalServicoDTO = profissionalServicoService.findAll();
         return ResponseEntity.ok(profissionalServicoDTO);
     }
-    @GetMapping("/profissional/{profissionalId}")
+    @GetMapping("/profissionalServico/{profissionalId}")
     public ResponseEntity<List<ProfissionalServicoDTO>> getByprofissionalId(@PathVariable Integer profissionalId) {
         List<ProfissionalServicoDTO> profissionalServicoDTOS = profissionalServicoService.findByProfissionalId(profissionalId);
         return ResponseEntity.ok(profissionalServicoDTOS);

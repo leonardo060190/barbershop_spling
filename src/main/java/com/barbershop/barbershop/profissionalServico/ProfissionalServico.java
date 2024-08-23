@@ -45,10 +45,11 @@ public class ProfissionalServico implements Serializable {
 
     @Override
     public String toString() {
-        return "Profissional_servico{" +
+        return "ProfissionalServico{" +
                 "id=" + id +
                 ", servico=" + servico +
                 ", profissional=" + profissional +
+                ", agendamentos=" + agendamentos +
                 '}';
     }
 }
