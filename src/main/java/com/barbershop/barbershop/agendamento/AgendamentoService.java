@@ -5,7 +5,10 @@ import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -50,6 +53,17 @@ public class AgendamentoService {
     //cria um novo agendamento
     @Transactional
     public AgendamentoDTO create(AgendamentoDTO agendamentoDTO){
+
+        // Verificar se já existe um agendamento para o mesmo profissional, data e hora
+        Integer profissionalId = agendamentoDTO.getProfissionalServico().getId();
+        LocalDate data = agendamentoDTO.getData();
+        LocalTime hora = agendamentoDTO.getHora();
+
+        Optional<Agendamento> existingAgendamento = agendamentoRepository.findExistingAgendamento(profissionalId, data, hora);
+
+        if (existingAgendamento.isPresent()) {
+            throw new IllegalStateException("Já existe um agendamento para este profissional neste horário.");
+        }
         agendamentoDTO.setId(null);
         Agendamento agendamento = agendomentoMapper.toEntity(agendamentoDTO);
         agendamento = agendamentoRepository.save(agendamento);
